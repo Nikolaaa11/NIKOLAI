@@ -1,0 +1,31 @@
+{
+  "total_sesiones": 211,
+  "periodo": "oct-2025 a sep-2026 (concentrado en mar–sep 2026)",
+  "nota": "Trabajo registrado en el historial de sesiones de Claude que NO vive en código. Descrito por tipo de trabajo, sin datos personales. Horas = lo que tardaría un profesional en hacerlo.",
+  "categorias": [
+    {"id": "legal", "nombre": "Contratos, NDAs y documentos legales", "rol": "abogado", "sesiones": 22, "horas_por_sesion": 5,
+     "ejemplos": ["Revisión de NDAs con empresas de energía", "Análisis legal integral de contratos de servicios", "Reconocimientos de deuda", "Adenda de contrato de suscripción", "LOI y promesa de compra (minería)", "Poderes simples", "Libros de accionistas", "Riesgos regulatorios (CMF, Decreto 125)"]},
+    {"id": "finanzas", "nombre": "Finanzas, desembolsos y control", "rol": "fin_analista", "sesiones": 13, "horas_por_sesion": 4,
+     "ejemplos": ["Fichas de desembolso de fondos a empresas del portafolio", "Recibos y estados de pago", "Conciliación de transferencias", "Planillas de órdenes de compra", "Cobranza a empresas del portafolio", "Exportación de base de inversionistas"]},
+    {"id": "fundraising", "nombre": "Postulaciones a fondos (CORFO, BID Lab, concursos)", "rol": "fundraising", "sesiones": 6, "horas_por_sesion": 16,
+     "ejemplos": ["Postulación PTEC CORFO", "Aplicación a fondo de venture capital BID Lab", "Solicitud de fondos Climate Smart Leasing", "Proyectos de IA para concursos", "Respuestas formales a CORFO"]},
+    {"id": "estrategia", "nombre": "Estrategia, mercado y desarrollo de negocios", "rol": "estrategia", "sesiones": 16, "horas_por_sesion": 8,
+     "ejemplos": ["Estudio de mercado camiones diésel vs eléctricos", "Mapa de electrolineras de Chile", "Barrido nacional de plantas solares y contactos", "Localización de terrenos solares", "Ubicación y estrategia de planta de reciclaje", "Plataforma B2B minería y energía", "Evaluación de economía circular"]},
+    {"id": "presentaciones", "nombre": "Presentaciones y reportes ejecutivos", "rol": "comunicaciones", "sesiones": 12, "horas_por_sesion": 8,
+     "ejemplos": ["Presentación a la ministra de Energía", "Presentación proyecto BESS", "Presentación inmobiliaria Línea de Vida", "Memoria de cálculo con diseño premium", "Reportes técnicos y comerciales (RevTech)", "Cartas con formato corporativo", "Carta Gantt de proyecto"]},
+    {"id": "ingenieria", "nombre": "Análisis de ingeniería", "rol": "ing_energia", "sesiones": 3, "horas_por_sesion": 8,
+     "ejemplos": ["Funcionamiento y carga de baterías", "Impacto normativo en proyectos de energía", "Cambio de cinta transportadora (minería)"]},
+    {"id": "operacion_plataforma", "nombre": "Operación automatizada de plataformas (health checks, auditorías UX)", "rol": "qa_sre", "sesiones": 29, "horas_por_sesion": 2,
+     "ejemplos": ["Health check diario de la plataforma", "Auditoría UX semanal", "Mejoras continuas de plataforma"]},
+    {"id": "video_tutoriales", "nombre": "Generación de video-tutoriales", "rol": "diseno_grafico", "sesiones": 6, "horas_por_sesion": 6,
+     "ejemplos": ["Tutoriales de uso de la plataforma"]},
+    {"id": "carrera", "nombre": "Búsqueda laboral y planes de carrera", "rol": "rrhh", "sesiones": 6, "horas_por_sesion": 6,
+     "ejemplos": ["Automatización de búsqueda de empleo", "Agentes de búsqueda laboral en Nueva Zelanda", "Plan de viaje y trabajo en Auckland"]},
+    {"id": "asistencia", "nombre": "Asistencia ejecutiva (correos, transcripciones, documentos)", "rol": "asistente", "sesiones": 20, "horas_por_sesion": 1.5,
+     "ejemplos": ["Correos formales", "Transcripción e informe de reuniones", "Conversión PDF/Word", "Orden de carpetas y Dropbox"]},
+    {"id": "soporte_ti", "nombre": "Soporte TI e instalación de herramientas", "rol": "soporte_ti", "sesiones": 14, "horas_por_sesion": 1.5,
+     "ejemplos": ["Diagnóstico de reinicios y discos", "Revisión de pendrive por malware", "Instalación de conectores MCP (Gmail, Playwright, Ideogram)"]},
+    {"id": "personal", "nombre": "Vida personal y consultas varias", "rol": null, "sesiones": 12, "horas_por_sesion": 0,
+     "ejemplos": ["Consultas cotidianas", "Viajes", "Entretenimiento"]}
+  ]
+}

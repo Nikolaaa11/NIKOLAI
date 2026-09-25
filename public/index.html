@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Radiografía NIKOLAI</title>
+  <meta name="description" content="Qué has construido, cuánto costaría con profesionales en Chile y EE.UU., cuántos equipos reemplazas y dónde enfocarte para lograr la libertad financiera.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%232a78d6'/><text x='16' y='22' font-family='system-ui' font-size='16' font-weight='700' text-anchor='middle' fill='white'>N</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-in">
+      <div class="brand">NIKOLAI <span>· radiografía</span></div>
+      <nav class="nav" aria-label="Secciones">
+        <a href="#profesiones">Profesiones</a>
+        <a href="#costo">Costo</a>
+        <a href="#equipos">Equipos</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#diagnostico">Diagnóstico</a>
+        <a href="#foco">Foco</a>
+        <a href="#libertad">Libertad financiera</a>
+        <a href="#prompt">Prompt</a>
+        <a href="#metodo">Método</a>
+      </nav>
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Cambiar tema">Tema</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="eyebrow">Radiografía profesional · septiembre 2026</div>
+      <h1>Trabajas como una empresa entera. Falta que te pague como una.</h1>
+      <p class="lead">Revisé todo lo que hay en tu cuenta: repositorios de GitHub, proyectos en Vercel y el historial de sesiones con Claude. Este es el inventario, lo que costaría con profesionales y un plan para convertirlo en libertad financiera.</p>
+
+      <div class="hero-figure">
+        <div class="card">
+          <div class="stat-label">Costo de hacerlo con profesionales en Chile</div>
+          <div class="hero-num num" id="heroCL">—</div>
+          <div class="hero-sub" id="heroCLsub">—</div>
+        </div>
+        <div class="card">
+          <div class="stat-label">El mismo trabajo con profesionales en EE.UU.</div>
+          <div class="hero-num num" id="heroUS">—</div>
+          <div class="hero-sub" id="heroUSsub">—</div>
+        </div>
+      </div>
+      <div class="grid g4 tiles" id="tiles"></div>
+    </section>
+
+    <!-- PROFESIONES -->
+    <section id="profesiones">
+      <div class="section-head">
+        <div class="eyebrow">1 · Qué has hecho</div>
+        <h2 id="profTitle">Las profesiones que ejerces</h2>
+        <p class="lead">Cada tarjeta es un rol que una empresa tendría que contratar para producir lo que hay en tu cuenta. Las horas son las de un profesional competente, no las tuyas: con IA tú lo hiciste en mucho menos tiempo.</p>
+      </div>
+      <div class="grid g3" id="roleCards"></div>
+    </section>
+
+    <!-- COSTO -->
+    <section id="costo">
+      <div class="section-head">
+        <div class="eyebrow">2 · Cuánto costaría</div>
+        <h2>Chile vs. Estados Unidos</h2>
+        <p class="lead">Dos formas de medirlo. <b>Costo de proyecto</b>: horas × tarifa de agencia o consultor, pagado una vez. <b>Equipo mensual</b>: lo que costaría tener contratada la gente que hace este volumen de trabajo, con cargas del empleador.</p>
+      </div>
+
+      <div class="compare" id="compare"></div>
+
+      <div class="card" style="margin-top:16px">
+        <div class="toolbar" style="justify-content:space-between">
+          <h3>Costo de proyecto por profesión</h3>
+          <div class="seg" role="group" aria-label="Moneda del gráfico">
+            <button type="button" data-cur="usd" aria-pressed="true">USD</button>
+            <button type="button" data-cur="clp" aria-pressed="false">CLP</button>
+          </div>
+        </div>
+        <div class="legend">
+          <span><i style="background:var(--s1)"></i>Tarifas Chile</span>
+          <span><i style="background:var(--s2)"></i>Tarifas EE.UU.</span>
+        </div>
+        <div class="chart" id="costChart" role="img" aria-label="Costo por profesión, Chile y EE.UU."></div>
+      </div>
+
+      <div style="margin-top:16px">
+        <div class="table-wrap">
+          <table id="costTable">
+            <thead>
+              <tr>
+                <th>Profesión</th>
+                <th class="r">Horas</th>
+                <th class="r">Tarifa CL (CLP/h)</th>
+                <th class="r">Costo Chile</th>
+                <th class="r">Tarifa EE.UU. (USD/h)</th>
+                <th class="r">Costo EE.UU.</th>
+                <th class="r">Jornadas equiv.</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot></tfoot>
+          </table>
+        </div>
+        <p class="tbl-note" id="costNote"></p>
+      </div>
+    </section>
+
+    <!-- EQUIPOS -->
+    <section id="equipos">
+      <div class="section-head">
+        <div class="eyebrow">3 · A cuántos equipos solapas</div>
+        <h2 id="teamTitle">Equipos que reemplazas</h2>
+        <p class="lead">Agrupando las profesiones en los departamentos de una empresa mediana. La barra muestra cuánto del total de horas cae en cada equipo.</p>
+      </div>
+      <div class="grid g2" id="teams"></div>
+    </section>
+
+    <!-- PORTAFOLIO -->
+    <section id="portafolio">
+      <div class="section-head">
+        <div class="eyebrow">4 · Inventario</div>
+        <h2>Portafolio de proyectos</h2>
+        <p class="lead">Todos los repositorios, con lo que hacen, su madurez, las horas equivalentes y su potencial comercial (1 a 5). Los duplicados y variantes están marcados y no suman al total.</p>
+      </div>
+      <div class="card" style="margin-bottom:16px">
+        <h3 style="margin-bottom:12px">Horas por área (sin duplicados)</h3>
+        <div class="chart" id="domainChart" role="img" aria-label="Horas por área de trabajo"></div>
+      </div>
+      <div class="toolbar">
+        <input type="search" id="q" placeholder="Buscar proyecto…" aria-label="Buscar proyecto">
+        <select id="fDom" aria-label="Filtrar por área"><option value="">Todas las áreas</option></select>
+        <select id="fMad" aria-label="Filtrar por madurez">
+          <option value="">Toda madurez</option>
+          <option value="produccion">Producción</option>
+          <option value="mvp">MVP</option>
+          <option value="prototipo">Prototipo</option>
+          <option value="vacio">Vacío</option>
+        </select>
+        <select id="fDup" aria-label="Duplicados">
+          <option value="uniq">Sin duplicados</option>
+          <option value="all">Incluir duplicados</option>
+        </select>
+        <select id="fSort" aria-label="Ordenar">
+          <option value="horas">Ordenar: horas</option>
+          <option value="pot">Ordenar: potencial</option>
+          <option value="nombre">Ordenar: nombre</option>
+        </select>
+      </div>
+      <div class="table-wrap">
+        <table id="projTable">
+          <thead>
+            <tr>
+              <th>Proyecto</th>
+              <th>Qué es</th>
+              <th>Área</th>
+              <th>Madurez</th>
+              <th class="r">Horas</th>
+              <th class="r">Potencial</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <p class="tbl-note" id="projNote"></p>
+    </section>
+
+    <!-- DIAGNÓSTICO -->
+    <section id="diagnostico">
+      <div class="section-head">
+        <div class="eyebrow">5 · Diagnóstico</div>
+        <h2>Lo que los números dicen de ti</h2>
+      </div>
+      <div class="grid g3" id="diag"></div>
+    </section>
+
+    <!-- FOCO -->
+    <section id="foco">
+      <div class="section-head">
+        <div class="eyebrow">6 · Dónde enfocarte</div>
+        <h2>Una apuesta principal, dos de apoyo, y dejar de abrir frentes</h2>
+        <p class="lead" id="focusLead"></p>
+      </div>
+      <div class="bets" id="bets"></div>
+
+      <h3 style="margin:32px 0 12px">Plan de 12 meses</h3>
+      <div class="horizon" id="horizons"></div>
+
+      <h3 style="margin:32px 0 12px">Reglas del dinero</h3>
+      <div class="grid g2" id="moneyRules"></div>
+    </section>
+
+    <!-- CALCULADORA -->
+    <section id="libertad">
+      <div class="section-head">
+        <div class="eyebrow">7 · Libertad financiera</div>
+        <h2>Tu número y cuándo llegas</h2>
+        <p class="lead">Libertad financiera = que tus inversiones paguen tus gastos sin que tengas que trabajar. Pon tus datos reales: nada se envía a ningún servidor.</p>
+      </div>
+      <div class="calc">
+        <div class="card">
+          <div class="stat-label" style="margin-bottom:8px">Escenarios rápidos</div>
+          <div class="presets seg" role="group" aria-label="Escenarios">
+            <button type="button" data-preset="hoy" aria-pressed="false">Ejemplo hoy</button>
+            <button type="button" data-preset="plan" aria-pressed="false">Con el plan de foco</button>
+          </div>
+          <div class="field">
+            <label for="gasto">Gasto mensual (CLP) <output id="gastoO"></output></label>
+            <input type="range" id="gasto" min="500000" max="10000000" step="100000" value="2500000">
+          </div>
+          <div class="field">
+            <label for="ahorro">Patrimonio invertido hoy (CLP) <output id="ahorroO"></output></label>
+            <input type="range" id="ahorro" min="0" max="500000000" step="1000000" value="10000000">
+          </div>
+          <div class="field">
+            <label for="ingreso">Ingreso mensual neto (CLP) <output id="ingresoO"></output></label>
+            <input type="range" id="ingreso" min="500000" max="30000000" step="100000" value="4000000">
+          </div>
+          <div class="field">
+            <label for="ret">Rentabilidad real anual <output id="retO"></output></label>
+            <input type="range" id="ret" min="1" max="8" step="0.5" value="4.5">
+          </div>
+          <div class="field">
+            <label for="swr">Tasa de retiro segura <output id="swrO"></output></label>
+            <input type="range" id="swr" min="3" max="5" step="0.25" value="3.5">
+          </div>
+          <div class="field">
+            <label for="crec">Crecimiento real del ingreso por año <output id="crecO"></output></label>
+            <input type="range" id="crec" min="0" max="30" step="1" value="10">
+          </div>
+          <p class="calc-note">"Ejemplo hoy" usa valores ilustrativos: no conozco tus gastos ni tu patrimonio reales. "Con el plan de foco" sube tu ingreso neto al nivel que supone cumplir la meta de ingreso recurrente a 12 meses. Tus ajustes quedan guardados solo en este navegador.</p>
+        </div>
+        <div class="card calc-out">
+          <div class="stat-label">Tu número de libertad financiera</div>
+          <div class="hero-num num" id="fiNum">—</div>
+          <div class="hero-sub" id="fiNumSub">—</div>
+          <div class="calc-grid">
+            <div><div class="stat-label">Ahorro mensual</div><div class="stat-value num" id="fiSave">—</div><div class="stat-note" id="fiRate">—</div></div>
+            <div><div class="stat-label">Años hasta la libertad</div><div class="stat-value num" id="fiYears">—</div><div class="stat-note" id="fiYear">—</div></div>
+            <div><div class="stat-label">Ingreso pasivo hoy</div><div class="stat-value num" id="fiPassive">—</div><div class="stat-note">al mes, con tu tasa de retiro</div></div>
+          </div>
+          <div class="divider"></div>
+          <div class="legend" id="fiLegend">
+            <span><i style="background:var(--s1)"></i>Patrimonio proyectado</span>
+            <span><i style="background:var(--s2);height:2px;border-radius:0"></i>Meta (tu número)</span>
+          </div>
+          <div class="chart" id="fiChart" role="img" aria-label="Proyección de patrimonio hacia la meta"></div>
+          <p class="tbl-note">Escenario ilustrativo en pesos de hoy (rentabilidad real = sobre la inflación). No es asesoría financiera personalizada.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMPT -->
+    <section id="prompt">
+      <div class="section-head">
+        <div class="eyebrow">8 · El prompt maestro</div>
+        <h2>El prompt que generó este análisis</h2>
+        <p class="lead">Cópialo y vuelve a correrlo cada trimestre en Claude Code para medir tu avance con los mismos criterios.</p>
+      </div>
+      <div class="toolbar">
+        <button class="btn" id="copyPrompt" type="button">Copiar prompt</button>
+        <a class="btn ghost" href="https://github.com/Nikolaaa11/NIKOLAI/blob/main/PROMPT_MAESTRO.md" target="_blank" rel="noopener">Ver en GitHub</a>
+      </div>
+      <pre class="prompt-box" id="promptBox"></pre>
+    </section>
+
+    <!-- MÉTODO -->
+    <section id="metodo">
+      <div class="section-head">
+        <div class="eyebrow">9 · Método y fuentes</div>
+        <h2>Cómo se calculó</h2>
+      </div>
+      <div class="grid g2">
+        <div class="card">
+          <h3>Qué se midió y qué se estimó</h3>
+          <ul class="list" id="methodList"></ul>
+        </div>
+        <div class="card">
+          <h3>Fuentes de tarifas y cambio</h3>
+          <ul class="list" id="sources"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Generado con Claude Code a partir de GitHub, Vercel y el historial de sesiones de la cuenta. Estimaciones con fines de planificación; revisa los supuestos antes de usarlos para decisiones.
+  </footer>
+
+  <div class="tooltip" id="tip" role="tooltip"></div>
+
+  <script src="data.js"></script>
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

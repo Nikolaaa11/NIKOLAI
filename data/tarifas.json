@@ -1,0 +1,309 @@
+{
+  "fecha": "2026-09-25",
+  "usd_clp": 946,
+  "uf_clp": 41016,
+  "meses_actividad": 7,
+  "horas_mes_fte": 160,
+  "cargas_empleador_cl": 0.25,
+  "cargas_empleador_us": 0.3,
+  "nota": "Tarifas de facturación (lo que cobra una agencia o consultor independiente por hora), no sueldos líquidos. Sueldos mensuales brutos Chile y anuales EE.UU. para el cálculo de equipo contratado.",
+  "roles": [
+    {
+      "id": "dev_fullstack",
+      "nombre": "Desarrollador/a Full-Stack",
+      "equipo": "tecnologia",
+      "cl_hora": 40000,
+      "us_hora": 120,
+      "cl_mes": 3000000,
+      "us_anual": 133000
+    },
+    {
+      "id": "arquitecto",
+      "nombre": "Arquitecto/a de Software y DevOps",
+      "equipo": "tecnologia",
+      "cl_hora": 55000,
+      "us_hora": 160,
+      "cl_mes": 4500000,
+      "us_anual": 165000
+    },
+    {
+      "id": "ia",
+      "nombre": "Ingeniero/a de IA y Automatización",
+      "equipo": "tecnologia",
+      "cl_hora": 50000,
+      "us_hora": 160,
+      "cl_mes": 4000000,
+      "us_anual": 160000
+    },
+    {
+      "id": "qa_sre",
+      "nombre": "QA y Monitoreo (SRE)",
+      "equipo": "tecnologia",
+      "cl_hora": 30000,
+      "us_hora": 95,
+      "cl_mes": 2200000,
+      "us_anual": 110000
+    },
+    {
+      "id": "datos",
+      "nombre": "Ingeniero/a de Datos y BI",
+      "equipo": "datos",
+      "cl_hora": 40000,
+      "us_hora": 125,
+      "cl_mes": 3000000,
+      "us_anual": 125000
+    },
+    {
+      "id": "gis",
+      "nombre": "Especialista SIG/GIS",
+      "equipo": "datos",
+      "cl_hora": 32000,
+      "us_hora": 100,
+      "cl_mes": 2300000,
+      "us_anual": 95000
+    },
+    {
+      "id": "ux",
+      "nombre": "Diseñador/a UX/UI",
+      "equipo": "producto",
+      "cl_hora": 32000,
+      "us_hora": 100,
+      "cl_mes": 2300000,
+      "us_anual": 100000
+    },
+    {
+      "id": "pm",
+      "nombre": "Product Manager",
+      "equipo": "producto",
+      "cl_hora": 42000,
+      "us_hora": 130,
+      "cl_mes": 3200000,
+      "us_anual": 140000
+    },
+    {
+      "id": "fin_analista",
+      "nombre": "Analista Financiero/a y Modelador/a",
+      "equipo": "finanzas",
+      "cl_hora": 35000,
+      "us_hora": 110,
+      "cl_mes": 2500000,
+      "us_anual": 102740
+    },
+    {
+      "id": "controller",
+      "nombre": "Controller y Contabilidad",
+      "equipo": "finanzas",
+      "cl_hora": 30000,
+      "us_hora": 90,
+      "cl_mes": 2300000,
+      "us_anual": 85000
+    },
+    {
+      "id": "abogado",
+      "nombre": "Abogado/a Corporativo/a",
+      "equipo": "legal",
+      "cl_hora": 100000,
+      "us_hora": 350,
+      "cl_mes": 4500000,
+      "us_anual": 150000
+    },
+    {
+      "id": "esg",
+      "nombre": "Especialista ESG, Ambiental y Regulatorio",
+      "equipo": "legal",
+      "cl_hora": 40000,
+      "us_hora": 130,
+      "cl_mes": 2900000,
+      "us_anual": 105000
+    },
+    {
+      "id": "inversiones",
+      "nombre": "Gerente de Inversiones y Gobierno Corporativo",
+      "equipo": "inversiones",
+      "cl_hora": 80000,
+      "us_hora": 250,
+      "cl_mes": 6000000,
+      "us_anual": 180000
+    },
+    {
+      "id": "fundraising",
+      "nombre": "Consultor/a de Fondos Públicos y Fundraising",
+      "equipo": "fundraising",
+      "cl_hora": 45000,
+      "us_hora": 150,
+      "cl_mes": 3000000,
+      "us_anual": 110000
+    },
+    {
+      "id": "ing_energia",
+      "nombre": "Ingeniero/a Eléctrico/a (BESS y solar)",
+      "equipo": "ingenieria",
+      "cl_hora": 45000,
+      "us_hora": 130,
+      "cl_mes": 3300000,
+      "us_anual": 115000
+    },
+    {
+      "id": "ing_industrial",
+      "nombre": "Ingeniero/a Industrial, Minería y Mantenimiento",
+      "equipo": "ingenieria",
+      "cl_hora": 42000,
+      "us_hora": 120,
+      "cl_mes": 3200000,
+      "us_anual": 105000
+    },
+    {
+      "id": "estrategia",
+      "nombre": "Consultor/a de Estrategia e Investigación de Mercado",
+      "equipo": "inversiones",
+      "cl_hora": 55000,
+      "us_hora": 180,
+      "cl_mes": 3800000,
+      "us_anual": 101860
+    },
+    {
+      "id": "ventas",
+      "nombre": "Desarrollo de Negocios y Ventas B2B",
+      "equipo": "comercial",
+      "cl_hora": 35000,
+      "us_hora": 120,
+      "cl_mes": 2800000,
+      "us_anual": 100000
+    },
+    {
+      "id": "mkt",
+      "nombre": "Marketing Digital y Growth",
+      "equipo": "comercial",
+      "cl_hora": 30000,
+      "us_hora": 110,
+      "cl_mes": 2200000,
+      "us_anual": 90000
+    },
+    {
+      "id": "comunicaciones",
+      "nombre": "Comunicaciones y Presentaciones Ejecutivas",
+      "equipo": "comunicaciones",
+      "cl_hora": 28000,
+      "us_hora": 90,
+      "cl_mes": 2000000,
+      "us_anual": 80000
+    },
+    {
+      "id": "diseno_grafico",
+      "nombre": "Diseñador/a Gráfico/a y Audiovisual",
+      "equipo": "comunicaciones",
+      "cl_hora": 25000,
+      "us_hora": 85,
+      "cl_mes": 1800000,
+      "us_anual": 70000
+    },
+    {
+      "id": "pmo",
+      "nombre": "Jefe/a de Proyectos (PMO)",
+      "equipo": "operaciones",
+      "cl_hora": 40000,
+      "us_hora": 120,
+      "cl_mes": 3000000,
+      "us_anual": 105000
+    },
+    {
+      "id": "rrhh",
+      "nombre": "Reclutador/a y Coach de Carrera",
+      "equipo": "personas",
+      "cl_hora": 30000,
+      "us_hora": 100,
+      "cl_mes": 2000000,
+      "us_anual": 80000
+    },
+    {
+      "id": "educacion",
+      "nombre": "Tutor/a y Diseñador/a Instruccional",
+      "equipo": "educacion",
+      "cl_hora": 22000,
+      "us_hora": 70,
+      "cl_mes": 1600000,
+      "us_anual": 70000
+    },
+    {
+      "id": "investigador",
+      "nombre": "Investigador/a y Asesor/a Académico/a",
+      "equipo": "educacion",
+      "cl_hora": 30000,
+      "us_hora": 90,
+      "cl_mes": 2200000,
+      "us_anual": 85000
+    },
+    {
+      "id": "soporte_ti",
+      "nombre": "Soporte TI",
+      "equipo": "soporte",
+      "cl_hora": 18000,
+      "us_hora": 65,
+      "cl_mes": 1200000,
+      "us_anual": 60000
+    },
+    {
+      "id": "asistente",
+      "nombre": "Asistente Ejecutivo/a",
+      "equipo": "soporte",
+      "cl_hora": 12000,
+      "us_hora": 40,
+      "cl_mes": 1000000,
+      "us_anual": 55000
+    }
+  ],
+  "equipos": {
+    "tecnologia": "Tecnología e Ingeniería de Software",
+    "datos": "Datos, BI y Geoespacial",
+    "producto": "Producto y Diseño",
+    "finanzas": "Finanzas y Control",
+    "legal": "Legal, Cumplimiento y Sostenibilidad",
+    "inversiones": "Inversiones y Estrategia",
+    "fundraising": "Fundraising y Fondos Públicos",
+    "ingenieria": "Ingeniería (Energía, Minería, Industrial)",
+    "comercial": "Comercial y Marketing",
+    "comunicaciones": "Comunicaciones y Diseño Gráfico",
+    "operaciones": "Operaciones y PMO",
+    "personas": "Personas y Carrera",
+    "educacion": "Educación e Investigación",
+    "soporte": "Soporte TI y Asistencia Ejecutiva"
+  },
+  "fuentes": [
+    {
+      "txt": "Guía Salarial Tech Chile 2026 (IT Workers)",
+      "url": "https://www.itworkers.cl/guia-salarial-tech-chile-2026.html"
+    },
+    {
+      "txt": "Sueldo Desarrollador Full Stack 2026 (Robert Half Chile)",
+      "url": "https://www.roberthalf.com/cl/es/vacantes-detalles/desarrollador-full-stack"
+    },
+    {
+      "txt": "Full-Stack Developer Hourly Rate 2026 (Arc.dev)",
+      "url": "https://arc.dev/freelance-developer-rates/full-stack"
+    },
+    {
+      "txt": "BLS Occupational Employment and Wages, May 2025",
+      "url": "https://www.bls.gov/news.release/ocwage.t01.htm"
+    },
+    {
+      "txt": "BLS Financial Analysts",
+      "url": "https://www.bls.gov/ooh/business-and-financial/financial-analysts.htm"
+    },
+    {
+      "txt": "BLS Management Analysts",
+      "url": "https://www.bls.gov/ooh/business-and-financial/management-analysts.htm"
+    },
+    {
+      "txt": "Honorarios de abogados en Chile 2026 (1–4 UF/hora)",
+      "url": "https://espinosaycia.cl/cuanto-cobra-un-abogado-en-chile/"
+    },
+    {
+      "txt": "Dólar observado 23-sep-2026: $945,87",
+      "url": "https://www.blockchain.cl/dolar-observado-hoy/"
+    },
+    {
+      "txt": "Valor UF 25-sep-2026: $41.016,28",
+      "url": "https://www.uf-hoy.com/"
+    }
+  ]
+}
