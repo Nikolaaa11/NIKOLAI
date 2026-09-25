@@ -8,6 +8,14 @@ Sitio estático que responde, con evidencia de la cuenta (GitHub, Vercel e histo
 4. A cuántos equipos de una empresa solapa.
 5. Dónde enfocarse para lograr la libertad financiera, con una calculadora interactiva.
 
+## Plan de vida (`/vida`)
+
+Dashboard con 15 pestañas (Resumen, Mi perfil, Dinero, Inversión, Patrimonio, Negocio y apps, Dónde vivir, Vacaciones, Alimentación, Salud, Deporte, Estudios, Coaches, Año a año, Prompt). El perfil es editable y todo se recalcula en el navegador con un motor de proyección anual (`public/vida/engine.js`). El prompt que lo genera está en `PROMPT_PLAN_DE_VIDA.md` y los datos de mercado y de vida, con fuente, en `data/vida/`.
+
+```bash
+python3 scripts/build_vida.py   # regenera public/vida/data.js
+```
+
 ## Estructura
 
 | Ruta | Qué es |
@@ -33,5 +41,5 @@ Vercel publica la carpeta `public/` (ver `vercel.json`). El sitio lleva `noindex
 - Horas = lo que tardaría un equipo profesional competente, no el tiempo real invertido con IA.
 - Las copias, versiones fechadas y repos vacíos no suman horas.
 - Tarifas de facturación de agencia o consultor; el costo de equipo mensual usa sueldos brutos más cargas del empleador.
-- USD 1 = CLP 946 y UF = CLP 41.016 (25-sep-2026).
+- USD 1 = CLP 966 y UF = CLP 41.016 (25-sep-2026).
 - Estimaciones con incertidumbre de ±30 %. No es asesoría financiera personalizada.

@@ -1,0 +1,970 @@
+{
+  "meta": {
+    "fecha_investigacion": "2026-09-25",
+    "perfil": "Profesional chileno 30-40 años, Santiago; software con IA; CEHTA Capital / FIP CEHTA ESG y portfolio (energía/BESS, minería, reciclaje Ley REP, leasing eléctrico); productos SaaS trazabilidad textil REP y ERP back-office de fondos.",
+    "nota_metodologia": "Datos obtenidos vía búsqueda web (sep-2026). Varios sitios .cl no pudieron abrirse directamente (bloqueo de red), por lo que algunas cifras provienen de resúmenes de resultados de búsqueda con su URL. Todo lo marcado 'estimado' o 'verificar' NO fue confirmado en fuente primaria."
+  },
+  "salud": {
+    "controles": [
+      {
+        "que": "Examen de Medicina Preventiva (EMP / EMPA) – garantía GES",
+        "frecuencia": "1 vez al año, gratuito (Fonasa e Isapre)",
+        "edad": "15 años y más (EMPA: 20-64 años; EMPAM: 65+)",
+        "detalle": "Incluye: presión arterial, glicemia en ayunas, colesterol total, peso/talla (IMC) y circunferencia de cintura, cuestionarios de consumo de alcohol (AUDIT) y tabaco; VDRL/RPR y baciloscopía (TBC) según riesgo; mujeres: PAP cada 3 años (25-64) y mamografía cada 3 años (50-59). Se pide en CESFAM (Fonasa) o prestador de la red GES de la Isapre.",
+        "fuente": "https://www.superdesalud.gob.cl/examen-de-medicina-preventiva/"
+      },
+      {
+        "que": "Presión arterial",
+        "frecuencia": "Anual (dentro del EMP); más seguido si está elevada",
+        "edad": "Todo adulto",
+        "detalle": "Tamizaje de hipertensión incluido en EMP. Meta orientativa: <120/80 óptimo; ≥140/90 es hipertensión (umbral clínico estándar; estimado como referencia general).",
+        "fuente": "https://diprece.minsal.cl/le-informamos/auge/examen-medicina-preventiva/"
+      },
+      {
+        "que": "Glicemia en ayunas",
+        "frecuencia": "Anual (EMP)",
+        "edad": "Todo adulto",
+        "detalle": "Detecta diabetes/prediabetes. Si sale alterada, se suele complementar con HbA1c o prueba de tolerancia a la glucosa (estimado: práctica clínica habitual).",
+        "fuente": "https://www.saludstgo.cl/cual-es-la-importancia-del-examen-medico-preventivo-en-adultos/"
+      },
+      {
+        "que": "Perfil lipídico completo (colesterol total, LDL, HDL, triglicéridos)",
+        "frecuencia": "EMP mide colesterol total anual; perfil completo cada 3-5 años desde los 35 (hombres), antes (≥25) si hay hipertensión, antecedentes familiares u otros factores de riesgo",
+        "edad": "30s-40s",
+        "detalle": "El EMP público cubre colesterol total; el perfil completo se pide con orden médica (Fonasa MLE/Isapre). Recomendación de frecuencia basada en guías internacionales (estimado para Chile).",
+        "fuente": "https://www.consumerreports.org/es/lista-de-control-de-salud-para-hombres-de-cualquier-edad"
+      },
+      {
+        "que": "IMC y circunferencia de cintura",
+        "frecuencia": "Anual (EMP); autocontrol mensual en el dashboard",
+        "edad": "Todo adulto",
+        "detalle": "IMC normal 18,5-24,9. Cintura: riesgo cardiometabólico aumentado sobre ~90 cm en hombres y ~80 cm en mujeres (valores de corte usados en APS; estimado, existen cortes alternativos 102/88).",
+        "fuente": "https://www.cesfamsantamaria.cl/index.php/examenes/empa"
+      },
+      {
+        "que": "Control dental y limpieza profesional",
+        "frecuencia": "Cada 6 meses (mínimo 1 vez al año)",
+        "edad": "Todo adulto",
+        "detalle": "Chequeo y destartraje semestral recomendado por especialistas; no está incluido en el EMP.",
+        "fuente": "https://www.biobiochile.cl/noticias/servicios/consejos-bbcl-contigo/2026/08/14/cada-cuanto-tiempo-hay-que-ir-al-dentista-especialista-explica-frecuencia-ideal-en-adultos-y-ninos.shtml"
+      },
+      {
+        "que": "Control oftalmológico",
+        "frecuencia": "Examen base completo a los 40 años; antes, cada 2-3 años si no hay síntomas (estimado); anual si usa lentes o pasa muchas horas frente a pantallas",
+        "edad": "30s: según síntomas; 40: obligatorio (presbicia, glaucoma)",
+        "detalle": "La Academia Americana de Oftalmología recomienda examen de línea base a los 40 aun sin síntomas; presbicia aparece ~40-45 años; glaucoma asintomático.",
+        "fuente": "https://www.aao.org/salud-ocular/consejos/informaci%C3%B3n-de-salud-ocular-para-adultos-de-40-65-"
+      },
+      {
+        "que": "Dermatólogo / revisión de lunares",
+        "frecuencia": "Autoexamen mensual (regla ABCDE); control dermatológico anual (cada 3 años si bajo riesgo)",
+        "edad": "Todo adulto; prioridad si piel clara, muchos lunares, exposición solar o antecedentes familiares",
+        "detalle": "El cáncer de piel ha crecido fuerte en Chile; melanoma detectado a tiempo tiene muy alta sobrevida. ABCDE: Asimetría, Bordes, Color, Diámetro >6 mm, Evolución.",
+        "fuente": "https://medicina.uc.cl/publicacion/cuando-hacer-screening-para-cancer-de-piel/"
+      },
+      {
+        "que": "Vacuna influenza",
+        "frecuencia": "Anual (campaña desde 1 de marzo de 2026)",
+        "edad": "Gratuita para grupos objetivo (60+, enfermos crónicos, embarazadas, personal de salud, escolares hasta 5° básico); adulto sano 30-40 puede vacunarse pagando en vacunatorio privado (costo estimado $15.000-$25.000)",
+        "detalle": "Campaña conjunta influenza + COVID-19 2026 del Programa Nacional de Inmunizaciones; meta 85% de cobertura en grupos objetivo.",
+        "fuente": "https://www.minsal.cl/campana-vacunacion-2026-contra-influenza/"
+      },
+      {
+        "que": "Vacuna COVID-19",
+        "frecuencia": "Según campaña anual MINSAL (2026 junto a influenza)",
+        "edad": "Grupos de riesgo priorizados; adulto sano según indicación médica/disponibilidad",
+        "detalle": "El MINSAL dispone de vacuna para población objetivo definida en la campaña 2026.",
+        "fuente": "https://www.minsal.cl/campana-de-vacunacion-e-inmunizacion-2026/"
+      },
+      {
+        "que": "Vacuna dT / dTpa (difteria, tétanos, ± tos convulsiva)",
+        "frecuencia": "Refuerzo cada 10 años",
+        "edad": "Todo adulto con esquema completo",
+        "detalle": "Revisar carnet de vacunas; si hubo herida de riesgo y >5 años del último refuerzo, consultar. Hepatitis B: completar esquema si no vacunado; no requiere refuerzo en inmunocompetentes.",
+        "fuente": "https://galenovirtual.cl/vacuna-hepatitis-b-generalidades/"
+      },
+      {
+        "que": "Tamizaje de cáncer colorrectal y próstata (planificación futura)",
+        "frecuencia": "A definir con médico",
+        "edad": "Colorrectal desde 45-50 años; próstata conversar desde 50 (45 si antecedentes) – estimado según guías internacionales",
+        "detalle": "No aplica aún en los 30s; dejar como hito en el plan de vida para los 45.",
+        "fuente": "https://diprece.minsal.cl/wrdprss_minsal/wp-content/uploads/2014/09/GPC-Medicina-Preventiva.pdf"
+      }
+    ],
+    "sueno": {
+      "recomendacion": "7 a 9 horas por noche (adultos 26-64 años)",
+      "rango_aceptable": "6-10 h puede ser apropiado para algunas personas (NSF); AASM: 7 o más horas, sin límite superior",
+      "detalle": "Dormir <7 h de forma crónica se asocia a más problemas de salud (obesidad, diabetes, HTA, depresión, peor rendimiento cognitivo). La NSF reafirmó en 2026 su recomendación tras revisar 133 meta-análisis.",
+      "higiene_del_sueno": [
+        "Horario regular de acostarse y levantarse, incluso fines de semana",
+        "Dormitorio oscuro, silencioso y fresco (18-21 °C)",
+        "Sin pantallas al menos 1 hora antes de dormir (luz azul inhibe melatonina)",
+        "Evitar cafeína en la tarde y alcohol cerca de la hora de dormir (estimado: recomendación estándar)",
+        "Luz natural y ejercicio durante el día"
+      ],
+      "fuentes": [
+        "https://www.thensf.org/how-many-hours-of-sleep-do-you-really-need/",
+        "https://aasm.org/seven-or-more-hours-of-sleep-per-night-a-health-necessity-for-adults/",
+        "https://torax.cl/higiene-del-sueno-datos-y-recomendaciones/"
+      ],
+      "nota": "No se encontró una guía MINSAL específica con horas de sueño; se usan NSF/AASM y el Instituto Nacional del Tórax (Chile)."
+    },
+    "mental": [
+      {
+        "recurso": "Salud Responde – orientación y contención en salud mental",
+        "contacto": "600 360 7777, opción 2 (24/7, 365 días)",
+        "costo": "Gratuito",
+        "detalle": "Equipo de psicología, psiquiatría, enfermería y trabajo social; primeros auxilios psicológicos.",
+        "fuente": "https://saludresponde.minsal.cl/salud-mental-y-prevencion-del-suicidio/"
+      },
+      {
+        "recurso": "Línea de Prevención del Suicidio 'No estás solo, no estás sola'",
+        "contacto": "*4141 desde cualquier celular (24/7)",
+        "costo": "Gratuito",
+        "detalle": "Psicólogos capacitados en crisis. Usar ante ideación suicida o crisis aguda.",
+        "fuente": "https://portalsaluddigital.minsal.cl/telemedicina-sincronica/4141-linea-prevencion-del-suicidio/"
+      },
+      {
+        "recurso": "GES Depresión (15 años y más)",
+        "contacto": "CESFAM (Fonasa) o prestador GES de la Isapre",
+        "costo": "Copago 0% Fonasa; 20% Isapre",
+        "detalle": "Garantiza diagnóstico, tratamiento psicológico/psiquiátrico y seguimiento; plazo máximo 30 días para psiquiatra (según fuente).",
+        "fuente": "https://www.biobiochile.cl/noticias/servicios/explicado/2025/10/06/que-significa-que-la-depresion-este-incluida-en-el-ges-estas-son-las-coberturas-y-tratamientos.shtml"
+      },
+      {
+        "recurso": "Psicólogo con bono Fonasa MLE",
+        "contacto": "Centros privados en convenio MLE (tramos B, C, D)",
+        "costo": "Copago aprox. $6.550 (nivel 1), $10.480 (nivel 2), $14.420 (nivel 3) por sesión (2026)",
+        "detalle": "Desde feb-2025 la psicología clínica está en el arancel MLE; no requiere derivación médica.",
+        "fuente": "https://comparacopago.cl/copago/psicologia"
+      },
+      {
+        "recurso": "Hábitos protectores para el coach de salud mental",
+        "contacto": "Autogestión en el dashboard",
+        "costo": "0",
+        "detalle": "Sueño 7-9 h, 150+ min de ejercicio semanal, contacto social, límites de horario laboral y pausas; revisar señales de burnout (estimado: recomendaciones generales, no guía MINSAL específica).",
+        "fuente": "https://www.who.int/es/news/item/25-11-2020-every-move-counts-towards-better-health-says-who"
+      }
+    ]
+  },
+  "deporte": {
+    "recomendaciones": [
+      {
+        "tema": "Actividad física OMS (adultos 18-64)",
+        "recomendacion": "150-300 min/semana de actividad aeróbica moderada, o 75-150 min vigorosa, o combinación equivalente + fortalecimiento muscular de todos los grandes grupos 2 o más días/semana",
+        "detalle": "Superar 300 min moderados aporta beneficios adicionales; reducir tiempo sedentario (cada movimiento cuenta).",
+        "fuente": "https://www.ncbi.nlm.nih.gov/books/NBK581973/"
+      },
+      {
+        "tema": "Zona 2",
+        "recomendacion": "Base aeróbica a intensidad conversacional: aprox. 60-70% FCmáx (algunos modelos 70-80%; depende del sistema de zonas – estimado) o justo bajo el primer umbral de lactato",
+        "detalle": "Mejora densidad y eficiencia mitocondrial, oxidación de grasas y flexibilidad metabólica; el trabajo en Z2 mejora las zonas superiores, no al revés. Ej. práctico: 3 sesiones de 45-60 min/semana.",
+        "fuente": "https://www.oriolroda.com/p/zona-2"
+      },
+      {
+        "tema": "Distribución 80/20 (polarizado)",
+        "recomendacion": "~80% del volumen a baja intensidad (Z1-Z2) y ~20% alta intensidad (intervalos, HIIT)",
+        "detalle": "Modelo descrito por Stephen Seiler y usado en deportes de resistencia de élite; sirve para plan de maratón/trail.",
+        "fuente": "https://planetatriatlon.com/entrenamiento-zona-2-mejora-rendimiento/"
+      },
+      {
+        "tema": "VO2max como predictor de longevidad",
+        "recomendacion": "Medir/estimar VO2max 1-2 veces al año (reloj deportivo o test de esfuerzo) y buscar subir de percentil",
+        "detalle": "Mandsager et al., JAMA Netw Open 2018: 122.007 adultos con test en cinta (Cleveland Clinic); el grupo de menor capacidad cardiorrespiratoria tuvo ~5 veces el riesgo de muerte vs. el grupo élite, sin límite superior de beneficio; efecto comparable o mayor que tabaquismo, HTA o diabetes. Estudio de Copenhague (JACC 2018, 46 años de seguimiento) confirma la asociación.",
+        "fuente": "https://pubmed.ncbi.nlm.nih.gov/30646252/"
+      },
+      {
+        "tema": "Fuerza",
+        "recomendacion": "2-3 sesiones/semana de fuerza (multiarticulares: sentadilla, peso muerto, empujes, tracciones)",
+        "detalle": "Cumple la recomendación OMS de 2+ días y protege masa muscular y ósea desde los 30-40.",
+        "fuente": "https://www.who.int/es/news/item/25-11-2020-every-move-counts-towards-better-health-says-who"
+      }
+    ],
+    "eventos": [
+      {
+        "nombre": "Maratón de Viña del Mar 2026",
+        "fecha": "2026-10-04",
+        "lugar": "Viña del Mar",
+        "distancias": "10K, 21K, 42K",
+        "fuente": "https://maratonvina.cl/wp-content/uploads/2026/04/BASES-MDV-2026.VF_.pdf"
+      },
+      {
+        "nombre": "Cascada Trail 2026",
+        "fecha": "2026-10-03",
+        "lugar": "Santuario Cascada de las Ánimas, San José de Maipo (RM)",
+        "distancias": "6K, 12K, 21K, 30K",
+        "fuente": "https://tusdesafios.com/events/cascada-trail-2026"
+      },
+      {
+        "nombre": "Endurance by The North Face 2026",
+        "fecha": "2026-10-17",
+        "lugar": "Precordillera Región Metropolitana",
+        "distancias": "10K, 25K, 50K, 80K, 160K",
+        "fuente": "https://www.latercera.com/el-deportivo/noticia/se-abre-venta-de-entradas-para-una-nueva-edicion-en-la-montana-chilena-del-endurance-by-the-north-face-2026/"
+      },
+      {
+        "nombre": "Itaú IRONMAN 70.3 Pucón 2027",
+        "fecha": "2027-01-10",
+        "lugar": "Pucón (Lago Villarrica)",
+        "distancias": "1,9 km natación / 90 km ciclismo / 21,1 km trote",
+        "fuente": "https://www.latercera.com/el-deportivo/noticia/se-abren-las-inscripciones-para-la-version-2027-del-ironman-703-de-pucon/"
+      },
+      {
+        "nombre": "STGO21K by ASICS 2027",
+        "fecha": "2027-04-04",
+        "lugar": "Santiago",
+        "distancias": "10K, 21K",
+        "fuente": "https://www.santiago21k.cl/"
+      },
+      {
+        "nombre": "Maratón de Santiago 2027",
+        "fecha": "2027-05-16 (anunciada; inscripciones aún no abiertas – confirmar en sitio oficial). Edición 2026 fue el 26-abr-2026 con +33 mil corredores",
+        "lugar": "Santiago",
+        "distancias": "10K, 21K, 42K",
+        "fuente": "https://chileestuyo.cl/eventos/maraton-de-santiago-2027/"
+      },
+      {
+        "nombre": "Medio Maratón de Puerto Varas",
+        "fecha": "2026-08-23 (ya realizada); edición 2027 estimada agosto 2027",
+        "lugar": "Puerto Varas",
+        "distancias": "2K, 5K, 10K, 21K",
+        "fuente": "https://runchile.cl/el-medio-maraton-de-puerto-varas-2026-ya-tiene-fecha/"
+      },
+      {
+        "nombre": "Patagonian International Marathon",
+        "fecha": "Edición 2026: 5-6 sep 2026 (ya realizada); 2027 estimada primera quincena de septiembre 2027",
+        "lugar": "Torres del Paine / base Puerto Natales",
+        "distancias": "10K, 15K, 21K, 30K, 42K",
+        "fuente": "https://www.patagonianinternationalmarathon.com/en/"
+      },
+      {
+        "nombre": "Calendario trail running Chile 2026-2027 (+90 carreras)",
+        "fecha": "Todo el año",
+        "lugar": "Chile",
+        "distancias": "Varias (10K a ultras)",
+        "fuente": "https://andestrail.cl/"
+      }
+    ]
+  },
+  "alimentacion": {
+    "guias": [
+      "1. Consume alimentos frescos de ferias y mercados establecidos.",
+      "2. Ponle color y sabor a tu día eligiendo frutas y verduras en tu alimentación.",
+      "3. Consume legumbres en guisos y ensaladas todas las veces que puedas.",
+      "4. Bebe agua varias veces al día y no la reemplaces por jugos o bebidas.",
+      "5. Consume lácteos en todas las etapas de la vida.",
+      "6. Aumenta el consumo de pescados, mariscos o algas de lugares autorizados.",
+      "7. Evita los productos ultraprocesados y con sellos 'ALTO EN'.",
+      "8. Comparte las tareas de la cocina, disfrutando de preparaciones nuevas y tradicionales.",
+      "9. En la mesa disfruta de tu alimentación, come acompañado cuando puedas y saca las pantallas.",
+      "10. Protege el planeta: cuida el agua, no botes comida, separa tu basura y recicla.",
+      "Metas prácticas (guías anteriores MINSAL, útiles como KPI): 5 porciones de frutas y verduras al día; legumbres al menos 2 veces/semana; pescado 2 veces/semana; 3 lácteos bajos en grasa al día."
+    ],
+    "costo_mensual_clp": {
+      "canasta_basica_alimentos_por_persona": 90261,
+      "canasta_basica_periodo": "marzo 2026 (último valor verificado; nueva metodología 2024 con canasta saludable). Var. 12 meses: +4,1%",
+      "canasta_basica_estimada_ago_2026": "aprox. $91.000-$93.000 (estimado aplicando IPC alimentos)",
+      "linea_pobreza_persona_equivalente_no_arrendatario_mar_2026": 248736,
+      "ipc_alimentos_agosto_2026": "+1,4% mensual; +4,6% en 12 meses (IPC general +0,6% m/m, 4,1% a/a; papas +49,2% en el año)",
+      "epf_ix_gasto_promedio_hogar_gran_santiago": 1590105,
+      "epf_ix_gasto_mediano_hogar_gran_santiago": 1204455,
+      "epf_ix_gasto_alimentos_hogar_promedio_capitales": 307947,
+      "epf_ix_participacion_alimentos": "21,2% del gasto (EPF oct-2021 a sep-2022; hogar promedio ~3,1 personas)",
+      "estimado_por_persona_promedio_2026": "aprox. $115.000-$125.000/mes (estimado: $307.947/3,1 personas ajustado por inflación de alimentos 2022-2026)",
+      "estimado_profesional_santiago_saludable": "aprox. $250.000-$400.000/mes incluyendo supermercado con proteína de calidad, frutas/verduras y algunas comidas fuera (estimado, no es dato oficial)",
+      "fuentes": [
+        "https://www.reporteagricola.cl/noticia/noticias/2026/04/canasta-basica-alimentos-registro-valor-durante-marzo-2026",
+        "https://observatorio.ministeriodesarrollosocial.gob.cl/nueva-serie-cba-2026",
+        "https://www.ine.gob.cl/sala-de-prensa/prensa/general/noticia/2026/09/08/%C3%ADndice-de-precios-al-consumidor-(ipc)-de-agosto-present%C3%B3-una-variaci%C3%B3n-mensual-de-0-6",
+        "https://www.ine.gob.cl/sala-de-prensa/prensa/general/noticia/2023/10/26/hogares-en-chile-gastan-m%C3%A1s-de-1-4-millones-de-pesos-en-promedio-al-mes-el-21-2-de-ese-monto-es-para-alimentaci%C3%B3n"
+      ]
+    },
+    "proteina": "Base: 0,8 g/kg/día (adulto sedentario, referencia OMS). Persona que entrena regularmente: 1,4-2,0 g/kg/día (ISSN 2017); fuerza 1,6-2,2 g/kg; resistencia 1,2-1,6 g/kg. Repartir en 3-4 comidas de ~20-40 g (≈0,25-0,4 g/kg por comida). Ejemplo 80 kg activo: 112-160 g/día.",
+    "plato_saludable": {
+      "modelo": "Plato para Comer Saludable (Harvard): 1/2 verduras y frutas (papas no cuentan), 1/4 granos integrales, 1/4 proteína saludable; aceites saludables (oliva) y agua como bebida.",
+      "ejemplo_chileno": "Almuerzo: 1/2 plato ensalada chilena + brócoli/zapallo italiano salteado; 1/4 quinoa o arroz integral; 1/4 jurel/reineta a la plancha o porotos con verduras (legumbre); aceite de oliva; agua; fruta de temporada de postre.",
+      "fuente": "https://nutritionsource.hsph.harvard.edu/?p=9887"
+    },
+    "fuente": "https://www.minsal.cl/guias-alimentarias-para-chile/"
+  },
+  "estudios": [
+    {
+      "nombre": "Diplomado en Finanzas e Inversiones",
+      "institucion": "Universidad de Chile – FEN (Unegocios)",
+      "modalidad": "B-learning / online",
+      "duracion": "140 horas (inicio 09-09-2026; próximas versiones estimadas 2027)",
+      "costo": "$990.000 CLP",
+      "para_que": "Base formal en finanzas corporativas e inversiones para operar junto a CEHTA Capital.",
+      "fuente": "https://www.unegocios.uchile.cl/programas/diplomado-en-finanzas-e-inversiones-dfi-26-1-b1"
+    },
+    {
+      "nombre": "Diplomado en Inversiones y Mercados Financieros",
+      "institucion": "Universidad de Chile – FEN (Unegocios)",
+      "modalidad": "Online / b-learning",
+      "duracion": "Estimado 1 semestre",
+      "costo": "No verificado (estimado $1,5-2,5 M CLP)",
+      "para_que": "Gestión de portafolios, valorización y mercados; útil para el ERP back-office de fondos.",
+      "fuente": "https://www.unegocios.uchile.cl/diplomados/diplomado-en-inversiones-y-mercados-financieros"
+    },
+    {
+      "nombre": "Diplomado en Venture Capital",
+      "institucion": "UAI Business School + Asociación Chilena de Venture Capital (ACVC)",
+      "modalidad": "Presencial/híbrido (verificar)",
+      "duracion": "Estimado 4-6 meses",
+      "costo": "No verificado (estimado $2-3 M CLP)",
+      "para_que": "Instrumentos, regulación y actores de VC/PE en Chile; networking directo con la industria (clave para CEHTA y levantamiento de capital).",
+      "fuente": "https://www.uai.cl/postgrados/diplomados/diplomado-en-venture-capital"
+    },
+    {
+      "nombre": "Diplomado en Venture Capital: regulación y estrategias de inversión",
+      "institucion": "Pontificia Universidad Católica (Educación Continua UC)",
+      "modalidad": "Verificar",
+      "duracion": "Estimado 1 semestre",
+      "costo": "No verificado (estimado)",
+      "para_que": "Marco regulatorio de fondos (Ley 20.712, FIP, CMF) y estrategias de inversión.",
+      "fuente": "https://educacioncontinua.uc.cl/programas/diplomado-en-venture-capital-regulacion-y-estrategias-de-inversion/"
+    },
+    {
+      "nombre": "CFA Program – Level I",
+      "institucion": "CFA Institute",
+      "modalidad": "Autoestudio + examen computarizado (centro Pearson en Santiago)",
+      "duracion": "3 niveles; ~300 h de estudio por nivel (estimado); típicamente 2-4 años total",
+      "costo": "USD 1.140 (early) / USD 1.490 (standard) por nivel; se eliminó la cuota de inscripción de USD 350 desde 2026",
+      "para_que": "Estándar global en análisis de inversiones y portafolio; credibilidad frente a LPs e inversionistas.",
+      "fuente": "https://300hours.com/cfa-exam-cost/"
+    },
+    {
+      "nombre": "CAIA – Chartered Alternative Investment Analyst (Level I)",
+      "institucion": "CAIA Association",
+      "modalidad": "Autoestudio + examen computarizado",
+      "duracion": "2 niveles; ~200 h por nivel (estimado); 12-18 meses",
+      "costo": "USD 400 inscripción única + USD 995 (early) / USD 1.395 (standard) por nivel (incluye currículo digital)",
+      "para_que": "El más alineado a fondos alternativos (PE, VC, infraestructura/energía) como FIP CEHTA ESG.",
+      "fuente": "https://caia.org/registration-and-fees/"
+    },
+    {
+      "nombre": "FRM – Financial Risk Manager (Part I)",
+      "institucion": "GARP",
+      "modalidad": "Autoestudio + examen computarizado",
+      "duracion": "2 partes; 6-12 meses cada una (estimado)",
+      "costo": "USD 400 inscripción única + USD 600 (early) / USD 800 (standard) por parte",
+      "para_que": "Gestión de riesgo; útil para modelos BESS/energía y módulo de riesgo del ERP.",
+      "fuente": "https://www.garp.org/frm/fees-payments"
+    },
+    {
+      "nombre": "Agentic AI (Andrew Ng) + short courses de agentes, RAG y MCP",
+      "institucion": "DeepLearning.AI",
+      "modalidad": "Online, a ritmo propio",
+      "duracion": "Short courses 1-2 h c/u; curso Agentic AI varias semanas (estimado)",
+      "costo": "Short courses gratuitos; cursos largos con suscripción/pago (estimado, verificar)",
+      "para_que": "Diseño de agentes con reflexión, tool use y workflows multi-paso: núcleo técnico de los SaaS con IA.",
+      "fuente": "https://www.deeplearning.ai/courses/agentic-ai"
+    },
+    {
+      "nombre": "Coursera Plus (especializaciones de IA, producto y negocios)",
+      "institucion": "Coursera (incluye contenido DeepLearning.AI y universidades)",
+      "modalidad": "Online",
+      "duracion": "Suscripción anual",
+      "costo": "Referencia USD 399/año o USD 59/mes (precio varía por país/promoción)",
+      "para_que": "AI product management, ventas y finanzas en una sola suscripción.",
+      "fuente": "https://thepivotwave.com/blog/coursera-pricing/"
+    },
+    {
+      "nombre": "Becas Capital Humano CORFO – Inteligencia Artificial",
+      "institucion": "CORFO",
+      "modalidad": "Online, alcance nacional",
+      "duracion": "Inicio octubre 2026 (duración según programa)",
+      "costo": "Beca (gratis para seleccionados) – 388 cupos en IA",
+      "para_que": "Especialización en IA sin costo; también abiertas becas en mercados de carbono (232) y bioeconomía (244).",
+      "fuente": "https://www.cooperativa.cl/noticias/economia/pymes/corfo-abre-1-325-becas-para-capacitar-en-ia-bioeconomia-y-sectores/2026-09-09/151831.html"
+    },
+    {
+      "nombre": "Negotiation Mastery",
+      "institucion": "Harvard Business School Online",
+      "modalidad": "Online",
+      "duracion": "~8 semanas",
+      "costo": "No verificado (estimado USD 1.800-2.000)",
+      "para_que": "Negociación de contratos B2B, term sheets y cierres con corporativos mineros/energéticos.",
+      "fuente": "https://pll.harvard.edu/course/negotiation-mastery"
+    },
+    {
+      "nombre": "Negotiation Essentials Online / cursos virtuales PON",
+      "institucion": "Program on Negotiation – Harvard Law School",
+      "modalidad": "Online en vivo",
+      "duracion": "1-2 días intensivos",
+      "costo": "No verificado (estimado USD 2.000-3.000; hay combos con descuento)",
+      "para_que": "Alternativa corta e intensiva de negociación.",
+      "fuente": "https://www.pon.harvard.edu/executive-education/online-programs/"
+    },
+    {
+      "nombre": "Ventas B2B / venta consultiva SaaS (ej. HubSpot Academy Inbound Sales, programas tipo Winning by Design)",
+      "institucion": "HubSpot Academy / otros",
+      "modalidad": "Online",
+      "duracion": "Estimado 4-10 h (HubSpot) a varias semanas (programas pagados)",
+      "costo": "Estimado: HubSpot gratis; programas especializados USD 500-2.000 (no verificado)",
+      "para_que": "Prospección, discovery y cierre para vender consultoría/SaaS a mineras, generadoras y productores REP.",
+      "fuente": "https://academy.hubspot.com/"
+    },
+    {
+      "nombre": "IELTS Academic / General (certificación inglés, meta banda 7+ ≈ C1)",
+      "institucion": "British Council Chile / IDP",
+      "modalidad": "Examen presencial o en computador, Santiago",
+      "duracion": "Examen ~2 h 45 min; preparación estimada 2-6 meses",
+      "costo": "Aprox. USD 245 (referencia; verificar precio en CLP en British Council)",
+      "para_que": "Acreditar C1 para LPs internacionales, BID Lab, clientes extranjeros y postgrados.",
+      "fuente": "https://www.britishcouncil.cl/examen/ielts/fechas-precios-ubicaciones"
+    },
+    {
+      "nombre": "Cambridge C1 Advanced (CAE)",
+      "institucion": "English UC (centro autorizado) / British Institute",
+      "modalidad": "Presencial, Santiago (Campus Oriente UC)",
+      "duracion": "Examen de 1 día; preparación 3-6 meses (estimado)",
+      "costo": "No verificado (estimado $200.000-$280.000 CLP)",
+      "para_que": "Certificado C1 sin vencimiento (a diferencia del IELTS, válido 2 años para trámites).",
+      "fuente": "https://english.uc.cl/cambridge/"
+    },
+    {
+      "nombre": "MBA Weekend / Executive – FEN Universidad de Chile",
+      "institucion": "Universidad de Chile – Escuela de Postgrado FEN",
+      "modalidad": "Presencial viernes tarde y sábado",
+      "duracion": "~2 años (estimado)",
+      "costo": "Arancel 755 UF (≈ $30 M CLP con UF ~$39.700) + matrícula anual $243.900 + postulación $100.000",
+      "para_que": "Red empresarial y gestión general; opción si se busca rol de socio/gerente del fondo.",
+      "fuente": "https://www.postgradofen.uchile.cl/mba-weekend"
+    },
+    {
+      "nombre": "MBA Executive – Escuela de Administración UC",
+      "institucion": "Pontificia Universidad Católica de Chile",
+      "modalidad": "Presencial ejecutivo",
+      "duracion": "~2 años (estimado)",
+      "costo": "Cifra reportada en búsqueda: $10.975.000 (verificar: podría ser valor anual o parcial); postulación $87.980",
+      "para_que": "MBA top-3 en Chile; red corporativa.",
+      "fuente": "https://escueladeadministracion.uc.cl/programas/mba-executive/"
+    },
+    {
+      "nombre": "Executive MBA (fines de semana / cada 3 semanas)",
+      "institucion": "Universidad Adolfo Ibáñez",
+      "modalidad": "Presencial modular",
+      "duracion": "~2 años (estimado)",
+      "costo": "No verificado (estimado 800-1.000 UF ≈ $32-40 M CLP)",
+      "para_que": "Formato compatible con trabajo full-time; fuerte en red de negocios.",
+      "fuente": "https://www.uai.cl/postgrados/mbas/executive-mba-fines-de-semana"
+    },
+    {
+      "nombre": "Executive MBA – ESE Business School",
+      "institucion": "Universidad de los Andes",
+      "modalidad": "Presencial ejecutivo",
+      "duracion": "4 semestres",
+      "costo": "Cifra reportada en búsqueda: $11.020.452 (verificar)",
+      "para_que": "Enfoque en dirección general y gobierno corporativo.",
+      "fuente": "https://www.rankia.cl/blog/mejores-universidades-escuelas-negocio-chile/4244375-mejores-mba-chile"
+    }
+  ],
+  "oportunidades": [
+    {
+      "nombre": "Convenio Marco de Servicios de Desarrollo y Mantención de Software, Servicios Profesionales TI y Cloud (ID 2239-2-LR26)",
+      "tipo": "licitacion",
+      "organismo": "ChileCompra / Mercado Público",
+      "monto": "Catálogo marco (montos por orden de compra de cada organismo público)",
+      "fecha_o_ventana": "Cierre de ofertas extendido al 9-oct-2026, 15:00 h",
+      "para_quien": "Proveedores de tecnología inscritos en Mercado Público (incluye pymes)",
+      "relevancia_para_perfil": "ALTA y URGENTE: entrar al catálogo permite vender desarrollo con IA, automatización y datos (y eventualmente los SaaS) a organismos públicos sin licitar cada vez.",
+      "url": "https://www.chilecompra.cl/2026/09/aprovecha-la-extension-del-plazo-de-la-licitacion-para-el-nuevo-convenio-marco-de-servicios-de-desarrollo-y-mantencion-de-software/"
+    },
+    {
+      "nombre": "Licitaciones tecnológicas de ChileCompra: Plataforma modular de compras (869591-9-LR26), Portal API Mercado Público (869591-10-LP26), Módulo Orden de Compra (869591-11-LR26)",
+      "tipo": "licitacion",
+      "organismo": "Dirección ChileCompra",
+      "monto": "No verificado",
+      "fecha_o_ventana": "Publicadas jul-sep 2026; plazo de plataforma modular extendido (revisar ficha en Mercado Público)",
+      "para_quien": "Empresas de desarrollo de software/cloud",
+      "relevancia_para_perfil": "MEDIA: proyectos grandes; opción de participar en consorcio o como subcontratista.",
+      "url": "https://www.chilecompra.cl/2026/09/se-extiende-el-plazo-para-ser-parte-de-la-licitacion-de-desarrollo-de-la-plataforma-modular-de-compras-para-nuevos-mecanismos/"
+    },
+    {
+      "nombre": "Alertas de Mercado Público (software de gestión, trazabilidad de residuos, REP, gestión de activos)",
+      "tipo": "licitacion",
+      "organismo": "ChileCompra",
+      "monto": "Variable",
+      "fecha_o_ventana": "Permanente",
+      "para_quien": "Proveedores registrados",
+      "relevancia_para_perfil": "MEDIA-ALTA: municipios y servicios licitan software de gestión y reciclaje; configurar búsquedas guardadas como tarea semanal del coach.",
+      "url": "https://www.mercadopublico.cl/"
+    },
+    {
+      "nombre": "Ley REP – Textiles (7° producto prioritario): decreto de metas en elaboración",
+      "tipo": "regulacion",
+      "organismo": "Ministerio del Medio Ambiente",
+      "monto": "N/A",
+      "fecha_o_ventana": "Declarado prioritario por Res. Ex. 3914/2025 (DO 4-jul-2025); Res. Ex. 1064/2026 (10-mar-2026) inició el decreto de metas; anteproyecto aún no publicado (consulta pública estimada 2027)",
+      "para_quien": "Productores/importadores textiles, gestores, recicladores",
+      "relevancia_para_perfil": "CRÍTICA para el SaaS de trazabilidad textil: ya existe obligación de reportar toneladas puestas en el mercado; postular/seguir el Comité Operativo Ampliado y preparar el producto para las metas.",
+      "url": "https://economiacircular.mma.gob.cl/textiles/"
+    },
+    {
+      "nombre": "Ley REP – Envases y embalajes: metas de valorización",
+      "tipo": "regulacion",
+      "organismo": "Ministerio del Medio Ambiente",
+      "monto": "N/A",
+      "fecha_o_ventana": "Metas domiciliarias reportadas 2026: cartón líquidos 15%, metal 15%, papel/cartón 18%, plástico 11%, vidrio 22%; 2027: 19%, 17%, 23%, 14%, 26% (verificar en DS 12/2020). No domiciliarios 2026: metal 51%, plástico 32%, papel/cartón 65%. MMA licitó en may-2026 la revisión de decretos de envases y neumáticos",
+      "para_quien": "Productores de productos envasados, GRANSIC, gestores",
+      "relevancia_para_perfil": "ALTA para la empresa de reciclaje del portfolio y para extender el SaaS de trazabilidad a envases.",
+      "url": "https://economiacircular.mma.gob.cl/envases-y-embalajes/"
+    },
+    {
+      "nombre": "Ley REP – Neumáticos (DS 8/2019)",
+      "tipo": "regulacion",
+      "organismo": "Ministerio del Medio Ambiente",
+      "monto": "N/A",
+      "fecha_o_ventana": "Categoría A 2026: recolección sube de 50% a 80% y valorización de 35% a 60%; meta 90% hacia 2029-2030",
+      "para_quien": "Importadores/productores de neumáticos, gestores",
+      "relevancia_para_perfil": "MEDIA-ALTA: leasing eléctrico y flotas mineras generan NFU; oportunidad de trazabilidad y reporte.",
+      "url": "https://www.prieto.cl/en/ley-rep-aplicacion-2025-y-lo-que-viene-en-2026-2/"
+    },
+    {
+      "nombre": "Ley REP – Pilas y Aparatos Eléctricos y Electrónicos (incluye paneles fotovoltaicos)",
+      "tipo": "regulacion",
+      "organismo": "Ministerio del Medio Ambiente",
+      "monto": "N/A",
+      "fecha_o_ventana": "Decreto publicado 7-may-2026; metas rigen 24 meses después (≈ may-2028); recolección parte en 3% y sube a 45% al año 10",
+      "para_quien": "Productores/importadores de AEE y pilas",
+      "relevancia_para_perfil": "ALTA a mediano plazo: BESS, paneles FV y electromovilidad del portfolio; nicho natural para extender la plataforma de trazabilidad (verificar si baterías industriales/BESS quedan cubiertas).",
+      "url": "https://www.emol.com/noticias/Nacional/2026/05/08/1199499/medio-ambiente-decreto-basura-electronica.html"
+    },
+    {
+      "nombre": "Ley REP – Aceites lubricantes (DS 47/2023)",
+      "tipo": "regulacion",
+      "organismo": "Ministerio del Medio Ambiente",
+      "monto": "N/A",
+      "fecha_o_ventana": "Metas de gestión vigentes desde 1-ene-2027",
+      "para_quien": "Productores de lubricantes, flotas, minería",
+      "relevancia_para_perfil": "MEDIA: clientes mineros y de leasing necesitarán trazabilidad de aceites usados desde 2027.",
+      "url": "https://www.prieto.cl/en/ley-rep-aplicacion-2025-y-lo-que-viene-en-2026-2/"
+    },
+    {
+      "nombre": "Ley Fintec (21.521) – Sistema de Finanzas Abiertas",
+      "tipo": "regulacion",
+      "organismo": "CMF",
+      "monto": "N/A",
+      "fecha_o_ventana": "Entrada en vigencia del SFA postergada a julio 2027; publicado Anexo N°3 con especificaciones técnicas y portal del desarrollador",
+      "para_quien": "Bancos, fintech, proveedores de servicios de información",
+      "relevancia_para_perfil": "MEDIA: integraciones de datos financieros para el ERP back-office del fondo y productos fintech.",
+      "url": "https://www.cmfchile.cl/portal/prensa/625/w4-article-110881.html"
+    },
+    {
+      "nombre": "CMF – Cambios para Fondos de Inversión Privados (FIP) y nuevo régimen de reportes",
+      "tipo": "regulacion",
+      "organismo": "CMF",
+      "monto": "N/A",
+      "fecha_o_ventana": "CMF prepara mayor transparencia para FIP que reciben recursos de fondos retail; NCG 532 (28-feb-2025) reemplaza régimen de reportes con módulo MSI (7 archivos estructurados), implementación operativa 2026 (verificar alcance para FIP)",
+      "para_quien": "Administradoras generales de fondos y FIP (666 FIP a fines de 2025, US$7.193 MM en activos)",
+      "relevancia_para_perfil": "ALTA: impacta al FIP CEHTA ESG y es una funcionalidad vendible del ERP back-office (reportería regulatoria automatizada).",
+      "url": "https://www.df.cl/senal-df/el-deal/los-cambios-que-prepara-la-cmf-para-los-fondos-de-inversion-privados"
+    },
+    {
+      "nombre": "BID Lab – Convocatoria para gestores de fondos de capital emprendedor (VC)",
+      "tipo": "inversion",
+      "organismo": "BID Lab (Grupo BID)",
+      "monto": "Inversión como LP en fondos; startups: equity hasta USD 1 M (ventanilla permanente)",
+      "fecha_o_ventana": "Propuestas de gestores para inversión en 2027: hasta 30-sep-2026",
+      "para_quien": "Gestores de fondos VC en ALC; startups con impacto (clima, economía circular, inclusión)",
+      "relevancia_para_perfil": "MUY ALTA y URGENTE (5 días): CEHTA Capital podría postular como gestor con tesis ESG/clima/economía circular; si no alcanza, preparar para el ciclo 2027.",
+      "url": "https://www.iadb.org/en/home/calls-proposals/venture-capital-funds"
+    },
+    {
+      "nombre": "Semilla Inicia",
+      "tipo": "financiamiento",
+      "organismo": "CORFO",
+      "monto": "Hasta $15 M CLP (hasta $17 M lideradas por mujeres); cofinancia 75%",
+      "fecha_o_ventana": "Convocatoria nacional 2026 abierta desde feb-2026; aperturas regionales en el 2° semestre; próxima nacional estimada 1er trimestre 2027",
+      "para_quien": "Emprendimientos innovadores en etapa idea/prototipo/MVP, sin ventas (empresas ≤18 meses)",
+      "relevancia_para_perfil": "MEDIA: aplica si un producto nuevo se constituye como empresa aparte sin ventas.",
+      "url": "https://www.corfo.gob.cl/sites/cpp/convocatoria/semilla_inicia/"
+    },
+    {
+      "nombre": "Semilla Expande",
+      "tipo": "financiamiento",
+      "organismo": "CORFO",
+      "monto": "Etapa 1 hasta $25 M + Etapa 2 hasta $20 M (75% cofinanciamiento; +10% lideradas por mujeres)",
+      "fecha_o_ventana": "Nacional 2026: 15-ene al 24-feb-2026 (cerrada); convocatorias regionales en ago-2026 (ej. Antofagasta); próxima nacional estimada ene-feb 2027",
+      "para_quien": "Empresas <36 meses con ventas entre $100 mil y $80 M en últimos 12 meses",
+      "relevancia_para_perfil": "ALTA: calza con el SaaS textil REP o el ERP de fondos si ya tienen primeras ventas.",
+      "url": "https://www.corfo.gob.cl/sites/cpp/convocatoria/semilla_expande/"
+    },
+    {
+      "nombre": "Crea y Valida (I+D+i empresarial)",
+      "tipo": "financiamiento",
+      "organismo": "CORFO",
+      "monto": "Hasta $180 M individual / $220 M colaborativo; hasta 80% micro y pequeña, 60% mediana, 40% grande",
+      "fecha_o_ventana": "2026: perfil obligatorio cerró 9-jun-2026; próxima convocatoria estimada 2° trimestre 2027",
+      "para_quien": "Empresas chilenas con innovación que requiere I+D (prototipo a validación)",
+      "relevancia_para_perfil": "ALTA: I+D en trazabilidad textil (IA/visión) o analítica BESS con portfolio companies.",
+      "url": "https://www.economia.gob.cl/2026/05/22/corfo-abre-convocatorias-para-que-pymes-impulsen-sus-capacidades-de-innovacion-y-lideren-proyectos-id.htm"
+    },
+    {
+      "nombre": "Gestión de la Innovación en Pymes / Innova Región / Red Mercados / Red Proveedores",
+      "tipo": "financiamiento",
+      "organismo": "CORFO (y comités regionales)",
+      "monto": "Gestión de Innovación: hasta 70%, tope $7,2 M por empresa y $72 M por proyecto; resto variable",
+      "fecha_o_ventana": "Gestión de Innovación cerró 15-jul-2026; otras con ventanas regionales el 2° semestre 2026 (revisar sitio)",
+      "para_quien": "Pymes (portfolio companies)",
+      "relevancia_para_perfil": "MEDIA: vehículo para financiar proyectos de innovación en empresas del portfolio. (PTEC no verificado en esta búsqueda).",
+      "url": "https://www.corfo.gob.cl/sites/cpp/convocatorias_programas_innovacion/"
+    },
+    {
+      "nombre": "Start-Up Chile BIG (Build / Ignite / Growth)",
+      "tipo": "aceleradora",
+      "organismo": "Start-Up Chile (CORFO)",
+      "monto": "Equity-free: Build $15 M, Ignite $30 M, Growth $75 M CLP",
+      "fecha_o_ventana": "BIG 12 cerró 25-may-2026; siguiente ventana reportada con cierre 28-nov (2026) 13:00 vía charly.io (confirmar)",
+      "para_quien": "Startups tecnológicas de cualquier país (Build: etapa temprana; Ignite: MVP; Growth: expansión)",
+      "relevancia_para_perfil": "ALTA: Ignite para SaaS REP o ERP de fondos con MVP; sin ceder equity.",
+      "url": "https://startupchile.org/en/apply/"
+    },
+    {
+      "nombre": "Startup Ciencia",
+      "tipo": "financiamiento",
+      "organismo": "ANID",
+      "monto": "Hasta $134,55 M CLP (85%)",
+      "fecha_o_ventana": "Edición 2026 abrió jul-2025 y cerró 10-sep-2025; página 'Startup Ciencia 2027' publicada (ventana estimada 2° semestre 2026 – revisar)",
+      "para_quien": "Startups de base científico-tecnológica",
+      "relevancia_para_perfil": "BAJA-MEDIA: solo si hay componente científico (p. ej. química de baterías, materiales textiles).",
+      "url": "https://anid.cl/concursos/startup-ciencia-2027/"
+    },
+    {
+      "nombre": "Becas Capital Humano CORFO (IA, mercados de carbono, bioeconomía)",
+      "tipo": "financiamiento",
+      "organismo": "CORFO",
+      "monto": "1.325 becas (IA: 388 cupos)",
+      "fecha_o_ventana": "Escalonado sep-nov 2026; IA abre en octubre 2026",
+      "para_quien": "Profesionales y técnicos",
+      "relevancia_para_perfil": "ALTA para coach de estudios: IA gratis; mercados de carbono útil para tesis ESG del fondo.",
+      "url": "https://www.corfo.gob.cl/sites/becascapitalhumano/"
+    },
+    {
+      "nombre": "Platanus Ventures",
+      "tipo": "aceleradora",
+      "organismo": "Platanus",
+      "monto": "USD 200.000 por 5,5% (términos batch 2024-2; verificar vigentes)",
+      "fecha_o_ventana": "Batches semestrales (estimado); programa de 12 semanas",
+      "para_quien": "Startups tech desde etapa idea a MVP, dispuestas a operar en Chile",
+      "relevancia_para_perfil": "MEDIA-ALTA: fuerte en fundadores técnicos que construyen con IA.",
+      "url": "https://platan.us/"
+    },
+    {
+      "nombre": "Magical Startups",
+      "tipo": "aceleradora",
+      "organismo": "Magical",
+      "monto": "Ticket típico ~USD 125.000",
+      "fecha_o_ventana": "Convocatoria típicamente en septiembre (revisar 2026)",
+      "para_quien": "Startups tech pre-seed/seed LatAm",
+      "relevancia_para_perfil": "MEDIA-ALTA: acceso a corporativos (útil para vender a minería/energía).",
+      "url": "https://magicalstartups.com/"
+    },
+    {
+      "nombre": "Wayra (Telefónica)",
+      "tipo": "inversion",
+      "organismo": "Telefónica",
+      "monto": "Hasta USD 200.000",
+      "fecha_o_ventana": "Postulación permanente",
+      "para_quien": "Startups B2B en Chile/LatAm/España",
+      "relevancia_para_perfil": "MEDIA: canal corporativo B2B.",
+      "url": "https://ecosistemastartup.com/convocatorias/wayra-telefonica-2026/"
+    },
+    {
+      "nombre": "Incubadora Chrysalis PUCV (Programa TIM / Chrysalis Connect)",
+      "tipo": "aceleradora",
+      "organismo": "PUCV",
+      "monto": "Becas y mentorías (sin monto fijo verificado)",
+      "fecha_o_ventana": "Convocatoria usualmente abre en abril (estimado 2027)",
+      "para_quien": "Emprendimientos de base tecnológica, preferencia Región de Valparaíso",
+      "relevancia_para_perfil": "BAJA-MEDIA (sesgo regional); +300 mentorías en su primer año de Connect.",
+      "url": "https://chrysalis.cl/chrysalis"
+    },
+    {
+      "nombre": "Endeavor Chile – Programa ScaleUp",
+      "tipo": "mentoria",
+      "organismo": "Endeavor",
+      "monto": "Sin financiamiento directo; mentorías y red",
+      "fecha_o_ventana": "8 meses; selección con entrevistas y selection day (fechas por cohorte, verificar)",
+      "para_quien": "Empresas en punto de inflexión con alto potencial de escalamiento",
+      "relevancia_para_perfil": "ALTA para portfolio companies (BESS, reciclaje, leasing): Account Manager, mentor sponsor, 3 mentorías específicas y mesas redondas.",
+      "url": "https://endeavor.cl/programa-scale-up/"
+    },
+    {
+      "nombre": "ChileGlobal Angels (Fundación Chile) – Pitch Day",
+      "tipo": "inversion",
+      "organismo": "Fundación Chile / Chile Global Ventures",
+      "monto": "Rondas del orden de USD 1 M (verificar; montos por ángel menores)",
+      "fecha_o_ventana": "Convocatorias periódicas a Pitch Day (revisar ventanilla vigente)",
+      "para_quien": "Startups innovadoras, escalables y con proyección internacional",
+      "relevancia_para_perfil": "MEDIA-ALTA: red de ángeles más antigua de Chile; también posible co-inversionista para deals del fondo.",
+      "url": "https://chileglobalventures.cl/angels/"
+    },
+    {
+      "nombre": "Southern Angels",
+      "tipo": "inversion",
+      "organismo": "Red de inversionistas ángeles",
+      "monto": "No verificado",
+      "fecha_o_ventana": "No verificado",
+      "para_quien": "Startups",
+      "relevancia_para_perfil": "No verificado en esta búsqueda; confirmar existencia/actividad antes de incluir en pipeline.",
+      "url": "https://acvc.cl/en/"
+    },
+    {
+      "nombre": "Fondos VC chilenos (Kayyak Ventures, Manutara Ventures, Taram Capital, Magma Partners, Genesis Ventures, Impacta VC, entre ~65 fondos)",
+      "tipo": "inversion",
+      "organismo": "Varios (miembros ACVC / ACAFI)",
+      "monto": "Seed a Serie A (tickets típicos USD 100 k - 2 M, estimado)",
+      "fecha_o_ventana": "Permanente",
+      "para_quien": "Startups tech (Taram: B2B late seed/Serie A; Kayyak: seed/Serie A LatAm)",
+      "relevancia_para_perfil": "ALTA: potenciales inversionistas para los SaaS y co-inversionistas/LPs para CEHTA.",
+      "url": "https://tracxn.com/d/investor-lists/venture-capital-funds-in-chile/__-RtUJuuV5YyotVqUJDPy12WAYTrR7JfUCyrH6F_Pqqs"
+    },
+    {
+      "nombre": "eWeek 2026 – encuentro de reciclaje y economía circular",
+      "tipo": "evento",
+      "organismo": "País Circular",
+      "monto": "Entrada: verificar",
+      "fecha_o_ventana": "1-3 oct 2026",
+      "para_quien": "Productores REP, gestores, recicladores, sector público",
+      "relevancia_para_perfil": "MUY ALTA: mejor vitrina 2026 para el SaaS de trazabilidad textil REP y la empresa de reciclaje.",
+      "url": "https://www.paiscircular.cl/tag/eweek-2026/"
+    },
+    {
+      "nombre": "Energy Storage Summit Latin America 2026",
+      "tipo": "evento",
+      "organismo": "Solar Media (apoyo ACERA)",
+      "monto": "Entrada pagada (verificar)",
+      "fecha_o_ventana": "27-28 oct 2026 (algunas fuentes 26-27), Hotel InterContinental Santiago",
+      "para_quien": "IPPs, desarrolladores, inversionistas, utilities, software providers de almacenamiento",
+      "relevancia_para_perfil": "MUY ALTA: BESS del portfolio, financiamiento de proyectos y venta de software de gestión.",
+      "url": "https://storagelatam.solarenergyevents.com/"
+    },
+    {
+      "nombre": "Future Energy Summit Southern Cone 2026 (Latam Future Energy)",
+      "tipo": "evento",
+      "organismo": "Latam Future Energy / Energía Estratégica",
+      "monto": "USD 249 (entrada)",
+      "fecha_o_ventana": "28-29 oct 2026, InterContinental Santiago (Las Condes)",
+      "para_quien": "Sector renovables, almacenamiento, inversionistas",
+      "relevancia_para_perfil": "ALTA: networking energía/BESS la misma semana que el Storage Summit.",
+      "url": "https://www.luminik.io/events/future-energy-summit-southern-cone-las-condes-897fec20faef/"
+    },
+    {
+      "nombre": "Water Congress 2026 (Gecamin)",
+      "tipo": "evento",
+      "organismo": "Gecamin",
+      "monto": "Pagado (verificar)",
+      "fecha_o_ventana": "27-29 oct 2026",
+      "para_quien": "Minería e industria de procesos",
+      "relevancia_para_perfil": "MEDIA: portfolio minero.",
+      "url": "https://gecamin.com/espanol/conferencias"
+    },
+    {
+      "nombre": "Chile Tech Week 2026 (incluye Cumbre ACVC)",
+      "tipo": "evento",
+      "organismo": "ACVC, Endeavor, Kayyak, Chile Ventures y otros",
+      "monto": "Mayoría de eventos gratuitos o de bajo costo (estimado)",
+      "fecha_o_ventana": "16-22 nov 2026, Santiago (+200 eventos: demo days, rondas, paneles)",
+      "para_quien": "Startups, VCs, corporativos",
+      "relevancia_para_perfil": "MUY ALTA: levantar capital para SaaS, networking de CEHTA con VCs y LPs.",
+      "url": "https://www.df.cl/df-mas/coffee-break/la-chile-tech-week-fija-fechas-para-el-16-al-22-de-noviembre-y-proyecta-mas"
+    },
+    {
+      "nombre": "Minexcellence 2026 (Gecamin)",
+      "tipo": "evento",
+      "organismo": "Gecamin",
+      "monto": "Pagado (verificar)",
+      "fecha_o_ventana": "24-26 nov 2026",
+      "para_quien": "Minería – excelencia operacional",
+      "relevancia_para_perfil": "MEDIA: venta de soluciones de IA/datos a minería.",
+      "url": "https://gecamin.com/espanol/conferencias"
+    },
+    {
+      "nombre": "Energyear Chile / RE+ Cono Sur 2027",
+      "tipo": "evento",
+      "organismo": "Energyear / ACERA / ACESOL",
+      "monto": "Pagado (verificar)",
+      "fecha_o_ventana": "Estimado marzo 2027 (ediciones 2026: Energyear 11-12 mar; RE+ Cono Sur 25 mar)",
+      "para_quien": "Sector renovables y almacenamiento",
+      "relevancia_para_perfil": "ALTA: BESS y energía.",
+      "url": "https://www.acera.cl/events/energyear-chile-2026/"
+    },
+    {
+      "nombre": "EXPOMIN 2027",
+      "tipo": "evento",
+      "organismo": "Fisa / Expomin",
+      "monto": "Visita/stand pagado (verificar)",
+      "fecha_o_ventana": "20-24 abr 2027, Espacio Riesco, Santiago (Unión Europea invitada de honor; congreso con ejes IA y minería, descarbonización, minerales críticos)",
+      "para_quien": "Proveedores y compañías mineras",
+      "relevancia_para_perfil": "MUY ALTA: principal feria minera LatAm; vitrina para portfolio minero, BESS para faenas y soluciones de IA.",
+      "url": "https://www.investchile.gob.cl/expomin-2027/"
+    },
+    {
+      "nombre": "CESCO Week Santiago 2027",
+      "tipo": "evento",
+      "organismo": "CESCO",
+      "monto": "Pagado (verificar)",
+      "fecha_o_ventana": "Estimado abril 2027 (edición 2026: 13-17 abr)",
+      "para_quien": "Industria del cobre e inversionistas",
+      "relevancia_para_perfil": "MEDIA-ALTA: networking con ejecutivos mineros e inversionistas.",
+      "url": "https://cesco.cl/agenda/cesco-week-stgo-2026/"
+    },
+    {
+      "nombre": "Chile Fintech Forum 2027",
+      "tipo": "evento",
+      "organismo": "FinteChile",
+      "monto": "Pagado (verificar)",
+      "fecha_o_ventana": "Estimado mayo 2027 (edición 2026: 6-7 may, Espacio Riesco, ~8.000 asistentes)",
+      "para_quien": "Fintech, bancos, inversionistas, reguladores",
+      "relevancia_para_perfil": "ALTA: ERP back-office de fondos, Ley Fintec y red de inversionistas.",
+      "url": "https://www.chilefintechforum.com/"
+    },
+    {
+      "nombre": "ElecGas 2027 / Encuentro Anual de la Energía",
+      "tipo": "evento",
+      "organismo": "B2B Media Group / iMercados; Generadoras de Chile + Empresas Eléctricas + Transmisoras",
+      "monto": "Pagado (verificar)",
+      "fecha_o_ventana": "ElecGas estimado junio 2027 (2026: 17-jun); Encuentro Anual de Energía re-editado por gremios (fecha no verificada)",
+      "para_quien": "Sector eléctrico y gas",
+      "relevancia_para_perfil": "ALTA: regulación, tarifas y almacenamiento.",
+      "url": "https://www.revistaei.cl/event/elecgas-2026/"
+    },
+    {
+      "nombre": "Minería Digital 2027 (Gecamin)",
+      "tipo": "evento",
+      "organismo": "Gecamin",
+      "monto": "Pagado (verificar)",
+      "fecha_o_ventana": "Estimado agosto 2027 (edición 2026: 5-7 ago, Sheraton Santiago)",
+      "para_quien": "Minería, transformación digital",
+      "relevancia_para_perfil": "ALTA: vender IA aplicada a minería.",
+      "url": "https://gecamin.com/mineriadigital/"
+    },
+    {
+      "nombre": "EXPONOR",
+      "tipo": "evento",
+      "organismo": "AIA Antofagasta",
+      "monto": "Pagado (verificar)",
+      "fecha_o_ventana": "Edición 2026: 8-11 jun 2026 (realizada); feria bienal, próxima estimada 2028",
+      "para_quien": "Proveedores mineros del norte",
+      "relevancia_para_perfil": "MEDIA: planificar para 2028.",
+      "url": "https://www.redimin.cl/exponor-2026-del-8-al-11-de-junio-y-con-visitas-a-faenas-la-feria-que-lleva-los-negocios-mineros-al-terreno/"
+    },
+    {
+      "nombre": "ProChile – Concursos 2027 (Servicios e Industrias Creativas)",
+      "tipo": "financiamiento",
+      "organismo": "ProChile",
+      "monto": "$150 M por concurso; cofinanciamiento máx. 50%",
+      "fecha_o_ventana": "Postulación 23-jul a 18-ago-2026 (cerrada); próxima estimada jul-ago 2027",
+      "para_quien": "Gremios/asociaciones representativas del sector servicios (no empresas individuales)",
+      "relevancia_para_perfil": "MEDIA: exportar consultoría/SaaS vía gremio TI; alternativamente usar oficinas comerciales ProChile para prospección en Perú/Colombia/México.",
+      "url": "https://www.prochile.gob.cl/noticias/detalle-noticia/2026/07/23/prochile-lanza-convocatoria-a-concursos-2027"
+    },
+    {
+      "nombre": "SERCOTEC – Capital Semilla Emprende / Capital Abeja Emprende",
+      "tipo": "financiamiento",
+      "organismo": "SERCOTEC",
+      "monto": "Capital Abeja: hasta $3,5 M (mujeres); Capital Semilla Emprende: monto similar (verificar)",
+      "fecha_o_ventana": "Convocatorias regionales 2026 (fechas varían por región)",
+      "para_quien": "Emprendedores y micro/pequeñas empresas",
+      "relevancia_para_perfil": "BAJA: montos pequeños; útil solo para proyectos personales pequeños.",
+      "url": "https://www.sercotec.cl/programas/capital-abeja-emprende/"
+    },
+    {
+      "nombre": "Red de Mentores OpenBeauchef (U. de Chile)",
+      "tipo": "mentoria",
+      "organismo": "OpenBeauchef – FCFM Universidad de Chile",
+      "monto": "Mentoría (sin costo para emprendimientos del programa, verificar)",
+      "fecha_o_ventana": "Permanente; certificación de mentores 2026 (32 nuevos)",
+      "para_quien": "Emprendimientos de base tecnológica",
+      "relevancia_para_perfil": "ALTA: +250 mentores; también opción de certificarse como mentor (Corfo financió la red vía instrumento Potencia).",
+      "url": "https://openbeauchef.cl/red-de-mentores/"
+    },
+    {
+      "nombre": "Red de Mentores – Centro de Innovación UC",
+      "tipo": "mentoria",
+      "organismo": "Pontificia Universidad Católica",
+      "monto": "Verificar",
+      "fecha_o_ventana": "Permanente; curso de formación para mentores de negocios",
+      "para_quien": "Emprendedores y futuros mentores",
+      "relevancia_para_perfil": "MEDIA-ALTA: mentoría y formación como mentor.",
+      "url": "https://centrodeinnovacion.uc.cl/emprendimiento/mentorias/curso-de-formacion-para-mentores-de-negocios/"
+    },
+    {
+      "nombre": "Otras redes de mentores en Chile: 3IE USM, IncubaUdeC, Red Mentores UST, Netmentora Chile",
+      "tipo": "mentoria",
+      "organismo": "Universidades / fundaciones",
+      "monto": "Verificar",
+      "fecha_o_ventana": "Permanente",
+      "para_quien": "Emprendedores",
+      "relevancia_para_perfil": "MEDIA: complementar con mentores sectoriales (energía, minería, reciclaje).",
+      "url": "https://emprende.uss.cl/redes/"
+    }
+  ],
+  "fuentes": [
+    {"txt": "Superintendencia de Salud – Examen de Medicina Preventiva", "url": "https://www.superdesalud.gob.cl/examen-de-medicina-preventiva/"},
+    {"txt": "DIPRECE MINSAL – Examen Medicina Preventiva (GES)", "url": "https://diprece.minsal.cl/le-informamos/auge/examen-medicina-preventiva/"},
+    {"txt": "Dirección de Salud Santiago – EMPA", "url": "https://www.saludstgo.cl/cual-es-la-importancia-del-examen-medico-preventivo-en-adultos/"},
+    {"txt": "MINSAL – Campaña de vacunación influenza 2026", "url": "https://www.minsal.cl/campana-vacunacion-2026-contra-influenza/"},
+    {"txt": "MINSAL – Campaña de vacunación e inmunización 2026", "url": "https://www.minsal.cl/campana-de-vacunacion-e-inmunizacion-2026/"},
+    {"txt": "National Sleep Foundation – horas de sueño", "url": "https://www.thensf.org/how-many-hours-of-sleep-do-you-really-need/"},
+    {"txt": "AASM – 7 or more hours of sleep", "url": "https://aasm.org/seven-or-more-hours-of-sleep-per-night-a-health-necessity-for-adults/"},
+    {"txt": "Instituto Nacional del Tórax – higiene del sueño", "url": "https://torax.cl/higiene-del-sueno-datos-y-recomendaciones/"},
+    {"txt": "Salud Responde – Salud mental y prevención del suicidio", "url": "https://saludresponde.minsal.cl/salud-mental-y-prevencion-del-suicidio/"},
+    {"txt": "MINSAL – Línea *4141", "url": "https://portalsaluddigital.minsal.cl/telemedicina-sincronica/4141-linea-prevencion-del-suicidio/"},
+    {"txt": "BioBioChile – GES depresión", "url": "https://www.biobiochile.cl/noticias/servicios/explicado/2025/10/06/que-significa-que-la-depresion-este-incluida-en-el-ges-estas-son-las-coberturas-y-tratamientos.shtml"},
+    {"txt": "ComparaCopago – Psicólogo Fonasa MLE 2026", "url": "https://comparacopago.cl/copago/psicologia"},
+    {"txt": "OMS – Directrices actividad física (NCBI)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK581973/"},
+    {"txt": "Mandsager et al. 2018 – CRF y mortalidad (PubMed)", "url": "https://pubmed.ncbi.nlm.nih.gov/30646252/"},
+    {"txt": "JACC 2018 – Midlife CRF, 46 años de seguimiento", "url": "https://www.jacc.org/doi/10.1016/j.jacc.2018.06.045"},
+    {"txt": "Chile es Tuyo – Maratón de Santiago 2027", "url": "https://chileestuyo.cl/eventos/maraton-de-santiago-2027/"},
+    {"txt": "Cooperativa – Resultados Maratón de Santiago 2026", "url": "https://www.cooperativa.cl/noticias/deportes/atletismo/maraton/maraton-de-santiago-chepkok-se-alzo-con-el-oro-y-belew-rompio-el-record/2026-04-26/104042.html"},
+    {"txt": "STGO21K 2027", "url": "https://www.santiago21k.cl/"},
+    {"txt": "Bases Maratón de Viña del Mar 2026", "url": "https://maratonvina.cl/wp-content/uploads/2026/04/BASES-MDV-2026.VF_.pdf"},
+    {"txt": "La Tercera – IRONMAN 70.3 Pucón 2027", "url": "https://www.latercera.com/el-deportivo/noticia/se-abren-las-inscripciones-para-la-version-2027-del-ironman-703-de-pucon/"},
+    {"txt": "Patagonian International Marathon", "url": "https://www.patagonianinternationalmarathon.com/en/"},
+    {"txt": "MINSAL – Guías Alimentarias para Chile", "url": "https://www.minsal.cl/guias-alimentarias-para-chile/"},
+    {"txt": "Gob.cl – 10 mensajes Guías Alimentarias", "url": "https://www.gob.cl/noticias/ministerio-de-salud-actualiza-las-guias-alimentarias-para-chile-con-10-nuevos-mensajes/"},
+    {"txt": "Reporte Agrícola – CBA marzo 2026", "url": "https://www.reporteagricola.cl/noticia/noticias/2026/04/canasta-basica-alimentos-registro-valor-durante-marzo-2026"},
+    {"txt": "Observatorio Social – Nueva serie CBA 2026", "url": "https://observatorio.ministeriodesarrollosocial.gob.cl/nueva-serie-cba-2026"},
+    {"txt": "INE – IPC agosto 2026", "url": "https://www.ine.gob.cl/sala-de-prensa/prensa/general/noticia/2026/09/08/%C3%ADndice-de-precios-al-consumidor-(ipc)-de-agosto-present%C3%B3-una-variaci%C3%B3n-mensual-de-0-6"},
+    {"txt": "INE – IX EPF gasto de hogares", "url": "https://www.ine.gob.cl/sala-de-prensa/prensa/general/noticia/2023/10/26/hogares-en-chile-gastan-m%C3%A1s-de-1-4-millones-de-pesos-en-promedio-al-mes-el-21-2-de-ese-monto-es-para-alimentaci%C3%B3n"},
+    {"txt": "ISSN Position Stand: protein and exercise", "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5477153/"},
+    {"txt": "Harvard – El Plato para Comer Saludable", "url": "https://nutritionsource.hsph.harvard.edu/?p=9887"},
+    {"txt": "Unegocios FEN – Diplomado Finanzas e Inversiones", "url": "https://www.unegocios.uchile.cl/programas/diplomado-en-finanzas-e-inversiones-dfi-26-1-b1"},
+    {"txt": "300hours – CFA exam cost 2026", "url": "https://300hours.com/cfa-exam-cost/"},
+    {"txt": "CAIA – Registration and fees", "url": "https://caia.org/registration-and-fees/"},
+    {"txt": "GARP – FRM fees", "url": "https://www.garp.org/frm/fees-payments"},
+    {"txt": "DeepLearning.AI – Agentic AI", "url": "https://www.deeplearning.ai/courses/agentic-ai"},
+    {"txt": "Cooperativa – CORFO 1.325 becas IA", "url": "https://www.cooperativa.cl/noticias/economia/pymes/corfo-abre-1-325-becas-para-capacitar-en-ia-bioeconomia-y-sectores/2026-09-09/151831.html"},
+    {"txt": "British Council Chile – IELTS precios", "url": "https://www.britishcouncil.cl/examen/ielts/fechas-precios-ubicaciones"},
+    {"txt": "FEN U. de Chile – MBA Weekend", "url": "https://www.postgradofen.uchile.cl/mba-weekend"},
+    {"txt": "ChileCompra – Convenio Marco Software (extensión a 9-oct)", "url": "https://www.chilecompra.cl/2026/09/aprovecha-la-extension-del-plazo-de-la-licitacion-para-el-nuevo-convenio-marco-de-servicios-de-desarrollo-y-mantencion-de-software/"},
+    {"txt": "MMA – Textiles Ley REP", "url": "https://economiacircular.mma.gob.cl/textiles/"},
+    {"txt": "Textiles Chile – Estado de situación textiles en Ley REP (abr-2026)", "url": "https://textileschile.cl/2026/04/07/estado-de-situacion-de-textiles-en-ley-rep/"},
+    {"txt": "MMA – Envases y embalajes", "url": "https://economiacircular.mma.gob.cl/envases-y-embalajes/"},
+    {"txt": "Prieto – Ley REP 2025 y lo que viene en 2026", "url": "https://www.prieto.cl/en/ley-rep-aplicacion-2025-y-lo-que-viene-en-2026-2/"},
+    {"txt": "Emol – Decreto REP pilas y AEE (may-2026)", "url": "https://www.emol.com/noticias/Nacional/2026/05/08/1199499/medio-ambiente-decreto-basura-electronica.html"},
+    {"txt": "CMF – Modificación normativa Sistema de Finanzas Abiertas", "url": "https://www.cmfchile.cl/portal/prensa/625/w4-article-110881.html"},
+    {"txt": "DF – CMF aplaza finanzas abiertas a 2027", "url": "https://www.df.cl/mercados/banca-fintech/fintech-pierden-la-pulseada-cmf-aplaza-hasta-2027-la-entrada-en-vigencia"},
+    {"txt": "DF – Cambios CMF para FIP", "url": "https://www.df.cl/senal-df/el-deal/los-cambios-que-prepara-la-cmf-para-los-fondos-de-inversion-privados"},
+    {"txt": "BID – Convocatoria fondos de capital emprendedor", "url": "https://www.iadb.org/en/home/calls-proposals/venture-capital-funds"},
+    {"txt": "CORFO – Semilla Inicia", "url": "https://www.corfo.gob.cl/sites/cpp/convocatoria/semilla_inicia/"},
+    {"txt": "CORFO – Semilla Expande", "url": "https://www.corfo.gob.cl/sites/cpp/convocatoria/semilla_expande/"},
+    {"txt": "Min. Economía – Crea y Valida 2026", "url": "https://www.economia.gob.cl/2026/05/22/corfo-abre-convocatorias-para-que-pymes-impulsen-sus-capacidades-de-innovacion-y-lideren-proyectos-id.htm"},
+    {"txt": "Diario Sustentable – Start-Up Chile BIG 12", "url": "https://www.diariosustentable.com/2026/05/start-up-chile-abre-convocatoria-global-para-su-generacion-big-12-hasta-75-millones-en-financiamiento-sin-ceder-acciones/"},
+    {"txt": "ANID – Startup Ciencia 2027", "url": "https://anid.cl/concursos/startup-ciencia-2027/"},
+    {"txt": "Endeavor Chile – Programa ScaleUp", "url": "https://endeavor.cl/programa-scale-up/"},
+    {"txt": "Ecosistema Startup – Platanus 2026", "url": "https://ecosistemastartup.com/platanus-ventures-2026-usd-200k-y-club-de-inversionistas/"},
+    {"txt": "ChileGlobal Angels", "url": "https://chileglobalventures.cl/angels/"},
+    {"txt": "Tracxn – 65 VC funds in Chile", "url": "https://tracxn.com/d/investor-lists/venture-capital-funds-in-chile/__-RtUJuuV5YyotVqUJDPy12WAYTrR7JfUCyrH6F_Pqqs"},
+    {"txt": "País Circular – eWeek 2026", "url": "https://www.paiscircular.cl/tag/eweek-2026/"},
+    {"txt": "Energy Storage Summit Latin America", "url": "https://storagelatam.solarenergyevents.com/"},
+    {"txt": "DF – Chile Tech Week 16-22 nov", "url": "https://www.df.cl/df-mas/coffee-break/la-chile-tech-week-fija-fechas-para-el-16-al-22-de-noviembre-y-proyecta-mas"},
+    {"txt": "InvestChile – EXPOMIN 2027", "url": "https://www.investchile.gob.cl/expomin-2027/"},
+    {"txt": "Chile Fintech Forum", "url": "https://www.chilefintechforum.com/"},
+    {"txt": "ProChile – Concursos 2027", "url": "https://www.prochile.gob.cl/noticias/detalle-noticia/2026/07/23/prochile-lanza-convocatoria-a-concursos-2027"},
+    {"txt": "OpenBeauchef – Red de Mentores", "url": "https://openbeauchef.cl/red-de-mentores/"}
+  ]
+}

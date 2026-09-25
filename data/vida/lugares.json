@@ -1,0 +1,1137 @@
+{
+  "meta": {
+    "fecha_investigacion": "2026-09-25",
+    "tipos_de_cambio_clp": {
+      "USD": 946,
+      "EUR": 1100,
+      "NZD": 539,
+      "UYU": 23.48,
+      "MXN": 53.51,
+      "COP": 0.2841,
+      "UF": 41016.28
+    },
+    "nota_tc": "USD=946 es el supuesto del usuario; el mercado estaba en ~960-963 el 25-09-2026 (dolaronline.cl). EUR chequeado en ~1.095 (se usa 1.100). NZD 0,5701 USD; UYU 40,29/USD (BROU); MXN 17,68/USD; COP 3.329,61/USD (TRM).",
+    "escalas": "seguridad/internet/naturaleza/fit_clientes_chile: 1 (malo) a 5 (excelente). Son juicios estimados a partir de las fuentes citadas (ENUSC 2025, Ookla, etc.), no un índice oficial.",
+    "supuesto_presupuestos_viaje": "CLP por persona, compartiendo habitación doble, estándar medio; vuelos ida y vuelta desde SCL con 1 maleta. Tarifas Kiwi.com consultadas el 25-09-2026 son 'basic' sin maleta: se suma ~USD 40-80.",
+    "hallazgo_clave": "Los cupos del Working Holiday Nueva Zelanda 2026 para chilenos (940 cupos, 18-35 años) abren el 14-oct-2026 a las 18:00 hora de Chile y se agotan en minutos."
+  },
+  "ciudades": [
+    {
+      "id": "providencia",
+      "nombre": "Providencia",
+      "pais": "Chile",
+      "grupo": "santiago",
+      "arriendo_2d_clp": 836000,
+      "arriendo_rango": "$650.000-$1.100.000/mes (70 m² promedio ~$836.000). Gastos comunes aparte: Providencia pasó a tener los GGCC más caros de Santiago (jul-2026), ~$100-180k estimado.",
+      "costo_vida_sin_arriendo_clp": 620000,
+      "costo_vida_rango": "$560.000-$700.000 (estimado; Wise ~USD 692, Numbeo ~$558k)",
+      "seguridad": 3,
+      "clima": "Mediterráneo: verano seco 28-32 °C, invierno frío 2-15 °C con smog; ~300 mm lluvia/año concentrada en may-ago.",
+      "huso_vs_chile": "0 h (CLT: UTC-3 en verano, UTC-4 en invierno)",
+      "internet": 5,
+      "naturaleza": 3,
+      "idioma": "Español",
+      "visa": "No aplica (ciudadano chileno)",
+      "fit_clientes_chile": 5,
+      "pros": [
+        "Metro L1/L6, todo caminable",
+        "Cerro San Cristóbal/Parque Metropolitano al lado",
+        "Máximo networking y reuniones presenciales con clientes",
+        "Oferta gastronómica y cowork"
+      ],
+      "contras": [
+        "Gastos comunes más altos de Santiago",
+        "Arriendos 1D subieron 13,9% en 2025",
+        "Ruido y comercio ambulante en eje Providencia/Los Leones",
+        "Invierno con mala calidad del aire"
+      ],
+      "fuente": "https://globalbrokers.cl/diario-inmobiliario/las-condes-lidera-el-ranking-de-arriendos-mas-caros-en-chile-mientras-que",
+      "total_mensual_clp": 1456000,
+      "campos_estimados": [
+        "costo_vida_sin_arriendo_clp",
+        "fit_clientes_chile",
+        "internet",
+        "naturaleza",
+        "seguridad"
+      ]
+    },
+    {
+      "id": "nunoa",
+      "nombre": "Ñuñoa",
+      "pais": "Chile",
+      "grupo": "santiago",
+      "arriendo_2d_clp": 777000,
+      "arriendo_rango": "$600.000-$850.000/mes (70 m² promedio ~$777.000; avisos 2D2B $600-690k)",
+      "costo_vida_sin_arriendo_clp": 600000,
+      "costo_vida_rango": "$550.000-$680.000 (estimado)",
+      "seguridad": 4,
+      "clima": "Mediterráneo (igual que Santiago): verano seco y caluroso, invierno frío con smog.",
+      "huso_vs_chile": "0 h (CLT)",
+      "internet": 5,
+      "naturaleza": 2,
+      "idioma": "Español",
+      "visa": "No aplica (ciudadano chileno)",
+      "fit_clientes_chile": 5,
+      "pros": [
+        "Mejor precio del eje oriente",
+        "ENUSC 2025: entre las comunas con menor sensación de inseguridad y mayor caída en percepción de delincuencia",
+        "Barrio residencial con plazas y vida de barrio (Plaza Ñuñoa, Irarrázaval)",
+        "Metro L3/L6"
+      ],
+      "contras": [
+        "Lejos de la precordillera (menos acceso rápido a cerros)",
+        "Mucha construcción en altura",
+        "Smog invernal"
+      ],
+      "fuente": "https://www.radioagricultura.cl/noticias/nacional/nunoa-lidera-caida-en-percepcion-del-aumento-de-la-delincuencia-segun-encuesta-enusc-2025_20260711/",
+      "total_mensual_clp": 1377000,
+      "campos_estimados": [
+        "costo_vida_sin_arriendo_clp",
+        "fit_clientes_chile",
+        "internet",
+        "naturaleza",
+        "seguridad"
+      ]
+    },
+    {
+      "id": "las_condes",
+      "nombre": "Las Condes",
+      "pais": "Chile",
+      "grupo": "santiago",
+      "arriendo_2d_clp": 916000,
+      "arriendo_rango": "$750.000-$1.200.000/mes (UF 18-30; 70 m² promedio ~$916.000, la comuna con arriendos más caros de Chile)",
+      "costo_vida_sin_arriendo_clp": 650000,
+      "costo_vida_rango": "$580.000-$750.000 (estimado)",
+      "seguridad": 4,
+      "clima": "Mediterráneo, algo más fresco y con mejor aire que el centro; cercanía a precordillera.",
+      "huso_vs_chile": "0 h (CLT)",
+      "internet": 5,
+      "naturaleza": 4,
+      "idioma": "Español",
+      "visa": "No aplica (ciudadano chileno)",
+      "fit_clientes_chile": 5,
+      "pros": [
+        "Sanhattan/El Golf: cerca de clientes finance/corporativos",
+        "Acceso a Parque Aguas de Ramón y cerros de la precordillera",
+        "Buenos servicios, clínicas, colegios"
+      ],
+      "contras": [
+        "Arriendo más caro de Chile (+7,8% en 2025)",
+        "Dependencia del auto en sectores altos",
+        "Tráfico en horas punta"
+      ],
+      "fuente": "https://globalbrokers.cl/diario-inmobiliario/las-condes-lidera-el-ranking-de-arriendos-mas-caros-en-chile-mientras-que",
+      "total_mensual_clp": 1566000,
+      "campos_estimados": [
+        "costo_vida_sin_arriendo_clp",
+        "fit_clientes_chile",
+        "internet",
+        "naturaleza",
+        "seguridad"
+      ]
+    },
+    {
+      "id": "vitacura_lobarnechea",
+      "nombre": "Vitacura / Lo Barnechea",
+      "pais": "Chile",
+      "grupo": "santiago",
+      "arriendo_2d_clp": 825000,
+      "arriendo_rango": "$750.000-$1.500.000/mes (70 m² promedio: Vitacura ~$830k, Lo Barnechea ~$820k; muchos deptos >90 m² suben el ticket real)",
+      "costo_vida_sin_arriendo_clp": 700000,
+      "costo_vida_rango": "$600.000-$800.000 (estimado; auto casi obligatorio)",
+      "seguridad": 4,
+      "clima": "Mediterráneo de piedemonte: más fresco, nieve cercana en invierno.",
+      "huso_vs_chile": "0 h (CLT)",
+      "internet": 5,
+      "naturaleza": 4,
+      "idioma": "Español",
+      "visa": "No aplica (ciudadano chileno)",
+      "fit_clientes_chile": 5,
+      "pros": [
+        "Vitacura entre las comunas con menor sensación de inseguridad (ENUSC 2025)",
+        "Lo Barnechea: 40-60 min a Farellones/Valle Nevado, Santuario Yerba Loca",
+        "Parque Bicentenario, ciclovías"
+      ],
+      "contras": [
+        "Poco metro: dependencia del auto",
+        "Tacos en Av. Kennedy/La Dehesa",
+        "Menos vida de barrio caminable (Lo Barnechea)"
+      ],
+      "fuente": "https://www.latercera.com/pulso/noticia/las-comunas-que-sienten-mas-y-menor-seguridad/",
+      "total_mensual_clp": 1525000,
+      "campos_estimados": [
+        "costo_vida_sin_arriendo_clp",
+        "fit_clientes_chile",
+        "internet",
+        "naturaleza",
+        "seguridad"
+      ]
+    },
+    {
+      "id": "vina_concon",
+      "nombre": "Viña del Mar / Concón",
+      "pais": "Chile",
+      "grupo": "chile_regiones",
+      "arriendo_2d_clp": 560000,
+      "arriendo_rango": "$460.000-$650.000/mes + GGCC $30-150k (Reñaca ~$500k+$150k GGCC; Concón ~$540k+$90k)",
+      "costo_vida_sin_arriendo_clp": 520000,
+      "costo_vida_rango": "$470.000-$600.000 (estimado)",
+      "seguridad": 3,
+      "clima": "Mediterráneo costero templado: 12-24 °C, neblina matinal (vaguada costera), inviernos suaves y lluviosos.",
+      "huso_vs_chile": "0 h (CLT)",
+      "internet": 5,
+      "naturaleza": 4,
+      "idioma": "Español",
+      "visa": "No aplica (ciudadano chileno)",
+      "fit_clientes_chile": 5,
+      "pros": [
+        "1h20 a Santiago por Ruta 68: reuniones presenciales en el día",
+        "Mar, dunas de Concón, surf; La Campana a ~1h",
+        "~35% más barato que el eje oriente de Santiago"
+      ],
+      "contras": [
+        "Alza de delitos en Viña centro (percepción)",
+        "Congestión y precios altos en verano",
+        "Riesgo de incendios forestales en quebradas"
+      ],
+      "fuente": "https://blog.houm.com/arriendo-departamento-en-vina-del-mar-guia-de-precios-y-zonas-en-2026/",
+      "total_mensual_clp": 1080000,
+      "campos_estimados": [
+        "costo_vida_sin_arriendo_clp",
+        "fit_clientes_chile",
+        "internet",
+        "naturaleza",
+        "seguridad"
+      ]
+    },
+    {
+      "id": "puerto_varas",
+      "nombre": "Puerto Varas",
+      "pais": "Chile",
+      "grupo": "chile_regiones",
+      "arriendo_2d_clp": 700000,
+      "arriendo_rango": "$650.000-$750.000/mes (55-77 m²; algunos + GGCC ~$130k); oferta anual escasa por arriendo turístico",
+      "costo_vida_sin_arriendo_clp": 560000,
+      "costo_vida_rango": "$500.000-$650.000 (estimado; ciudad turística con precios altos)",
+      "seguridad": 4,
+      "clima": "Templado lluvioso: ~1.800-2.000 mm/año, verano 18-24 °C, invierno 3-10 °C, mucha lluvia may-ago.",
+      "huso_vs_chile": "0 h (CLT)",
+      "internet": 4,
+      "naturaleza": 5,
+      "idioma": "Español",
+      "visa": "No aplica (ciudadano chileno)",
+      "fit_clientes_chile": 4,
+      "pros": [
+        "Lago Llanquihue + volcanes Osorno/Calbuco, Vicente Pérez Rosales, Chiloé a 1,5 h",
+        "Aeropuerto El Tepual (PMC) a 25 min, vuelo 1h45 a SCL",
+        "Calidad de vida y seguridad altas"
+      ],
+      "contras": [
+        "Arriendo casi al nivel de Ñuñoa",
+        "Invierno largo y lluvioso",
+        "Oferta de arriendo anual limitada; precios suben en temporada"
+      ],
+      "fuente": "https://www.portalinmobiliario.com/arriendo/departamento/puerto-varas-los-lagos",
+      "total_mensual_clp": 1260000,
+      "campos_estimados": [
+        "costo_vida_sin_arriendo_clp",
+        "fit_clientes_chile",
+        "internet",
+        "naturaleza",
+        "seguridad"
+      ]
+    },
+    {
+      "id": "la_serena",
+      "nombre": "La Serena",
+      "pais": "Chile",
+      "grupo": "chile_regiones",
+      "arriendo_2d_clp": 500000,
+      "arriendo_rango": "$450.000-$650.000/mes (muchos avisos incluyen GGCC y estacionamiento)",
+      "costo_vida_sin_arriendo_clp": 480000,
+      "costo_vida_rango": "$430.000-$560.000 (estimado)",
+      "seguridad": 3,
+      "clima": "Semiárido templado costero: 10-23 °C todo el año, mañanas nubladas (camanchaca), casi sin lluvia.",
+      "huso_vs_chile": "0 h (CLT)",
+      "internet": 4,
+      "naturaleza": 4,
+      "idioma": "Español",
+      "visa": "No aplica (ciudadano chileno)",
+      "fit_clientes_chile": 4,
+      "pros": [
+        "El arriendo 2D más barato de la lista",
+        "Valle del Elqui (astroturismo) a 1 h, playas, Fray Jorge",
+        "Vuelo ~1 h a Santiago"
+      ],
+      "contras": [
+        "Mercado laboral/profesional más chico",
+        "Cielos grises matinales gran parte del año",
+        "Seguridad en baja según percepción regional (estimado)"
+      ],
+      "fuente": "https://casas.mitula.cl/casas/arriendo-departamentos-2-dormitorios-serena",
+      "total_mensual_clp": 980000,
+      "campos_estimados": [
+        "costo_vida_sin_arriendo_clp",
+        "fit_clientes_chile",
+        "internet",
+        "naturaleza",
+        "seguridad"
+      ]
+    },
+    {
+      "id": "pucon",
+      "nombre": "Pucón",
+      "pais": "Chile",
+      "grupo": "chile_regiones",
+      "arriendo_2d_clp": 560000,
+      "arriendo_rango": "$490.000-$600.000/mes año corrido (a veces GGCC incluidos); verano se dispara por arriendo turístico",
+      "costo_vida_sin_arriendo_clp": 540000,
+      "costo_vida_rango": "$480.000-$620.000 (estimado)",
+      "seguridad": 4,
+      "clima": "Templado lluvioso: veranos 22-28 °C, inviernos fríos y muy lluviosos (~2.000+ mm), nieve en el volcán.",
+      "huso_vs_chile": "0 h (CLT)",
+      "internet": 3,
+      "naturaleza": 5,
+      "idioma": "Español",
+      "visa": "No aplica (ciudadano chileno)",
+      "fit_clientes_chile": 4,
+      "pros": [
+        "Volcán Villarrica, Huerquehue, termas, lago: naturaleza 365 días",
+        "Comunidad de trabajadores remotos creciendo",
+        "Arriendo moderado fuera de temporada"
+      ],
+      "contras": [
+        "Pueblo chico: servicios de salud limitados",
+        "Invierno muy lluvioso y temporada baja 'muerta'",
+        "Volcán activo (alertas periódicas); fibra buena en centro, débil en sectores rurales (estimado)",
+        "Llegar a SCL: 1h40 a Temuco + vuelo 1h15"
+      ],
+      "fuente": "https://www.portalinmobiliario.com/arriendo/departamento/pucon-la-araucania",
+      "total_mensual_clp": 1100000,
+      "campos_estimados": [
+        "costo_vida_sin_arriendo_clp",
+        "fit_clientes_chile",
+        "internet",
+        "naturaleza",
+        "seguridad"
+      ]
+    },
+    {
+      "id": "auckland",
+      "nombre": "Auckland",
+      "pais": "Nueva Zelanda",
+      "grupo": "extranjero",
+      "arriendo_2d_clp": 1455000,
+      "arriendo_local": "NZD 2.700/mes (mediana ~NZD 619-680/semana)",
+      "arriendo_rango": "NZD 2.500-3.000/mes (~$1.350.000-$1.620.000). Mediana Auckland 2D ~NZD 680/semana (mediados 2026); mercado plano/bajando levemente vs 2024.",
+      "costo_vida_sin_arriendo_clp": 835000,
+      "costo_vida_rango": "NZD 1.360-1.765/mes (~$730.000-$950.000)",
+      "seguridad": 4,
+      "clima": "Oceánico subtropical: 8-24 °C, húmedo, lluvias frecuentes en invierno (jun-ago), estaciones invertidas igual que Chile.",
+      "huso_vs_chile": "+16 h casi todo el año (+15 h unas semanas en sep). 9:00 en Santiago = 01:00 del día siguiente en Auckland; solape laboral solo ~16:00-18:00 CL = 08:00-10:00 NZ.",
+      "internet": 4,
+      "naturaleza": 5,
+      "idioma": "Inglés (y te reo Māori)",
+      "visa": "Working Holiday Chile-NZ: 940 cupos/año, 18-35 años inclusive, 12 meses; ronda 2026 abre el 14-oct-2026 18:00 (hora Chile) en immigration.govt.nz y se agota en minutos; pasaporte con vigencia de estadía + 3 meses; sin hijos. Sin WHV: exención de visa (NZeTA) hasta 3 meses por visita; desde 27-ene-2025 los visitantes pueden trabajar remoto para empleador/clientes extranjeros (no clientes NZ). Alternativa: WH Australia 462 (3.400 cupos, 18-35 según varias fuentes; hay fuentes que dicen 18-30: verificar).",
+      "fit_clientes_chile": 2,
+      "pros": [
+        "Naturaleza de clase mundial (Great Walks, fiordos, volcanes): lo más parecido a Patagonia con infraestructura",
+        "Muy segura y estable",
+        "WHV permite trabajar localmente 12 meses"
+      ],
+      "contras": [
+        "Diferencia horaria de 16 h: trabajo nocturno para clientes chilenos",
+        "Arriendo ~1,7x Providencia",
+        "Vuelo SCL-AKL caro (~USD 2.000 RT) y largo",
+        "Remoto como visitante no permite servir clientes neozelandeses"
+      ],
+      "fuente": "https://www.trademe.co.nz/c/property/news/rental-price-index",
+      "total_mensual_clp": 2290000,
+      "campos_estimados": [
+        "fit_clientes_chile",
+        "internet",
+        "naturaleza",
+        "seguridad"
+      ]
+    },
+    {
+      "id": "lisboa",
+      "nombre": "Lisboa",
+      "pais": "Portugal",
+      "grupo": "extranjero",
+      "arriendo_2d_clp": 1779000,
+      "arriendo_local": "EUR 1.617/mes (mediana T2 concejo de Lisboa, T1-2026)",
+      "arriendo_rango": "EUR 1.400-2.000/mes en barrios centrales; Alvalade/Campo de Ourique EUR 1.600-2.200 (~$1.540.000-$2.420.000)",
+      "costo_vida_sin_arriendo_clp": 820000,
+      "costo_vida_rango": "EUR 736-750/mes (~$810.000-$825.000)",
+      "seguridad": 4,
+      "clima": "Mediterráneo atlántico: 8-28 °C, ~290 días de sol, inviernos suaves y húmedos.",
+      "huso_vs_chile": "+3 h (nov-mar), +4 h (sep-oct y fin mar-abr), +5 h (abr-sep). Una jornada chilena 9-18 h = 13-22 h en Lisboa (invierno chileno).",
+      "internet": 4,
+      "naturaleza": 3,
+      "idioma": "Portugués (inglés muy extendido)",
+      "visa": "Sin visa 90 días (Schengen). Visa D8 nómada digital: ingreso >= 4x salario mínimo = EUR 3.680/mes (2026, SMN EUR 920) de clientes/empleador fuera de Portugal + ahorro >= EUR 11.040; trámite AIMA.",
+      "fit_clientes_chile": 3,
+      "pros": [
+        "Base europea con clima amable y comunidad nómada grande",
+        "D8 calza con ingresos de clientes chilenos",
+        "Costa, Sintra y Arrábida cerca"
+      ],
+      "contras": [
+        "Arriendo T2 supera el salario mínimo portugués: presión habitacional",
+        "Tardes/noches de trabajo para cubrir horario chileno",
+        "Burocracia AIMA lenta",
+        "Naturaleza 'suave', lejos de montaña/Patagonia"
+      ],
+      "fuente": "https://aluseg.com/indice-de-rendas/lisboa/",
+      "total_mensual_clp": 2599000,
+      "campos_estimados": [
+        "fit_clientes_chile",
+        "internet",
+        "naturaleza",
+        "seguridad"
+      ]
+    },
+    {
+      "id": "madrid",
+      "nombre": "Madrid",
+      "pais": "España",
+      "grupo": "extranjero",
+      "arriendo_2d_clp": 1540000,
+      "arriendo_local": "EUR 1.400/mes (mediana 2 hab., T1-2026, +12,3% a/a)",
+      "arriendo_rango": "EUR 1.300-2.100/mes (~$1.430.000-$2.310.000); promedio general de alquiler EUR 2.126 (T2-2026, todos los tamaños)",
+      "costo_vida_sin_arriendo_clp": 900000,
+      "costo_vida_rango": "EUR 800-830/mes (~$880.000-$915.000)",
+      "seguridad": 4,
+      "clima": "Mediterráneo continental: veranos 33-38 °C, inviernos 0-12 °C, seco.",
+      "huso_vs_chile": "+4 h (nov-mar), +5 h (transiciones), +6 h (abr-sep).",
+      "internet": 5,
+      "naturaleza": 3,
+      "idioma": "Español",
+      "visa": "Sin visa 90 días (Schengen). Visa nómada digital (Ley de Startups): ingreso >= 200% SMI = EUR 2.849/mes (EUR 34.188/año) en 2026, +EUR 916 primer dependiente. Iberoamericanos pueden optar a nacionalidad tras 2 años de residencia legal (verificar si computa la residencia de nómada).",
+      "fit_clientes_chile": 3,
+      "pros": [
+        "Mismo idioma y cultura de negocios cercana a Chile",
+        "Umbral de ingreso de la visa nómada más bajo que Portugal",
+        "Hub de vuelos a Europa y directo a SCL",
+        "Vía rápida a nacionalidad para chilenos (2 años, verificar)"
+      ],
+      "contras": [
+        "Arriendo en máximos históricos",
+        "Diferencia de 5-6 h en invierno chileno",
+        "Calor extremo en verano"
+      ],
+      "fuente": "https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/alquiler/madrid-comunidad/madrid-provincia/madrid/",
+      "total_mensual_clp": 2440000,
+      "campos_estimados": [
+        "fit_clientes_chile",
+        "internet",
+        "naturaleza",
+        "seguridad"
+      ]
+    },
+    {
+      "id": "montevideo",
+      "nombre": "Montevideo",
+      "pais": "Uruguay",
+      "grupo": "extranjero",
+      "arriendo_2d_clp": 1291000,
+      "arriendo_local": "UYU ~55.000/mes (estimado; Pocitos ~UYU 60.000)",
+      "arriendo_rango": "UYU 40.000 (Cordón/Parque Rodó, estimado) - 70.000 (Pocitos/Punta Carretas/Carrasco) (~$940.000-$1.640.000); alzas ~5% anual",
+      "costo_vida_sin_arriendo_clp": 968000,
+      "costo_vida_rango": "USD 1.023-1.249/mes (~$968.000-$1.180.000): Uruguay es caro en dólares",
+      "seguridad": 3,
+      "clima": "Subtropical húmedo: veranos 26-30 °C, inviernos 6-14 °C húmedos y ventosos.",
+      "huso_vs_chile": "0 h (sep-abr) / +1 h (abr-sep). UTC-3 fijo.",
+      "internet": 5,
+      "naturaleza": 2,
+      "idioma": "Español",
+      "visa": "Chilenos acceden a Residencia Temporaria Mercosur (hasta 2 años, renovable, sin acreditar actividad) o Residencia Permanente Mercosur; también permiso 'nómada digital' (identidad provisoria 180 días, renovable una vez).",
+      "fit_clientes_chile": 5,
+      "pros": [
+        "Mismo horario que Chile en verano",
+        "Residencia Mercosur simple para chilenos",
+        "Tranquila, rambla y playas de río, fibra Antel extendida"
+      ],
+      "contras": [
+        "Costo de vida en USD alto (peso fuerte)",
+        "Sin montañas: naturaleza limitada vs Chile",
+        "Mercado chico; invierno gris y húmedo"
+      ],
+      "fuente": "https://www.pisoinmobiliario.com/blog-entry/411-comparativa-precios-alquiler-montevideo-2026-todas-zonas",
+      "total_mensual_clp": 2259000,
+      "campos_estimados": [
+        "arriendo_2d_clp",
+        "fit_clientes_chile",
+        "internet",
+        "naturaleza",
+        "seguridad"
+      ]
+    },
+    {
+      "id": "cdmx",
+      "nombre": "Ciudad de México",
+      "pais": "México",
+      "grupo": "extranjero",
+      "arriendo_2d_clp": 1605000,
+      "arriendo_local": "MXN ~30.000/mes (2 rec. en Condesa/Roma)",
+      "arriendo_rango": "MXN 18.000 (Narvarte/Del Valle, estimado) - 45.000 (Condesa/Polanco) (~$960.000-$2.410.000); promedio CDMX general MXN ~20.400",
+      "costo_vida_sin_arriendo_clp": 700000,
+      "costo_vida_rango": "USD 838 (~$793.000) según Wise; MXN 8.900-14.200 (~$475.000-$760.000) según Numbeo (estimado)",
+      "seguridad": 3,
+      "clima": "Subtropical de altura (2.240 m): 8-26 °C, lluvias jun-sep por las tardes, estación seca oct-may.",
+      "huso_vs_chile": "-3 h (sep-abr) / -2 h (abr-sep). México sin horario de verano.",
+      "internet": 3,
+      "naturaleza": 2,
+      "idioma": "Español",
+      "visa": "Turista sin visa (hasta 180 días). Residencia temporal por solvencia: ~USD 4.300-4.500/mes netos últimos 6 meses o ~USD 73-75k ahorro promedio 12 meses; se tramita en consulado mexicano fuera de México (no se puede cambiar desde turista).",
+      "fit_clientes_chile": 4,
+      "pros": [
+        "Escena cultural/gastronómica enorme, mucho remoto latino",
+        "Solo 2-3 h de diferencia",
+        "Vuelos directos SCL"
+      ],
+      "contras": [
+        "Roma/Condesa ya no es barata (arriendo > Providencia)",
+        "Sismos, contaminación, estrés hídrico",
+        "Seguridad muy dependiente de la colonia",
+        "Requisito de solvencia alto para residir"
+      ],
+      "fuente": "https://www.holaneo.com/guias/cuanto-cuesta-rentar-departamento-cdmx-2026",
+      "total_mensual_clp": 2305000,
+      "campos_estimados": [
+        "costo_vida_sin_arriendo_clp",
+        "fit_clientes_chile",
+        "internet",
+        "naturaleza",
+        "seguridad"
+      ]
+    },
+    {
+      "id": "medellin",
+      "nombre": "Medellín",
+      "pais": "Colombia",
+      "grupo": "extranjero",
+      "arriendo_2d_clp": 852000,
+      "arriendo_local": "COP ~3.000.000/mes (estimado, Laureles/Poblado)",
+      "arriendo_rango": "Laureles 2 hab.: COP 1.900.000-5.500.000 (~$540.000-$1.560.000); El Poblado típicamente más caro",
+      "costo_vida_sin_arriendo_clp": 696000,
+      "costo_vida_rango": "COP 2,3-2,6 millones/mes (~$660.000-$740.000)",
+      "seguridad": 2,
+      "clima": "'Eterna primavera': 17-28 °C todo el año; lluvias abr-may y oct-nov.",
+      "huso_vs_chile": "-2 h (sep-abr) / -1 h (abr-sep). UTC-5 fijo.",
+      "internet": 4,
+      "naturaleza": 3,
+      "idioma": "Español",
+      "visa": "Turista sin visa 90 días (prorrogable hasta 180/año). Visa V Nómada Digital: ingreso >= 3 SMMLV = COP 5.252.715/mes (~USD 1.600) en cada uno de los últimos 3 meses, seguro de salud, tasa de estudio USD 55; trámite online Cancillería.",
+      "fit_clientes_chile": 4,
+      "pros": [
+        "Mejor relación costo/clima de la lista",
+        "Visa nómada con umbral de ingreso bajo",
+        "Montañas verdes cercanas (Guatapé, Santa Elena, Jardín)"
+      ],
+      "contras": [
+        "Seguridad: robos y estafas por apps de citas a extranjeros",
+        "Peso colombiano volátil",
+        "Gentrificación en Poblado/Laureles",
+        "Naturaleza tropical, no andina/patagónica"
+      ],
+      "fuente": "https://gestionlegalcolombia.com/visas/visa-nomada/",
+      "total_mensual_clp": 1548000,
+      "campos_estimados": [
+        "arriendo_2d_clp",
+        "fit_clientes_chile",
+        "internet",
+        "naturaleza",
+        "seguridad"
+      ]
+    }
+  ],
+  "vacaciones": [
+    {
+      "mes": 1,
+      "destino": "Chiloé + Puerto Varas / Lago Llanquihue",
+      "region": "chile",
+      "dias": 7,
+      "presupuesto_clp_persona": 750000,
+      "tipo": "naturaleza",
+      "por_que": "Enero y febrero concentran menos lluvia en Chiloé; iglesias patrimoniales, palafitos de Castro, Dalcahue, Parque Nacional Chiloé y volcanes del Llanquihue.",
+      "tip": "Vuelo SCL-PMC ~USD 109 RT (tarifa basic). Arrienda auto en PMC; ferry Pargua-Chacao 24/7 cada 15-30 min (~30-50 min). 3-4 días en la isla + 2 para islas menores (Quinchao/Lemuy).",
+      "fuente": "https://cometo.cl/blog/guia-completa-para-recorrer-chiloe"
+    },
+    {
+      "mes": 1,
+      "destino": "Florianópolis (Brasil)",
+      "region": "sudamerica",
+      "dias": 8,
+      "presupuesto_clp_persona": 1000000,
+      "tipo": "playa",
+      "por_que": "Verano brasileño con 40+ playas y lagoas; vuelo directo JetSMART de ~3,5 h.",
+      "tip": "Vuelo directo SCL-FLN desde ~USD 266 RT en feb-2027 (basic). Evita la semana de Carnaval (feb-2027) por precios. Presupuesto estimado.",
+      "fuente": "https://kiwi.com/u/gvh6ct"
+    },
+    {
+      "mes": 2,
+      "destino": "Carretera Austral (Coyhaique - Cerro Castillo - Capillas de Mármol - Cochrane)",
+      "region": "chile",
+      "dias": 14,
+      "presupuesto_clp_persona": 1650000,
+      "tipo": "aventura",
+      "por_que": "Nov-mar es la ventana recomendada: días de hasta 18 h de luz y servicios abiertos; febrero es el mes más cálido.",
+      "tip": "10 días mínimo, 12-16 ideal. Vuelo SCL-Balmaceda ~USD 133 RT (basic). Arrienda 4x4 con anticipación (flota escasa en verano). Octubre y abril: menos gente.",
+      "fuente": "https://www.lokicars.cl/blog/carretera-austral-cuantos-dias-necesito-auto"
+    },
+    {
+      "mes": 3,
+      "destino": "Torres del Paine - Circuito W",
+      "region": "chile",
+      "dias": 7,
+      "presupuesto_clp_persona": 1600000,
+      "tipo": "aventura",
+      "por_que": "Marzo mantiene la temporada abierta con menos gente y viento que dic-feb y los primeros colores de otoño; es la ventana realista de 2026-27 considerando que dic-feb se agota con 6+ meses de anticipación.",
+      "tip": "RESERVAR YA: refugios/campings en Vértice (Paine Grande, Grey, Dickson, Los Perros) y Las Torres (Central, Chileno, Cuernos, Francés, Serón), en dos sistemas separados; arma el itinerario para que las noches calcen. Entrada chilenos circuito W: $37.800 (nuevo sistema CONAF desde 1-may-2026). Pensión completa ~USD 110/día (Vértice) y ~USD 140/día (Las Torres). Camping con carpa propia y comida baja a ~$700k; todo en refugio con pensión completa ~$2M. Vuelo SCL-PUQ ~USD 130 RT (basic) + bus a Puerto Natales.",
+      "fuente": "https://www.conaf.cl/el-1-de-mayo-entra-en-vigencia-nuevo-sistema-tarifario-para-el-parque-nacional-torres-del-paine/"
+    },
+    {
+      "mes": 4,
+      "destino": "Mendoza + Valle de Uco (Argentina)",
+      "region": "sudamerica",
+      "dias": 4,
+      "presupuesto_clp_persona": 650000,
+      "tipo": "descanso",
+      "por_que": "Otoño: viñedos dorados post-vendimia, clima seco 15-25 °C; a 1 h de vuelo.",
+      "tip": "Vuelo directo SCL-MDZ ~USD 168 RT (basic). Si prefieres la Fiesta de la Vendimia, es a inicios de marzo; Semana Santa 2027 (26-28 mar) sirve de fin de semana largo. Presupuesto estimado (inflación argentina volátil).",
+      "fuente": "https://kiwi.com/u/u69pxn"
+    },
+    {
+      "mes": 5,
+      "destino": "Cusco + Valle Sagrado + Machu Picchu (Perú)",
+      "region": "sudamerica",
+      "dias": 7,
+      "presupuesto_clp_persona": 1100000,
+      "tipo": "aventura",
+      "por_que": "Inicio de la estación seca (may-sep) antes del peak de julio; cielos despejados.",
+      "tip": "Vuelo directo SCL-CUZ ~USD 339 RT. Chilenos pagan tarifa extranjero: S/ 152 + tarifa SERNANP S/ 11 (desde may-2026). Desde sep-2026 las entradas se compran solo en tuboleto.cultura.pe; Huayna Picchu 350 cupos/día y Montaña 400/día: comprar con semanas de anticipación. 2 días de aclimatación en Valle Sagrado.",
+      "fuente": "https://perusites.com/es/machu-picchu/precios-machu-picchu/"
+    },
+    {
+      "mes": 6,
+      "destino": "Valle del Elqui (Vicuña / Pisco Elqui) + La Serena",
+      "region": "chile",
+      "dias": 4,
+      "presupuesto_clp_persona": 350000,
+      "tipo": "descanso",
+      "por_que": "Cielos de invierno más limpios para astroturismo; calza con los fines de semana largos del 19-21 y 26-28 de junio de 2027.",
+      "tip": "Reserva observatorio con anticipación; lleva ropa de abrigo para la noche. Presupuesto estimado (auto/bus + cabaña).",
+      "fuente": "https://www.feriados.cl/2027.php"
+    },
+    {
+      "mes": 7,
+      "destino": "Bariloche - esquí en Cerro Catedral (Argentina)",
+      "region": "sudamerica",
+      "dias": 6,
+      "presupuesto_clp_persona": 1250000,
+      "tipo": "aventura",
+      "por_que": "Temporada de nieve jun-sep en el centro de esquí más grande de Sudamérica (27 medios de elevación, 58 pistas).",
+      "tip": "Pase diario 2026 desde ARS 160.000 (efectivo; +40% vs 2025); arriendo de equipo desde ARS 68.500. Vuelo ~USD 325 RT vía Aeroparque. Evita las 2 semanas de vacaciones de invierno argentinas (mediados de julio) o elige fines de agosto. Presupuesto estimado (ARS volátil).",
+      "fuente": "https://www.rionegro.com.ar/voy-turismo/invierno-2026-en-bariloche-cerro-catedral-lanzo-la-venta-de-pases-de-esqui-con-valores-desde-160-000-4571991/"
+    },
+    {
+      "mes": 8,
+      "destino": "Pucón + termas (Geométricas/Huife) + Centro de Ski Pucón",
+      "region": "chile",
+      "dias": 5,
+      "presupuesto_clp_persona": 500000,
+      "tipo": "descanso",
+      "por_que": "Nieve y termas en temporada baja: precios bajos y sirve de 'prueba de vida' si Pucón es candidato para vivir.",
+      "tip": "Revisa el nivel de alerta del volcán Villarrica antes de ir. Bus cama SCL-Pucón o vuelo a Temuco. Presupuesto estimado.",
+      "fuente": "https://www.portalinmobiliario.com/arriendo/departamento/pucon-la-araucania"
+    },
+    {
+      "mes": 9,
+      "destino": "San Pedro de Atacama",
+      "region": "chile",
+      "dias": 5,
+      "presupuesto_clp_persona": 700000,
+      "tipo": "naturaleza",
+      "por_que": "Primavera (sep-nov) con máximas <25 °C, cielos claros; Fiestas Patrias 2027 cae vie 17 - dom 19 sep.",
+      "tip": "4-5 días: Valle de la Luna (entrada ~$5.000; tour atardecer USD 25-40), Géiseres del Tatio, Laguna Cejar, lagunas altiplánicas. Tours $20-80 mil c/u. Vuelo SCL-Calama ~USD 107-114 RT (basic). Jun-ago es temporada alta.",
+      "fuente": "https://viajandoando.cl/norte-de-chile/desierto-atacama-guia/"
+    },
+    {
+      "mes": 10,
+      "destino": "Nordeste de Brasil (Maceió / Maragogi / Porto de Galinhas)",
+      "region": "sudamerica",
+      "dias": 9,
+      "presupuesto_clp_persona": 1450000,
+      "tipo": "playa",
+      "por_que": "Estación seca del Nordeste (sep-mar) con piscinas naturales y mar cálido, antes del verano de alta demanda.",
+      "tip": "No hay vuelo directo: conexión en São Paulo. La búsqueda en Kiwi para sep-2027 dio USD 1.741 con mala ruta; lo razonable es USD 650-900 comprando 2-4 meses antes vía GRU (estimado). Fin de semana largo 9-11 oct 2027.",
+      "fuente": "https://kiwi.com/u/7r8cxu"
+    },
+    {
+      "mes": 11,
+      "destino": "Isla de Pascua (Rapa Nui)",
+      "region": "chile",
+      "dias": 6,
+      "presupuesto_clp_persona": 1150000,
+      "tipo": "naturaleza",
+      "por_que": "Temporada intermedia: 20-24 °C, menos gente y tarifas más bajas que ene-feb (Tapati en feb).",
+      "tip": "Vuelo LATAM directo ~5 h: $200-500 mil RT según anticipación (Kiwi mostró USD 798 en mar-2027: compra directo en LATAM y con tiempo). Entrada Parque Nacional Rapa Nui chilenos $20.000; guía acreditado obligatorio en la mayoría de los sitios. Estadía máxima de turistas y formulario de ingreso: verificar reglas vigentes.",
+      "fuente": "https://conlamochila.com/costo-o-precio-de-acceso-a-rapa-nui-isla-de-pascua-chile/"
+    },
+    {
+      "mes": 11,
+      "destino": "Buenos Aires (Argentina)",
+      "region": "sudamerica",
+      "dias": 5,
+      "presupuesto_clp_persona": 700000,
+      "tipo": "ciudad",
+      "por_que": "Primavera: floración de jacarandás (nov), clima 18-27 °C, teatro, gastronomía.",
+      "tip": "Vuelo ~USD 164 RT (SKY a EZE / JetSMART desde AEP, basic). Presupuesto estimado; paga con tarjeta de débito/crédito internacional según tipo de cambio vigente.",
+      "fuente": "https://kiwi.com/u/7qfpxq"
+    },
+    {
+      "mes": 12,
+      "destino": "Cajón del Maipo - Monumento Natural El Morado",
+      "region": "chile",
+      "dias": 2,
+      "presupuesto_clp_persona": 120000,
+      "tipo": "naturaleza",
+      "por_que": "Escapada de fin de semana a 1,5 h de Santiago: glaciar colgante y laguna, sendero abierto en temporada estival; fin de semana largo de Navidad (25-27 dic 2026).",
+      "tip": "Sal temprano (cupos/horario de ingreso CONAF); combina con Baños Morales o termas. Presupuesto estimado.",
+      "fuente": "https://www.13.cl/programas/noticias-13/servicios/feriados-que-quedan-en-chile-durante-2026-cuando-sera-el-proximo"
+    }
+  ],
+  "bucket_list": [
+    {
+      "destino": "Nueva Zelanda (Isla Sur + Auckland)",
+      "region": "larga_distancia",
+      "mejor_temporada": "Marzo (fin de verano/otoño temprano): clima estable, menos gente que dic-feb y la temporada de Great Walks sigue abierta hasta el 30-abr (última salida 28-abr-2027).",
+      "dias": 21,
+      "presupuesto_clp_persona": 4000000,
+      "presupuesto_rango": "$3.500.000-$5.000.000 (estimado)",
+      "desglose": "Vuelo ~USD 2.000 RT con maleta (Qantas vía Sídney, mar-2027) ≈ $1,89M; campervan 20 días ≈ $860k/pp compartida; combustible/ferry ≈ $160k; Milford Track 3 noches NZD 456 (tarifa internacional NZD 152/noche) ≈ $246k; comida/actividades NZD 70/día ≈ $790k.",
+      "tipo": "naturaleza",
+      "por_que": "Lo más cercano a Patagonia con infraestructura de primer nivel (fiordos, Great Walks, glaciares, volcanes); además es la prueba de campo para vivir allá.",
+      "tip": "Reservas de Great Walks 2026/27 abrieron en may-2026 (Milford 13-may) y los peaks dic-feb se agotan en minutos: revisa cupos de mar-2027 ahora o apunta a la apertura de may-2027. Si tienes <=35 años, el WHV abre el 14-oct-2026. Chilenos: exención de visa con NZeTA (verificar costo NZeTA + tasa IVL).",
+      "fuente": "https://www.doc.govt.nz/news/media-releases/2026-media-releases/ready-set-naturing-doc-great-walk-hut-and-campsite-bookings-open-from-12-may/",
+      "fuente_vuelo": "https://kiwi.com/u/u5xfqx"
+    },
+    {
+      "destino": "Japón (Tokio - Hakone - Kioto - Nara - Osaka)",
+      "region": "larga_distancia",
+      "mejor_temporada": "Fines de marzo a inicios de abril (sakura) o mediados de noviembre a inicios de diciembre (koyo, colores de otoño; menos saturado).",
+      "dias": 16,
+      "presupuesto_clp_persona": 5000000,
+      "presupuesto_rango": "$4.200.000-$6.000.000 (estimado)",
+      "desglose": "Vuelo ~USD 2.020 RT (2 escalas vía EE.UU., mar-2027) ≈ $1,91M; gasto diario estándar medio ¥20.000-35.000 (USD 130-230) × 16 ≈ $2,5M; JR Pass 14 días ¥84.000 vía agentes externos desde 1-oct-2026 (el sitio oficial mantiene ¥80.000) ≈ $0,5M.",
+      "tipo": "ciudad",
+      "por_que": "Contraste total: cultura, gastronomía, templos y alpes japoneses; muy seguro y eficiente.",
+      "tip": "Chilenos no necesitan visa (turismo). Si conectas en EE.UU. necesitas ESTA (Visa Waiver). Compra el JR Pass en el sitio oficial para mantener el precio antiguo, o evalúa pases regionales. Hoteles en sakura: reserva con 4-6 meses de anticipación.",
+      "fuente": "https://selfguidejapan.com/blog/japan-rail-pass-price-2026",
+      "fuente_vuelo": "https://kiwi.com/u/c5xmv3"
+    }
+  ],
+  "feriados_largos": [
+    {
+      "fecha": "2026-10-10 a 2026-10-12",
+      "motivo": "Encuentro de Dos Mundos (lun 12 oct)",
+      "dias": 3
+    },
+    {
+      "fecha": "2026-10-31 a 2026-11-01",
+      "motivo": "Iglesias Evangélicas (sáb 31) + Todos los Santos (dom 1): caen en fin de semana, sin día extra",
+      "dias": 2
+    },
+    {
+      "fecha": "2026-12-05 a 2026-12-08",
+      "motivo": "Inmaculada Concepción (mar 8 dic): puente si tomas el lunes 7 de vacaciones",
+      "dias": 4
+    },
+    {
+      "fecha": "2026-12-25 a 2026-12-27",
+      "motivo": "Navidad (vie 25 dic, irrenunciable)",
+      "dias": 3
+    },
+    {
+      "fecha": "2027-01-01 a 2027-01-03",
+      "motivo": "Año Nuevo (vie 1 ene)",
+      "dias": 3
+    },
+    {
+      "fecha": "2027-03-26 a 2027-03-28",
+      "motivo": "Semana Santa (Viernes y Sábado Santo)",
+      "dias": 3
+    },
+    {
+      "fecha": "2027-05-21 a 2027-05-23",
+      "motivo": "Glorias Navales (vie 21 may). Nota: 1 de mayo 2027 cae sábado",
+      "dias": 3
+    },
+    {
+      "fecha": "2027-06-19 a 2027-06-21",
+      "motivo": "Día Nacional de los Pueblos Indígenas (lun 21 jun)",
+      "dias": 3
+    },
+    {
+      "fecha": "2027-06-26 a 2027-06-28",
+      "motivo": "San Pedro y San Pablo (trasladado al lun 28 jun)",
+      "dias": 3
+    },
+    {
+      "fecha": "2027-07-16 a 2027-07-18",
+      "motivo": "Virgen del Carmen (vie 16 jul)",
+      "dias": 3
+    },
+    {
+      "fecha": "2027-09-17 a 2027-09-19",
+      "motivo": "Fiestas Patrias: 18 y 19 caen sáb-dom, por Ley 20.983 el vie 17 es feriado",
+      "dias": 3
+    },
+    {
+      "fecha": "2027-10-09 a 2027-10-11",
+      "motivo": "Encuentro de Dos Mundos (trasladado al lun 11 oct)",
+      "dias": 3
+    },
+    {
+      "fecha": "2027-10-30 a 2027-11-01",
+      "motivo": "Iglesias Evangélicas (dom 31) + Todos los Santos (lun 1 nov)",
+      "dias": 3
+    }
+  ],
+  "fuentes": [
+    {
+      "txt": "Arriendo promedio 70 m² por comuna (Las Condes $915.901, Providencia $835.990, Vitacura $829.842, Lo Barnechea $820.281, Ñuñoa $777.252) - 2026",
+      "url": "https://globalbrokers.cl/diario-inmobiliario/las-condes-lidera-el-ranking-de-arriendos-mas-caros-en-chile-mientras-que"
+    },
+    {
+      "txt": "Brecha de arriendos sector oriente vs periferia (El Diario Inmobiliario)",
+      "url": "https://eldiarioinmobiliario.cl/destacadas/arriendos-santiago-2025-departamentos-70m2-brecha-precios-rm/"
+    },
+    {
+      "txt": "Providencia supera a Las Condes en gastos comunes (jul-2026)",
+      "url": "https://www.meganoticias.cl/nacional/526829-comunas-gastos-comunes-caros-elevados-ranking-santiago-las-condes-providencia-13-07-2026.html"
+    },
+    {
+      "txt": "Avisos 2D Ñuñoa (Nestoria)",
+      "url": "https://www.nestoria.cl/nunoa/departamentos/arriendo/dormitorios-2"
+    },
+    {
+      "txt": "ENUSC 2025 (publicada jul-2026) - SPD",
+      "url": "https://subprevenciondeldelito.gob.cl/noticia/enusc-2025-bajan-la-victimizacion-de-hogares-por-delitos-violentos-y-la-percepcion-de-inseguridad-en-el-pais/"
+    },
+    {
+      "txt": "Comunas con menor sensación de inseguridad: Huechuraba, La Reina, Vitacura, Ñuñoa (La Tercera)",
+      "url": "https://www.latercera.com/pulso/noticia/las-comunas-que-sienten-mas-y-menor-seguridad/"
+    },
+    {
+      "txt": "Ñuñoa lidera caída en percepción de delincuencia (ENUSC 2025)",
+      "url": "https://www.radioagricultura.cl/noticias/nacional/nunoa-lidera-caida-en-percepcion-del-aumento-de-la-delincuencia-segun-encuesta-enusc-2025_20260711/"
+    },
+    {
+      "txt": "Costo de vida Santiago (Wise)",
+      "url": "https://wise.com/gb/cost-of-living/chile/santiago"
+    },
+    {
+      "txt": "Costo de vida Santiago (Livingcost)",
+      "url": "https://www.livingcost.net/chile/santiago"
+    },
+    {
+      "txt": "Chile lidera banda ancha fija en Sudamérica, top-5 mundial Ookla (348 Mbps)",
+      "url": "https://www.telecomtv.com/content/access-evolution/chile-tops-global-fixed-broadband-ranking-ookla-46325/"
+    },
+    {
+      "txt": "Valor UF 25-09-2026: $41.016,28",
+      "url": "https://www.uf-hoy.com/"
+    },
+    {
+      "txt": "Dólar 25-09-2026: $963,11",
+      "url": "https://www.dolaronline.cl/"
+    },
+    {
+      "txt": "Euro 25-09-2026: ~$1.095",
+      "url": "https://www.valor-euro.cl/"
+    },
+    {
+      "txt": "NZD/USD 0,5701 (23-09-2026)",
+      "url": "https://tradingeconomics.com/new-zealand/currency"
+    },
+    {
+      "txt": "TRM Colombia 25-09-2026: COP 3.329,61",
+      "url": "https://www.capitalcolombia.com/sec-trm_precio_dolar_en_colombia"
+    },
+    {
+      "txt": "Dólar BROU Uruguay 25-09-2026: UYU 40,29 promedio",
+      "url": "https://calculatam.com/uy/cotizacion"
+    },
+    {
+      "txt": "USD/MXN 17,68 (sep-2026)",
+      "url": "https://mx.investing.com/currencies/usd-mxn"
+    },
+    {
+      "txt": "Arriendo Viña del Mar 2026 (Houm)",
+      "url": "https://blog.houm.com/arriendo-departamento-en-vina-del-mar-guia-de-precios-y-zonas-en-2026/"
+    },
+    {
+      "txt": "Arriendos Puerto Varas (Portal Inmobiliario)",
+      "url": "https://www.portalinmobiliario.com/arriendo/departamento/puerto-varas-los-lagos"
+    },
+    {
+      "txt": "Arriendos 2D La Serena (Mitula)",
+      "url": "https://casas.mitula.cl/casas/arriendo-departamentos-2-dormitorios-serena"
+    },
+    {
+      "txt": "Arriendos Pucón (Portal Inmobiliario)",
+      "url": "https://www.portalinmobiliario.com/arriendo/departamento/pucon-la-araucania"
+    },
+    {
+      "txt": "Trade Me Rental Price Index (jun-2026)",
+      "url": "https://www.trademe.co.nz/c/property/news/rental-price-index"
+    },
+    {
+      "txt": "Arriendo promedio por ciudad NZ 2026 (MoneyBalance)",
+      "url": "https://moneybalance.co.nz/personal-finance/cost-of-living/average-rent-by-city-nz/"
+    },
+    {
+      "txt": "Costo de vida Auckland (Wise)",
+      "url": "https://wise.com/gb/cost-of-living/new-zealand/auckland"
+    },
+    {
+      "txt": "Working Holiday NZ 2026 para chilenos: 940 cupos, 18-35, apertura 14-oct (El Mostrador)",
+      "url": "https://www.elmostrador.cl/datos-utiles/2026/08/23/working-holiday-nueva-zelanda-2026-chile-cuanto-se-gana-requisitos-postular/"
+    },
+    {
+      "txt": "Fechas de aplicación WHV Nueva Zelanda 2026 (YoMeAnimo)",
+      "url": "https://www.yomeanimo.com/working-holiday-nueva-zelanda-fechas-de-aplicacion"
+    },
+    {
+      "txt": "Trabajo remoto como visitante en NZ (Immigration NZ)",
+      "url": "https://www.immigration.govt.nz/about-us/news-centre/working-remotely-from-new-zealand"
+    },
+    {
+      "txt": "Países con exención de visa a NZ (Immigration NZ)",
+      "url": "https://www.immigration.govt.nz/visit/what-you-need-to-visit-new-zealand/visa-waiver-countries-and-territories/"
+    },
+    {
+      "txt": "Work and Holiday Australia para chilenos (3.400 cupos)",
+      "url": "https://www.workingholiday.cl/working-holiday-australia-chile/"
+    },
+    {
+      "txt": "Índice de rentas Lisboa 2026 (mediana T2 EUR 1.617)",
+      "url": "https://aluseg.com/indice-de-rendas/lisboa/"
+    },
+    {
+      "txt": "Lisboa entre capitales UE donde la renta supera el salario mínimo (idealista)",
+      "url": "https://www.idealista.pt/news/imobiliario/habitacao/2026/05/06/75325-lisboa-entre-as-capitais-da-ue-onde-a-renda-ultrapassa-o-salario-minimo"
+    },
+    {
+      "txt": "Costo de vida Lisboa 2026 (Global Citizen Solutions)",
+      "url": "https://www.globalcitizensolutions.com/cost-of-living-in-lisbon/"
+    },
+    {
+      "txt": "Portugal D8: EUR 3.680/mes en 2026",
+      "url": "https://globallawexperts.com/portugal-d8-visa-requirements-2026-income-e3680-documents-aima-process-timelines/"
+    },
+    {
+      "txt": "Precio alquiler Madrid (idealista)",
+      "url": "https://www.idealista.com/sala-de-prensa/informes-precio-vivienda/alquiler/madrid-comunidad/madrid-provincia/madrid/"
+    },
+    {
+      "txt": "Alquiler medio Madrid EUR 2.126 (T2-2026, Brains RE)",
+      "url": "https://brainsre.news/alquiler-pisos-madrid/"
+    },
+    {
+      "txt": "Costo de vida Madrid (Wise)",
+      "url": "https://wise.com/gb/cost-of-living/spain/madrid"
+    },
+    {
+      "txt": "Visa nómada digital España 2026: EUR 2.849/mes",
+      "url": "https://www.jobbatical.com/blog/spain-digital-nomad-visa-income-smi-increase"
+    },
+    {
+      "txt": "Comparativa alquiler Montevideo 2026 por zonas",
+      "url": "https://www.pisoinmobiliario.com/blog-entry/411-comparativa-precios-alquiler-montevideo-2026-todas-zonas"
+    },
+    {
+      "txt": "Costo de vida Montevideo (Wise)",
+      "url": "https://wise.com/us/cost-of-living/uruguay/montevideo"
+    },
+    {
+      "txt": "Residencia Temporaria Mercosur Uruguay (gub.uy)",
+      "url": "https://www.gub.uy/tramites/residencia-legal-temporaria-mercosur"
+    },
+    {
+      "txt": "Rutas de residencia Uruguay 2026 (Rio Times)",
+      "url": "https://www.riotimesonline.com/uruguay-residency-visas-which-route-2026/"
+    },
+    {
+      "txt": "Cuánto cuesta rentar en CDMX 2026 (HolaNeo)",
+      "url": "https://www.holaneo.com/guias/cuanto-cuesta-rentar-departamento-cdmx-2026"
+    },
+    {
+      "txt": "Mejores zonas para rentar en CDMX 2026 (Nolab)",
+      "url": "https://nolab.mx/blog/mejores-zonas-para-rentar-en-cdmx"
+    },
+    {
+      "txt": "Costo de vida Ciudad de México (Wise)",
+      "url": "https://wise.com/us/cost-of-living/mexico/mexico-city"
+    },
+    {
+      "txt": "Residencia temporal México por solvencia 2026",
+      "url": "https://www.asesoriamigratoriaqro.com/nomadas-digitales-mexico-estatus-migratorio/"
+    },
+    {
+      "txt": "Arriendos Laureles, Medellín (Properati)",
+      "url": "https://www.properati.com.co/s/laureles-medellin/apartamento/arriendo/habitaciones:1,2"
+    },
+    {
+      "txt": "Costo de vida Medellín (Wise)",
+      "url": "https://wise.com/gb/cost-of-living/colombia/medellin"
+    },
+    {
+      "txt": "Visa Nómada Digital Colombia 2026",
+      "url": "https://gestionlegalcolombia.com/visas/visa-nomada/"
+    },
+    {
+      "txt": "Feriados que quedan en 2026 (El Mostrador)",
+      "url": "https://www.elmostrador.cl/datos-utiles/2026/09/19/feriados-que-quedan-en-chile-despues-de-las-fiestas-patrias-revisa-las-fechas/"
+    },
+    {
+      "txt": "Feriados que quedan en 2026 (13.cl)",
+      "url": "https://www.13.cl/programas/noticias-13/servicios/feriados-que-quedan-en-chile-durante-2026-cuando-sera-el-proximo"
+    },
+    {
+      "txt": "Feriados de Chile 2027 (feriados.cl)",
+      "url": "https://www.feriados.cl/2027.php"
+    },
+    {
+      "txt": "Feriados 2027 y fines de semana largos (Cocha)",
+      "url": "https://www.cocha.com/blog/tips-de-viaje/feriados-chile-fines-de-semana-largos"
+    },
+    {
+      "txt": "Fiestas Patrias 2027: vie 17 feriado (La Tercera)",
+      "url": "https://www.latercera.com/servicios/noticia/fiestas-patrias-2027-caeran-en-fin-de-semana-el-18-sera-sabado-y-el-19-domingo/"
+    },
+    {
+      "txt": "Nuevo sistema tarifario Torres del Paine desde 1-may-2026 (CONAF)",
+      "url": "https://www.conaf.cl/el-1-de-mayo-entra-en-vigencia-nuevo-sistema-tarifario-para-el-parque-nacional-torres-del-paine/"
+    },
+    {
+      "txt": "Calendario de reservas W Trek 2026/27 (Patagonia Scout)",
+      "url": "https://patagoniascout.com/planning/w-trek-booking-timeline/"
+    },
+    {
+      "txt": "Costos Torres del Paine 2026 (ReserveNature)",
+      "url": "https://reservenature.com/blogs/torres-del-paine-cost-budget-breakdown"
+    },
+    {
+      "txt": "Apertura de reservas Torres del Paine 2026-2027 (Booking Patagonia)",
+      "url": "https://www.bookingpatagonia.travel/blog/when-torres-del-paine-reservations-open-for-the-2026-2027-season"
+    },
+    {
+      "txt": "Guía Desierto de Atacama 2026",
+      "url": "https://viajandoando.cl/norte-de-chile/desierto-atacama-guia/"
+    },
+    {
+      "txt": "Carretera Austral: cuántos días (2026)",
+      "url": "https://www.lokicars.cl/blog/carretera-austral-cuantos-dias-necesito-auto"
+    },
+    {
+      "txt": "Guía Carretera Austral 2026 (Cometo)",
+      "url": "https://cometo.cl/blog/guia-para-recorrer-la-carretera-austral-1"
+    },
+    {
+      "txt": "Guía Chiloé 2026 (Cometo)",
+      "url": "https://cometo.cl/blog/guia-completa-para-recorrer-chiloe"
+    },
+    {
+      "txt": "Costo de acceso a Rapa Nui 2026",
+      "url": "https://conlamochila.com/costo-o-precio-de-acceso-a-rapa-nui-isla-de-pascua-chile/"
+    },
+    {
+      "txt": "Precios Machu Picchu 2026",
+      "url": "https://perusites.com/es/machu-picchu/precios-machu-picchu/"
+    },
+    {
+      "txt": "Tarifa adicional SERNANP Machu Picchu desde may-2026 (Infobae)",
+      "url": "https://www.infobae.com/peru/2026/02/05/los-visitantes-de-machu-picchu-pagaran-una-nueva-tarifa-a-partir-de-mayo-de-2026-cuanto-sera-y-por-que-incluye-a-nacionales/"
+    },
+    {
+      "txt": "Pases Cerro Catedral invierno 2026",
+      "url": "https://www.rionegro.com.ar/voy-turismo/invierno-2026-en-bariloche-cerro-catedral-lanzo-la-venta-de-pases-de-esqui-con-valores-desde-160-000-4571991/"
+    },
+    {
+      "txt": "Great Walks NZ 2026/27: reservas desde may-2026 (DOC)",
+      "url": "https://www.doc.govt.nz/news/media-releases/2026-media-releases/ready-set-naturing-doc-great-walk-hut-and-campsite-bookings-open-from-12-may/"
+    },
+    {
+      "txt": "Milford Track booking 2026/2027",
+      "url": "https://runawaytraveller.com/milford-track-booking-how-to/"
+    },
+    {
+      "txt": "Japan Rail Pass: alza desde 1-oct-2026",
+      "url": "https://selfguidejapan.com/blog/japan-rail-pass-price-2026"
+    },
+    {
+      "txt": "Presupuesto diario Japón 2026",
+      "url": "https://kanko-map.com/en/japan-travel-budget-guide-2026/"
+    },
+    {
+      "txt": "Requisitos para viajar a Japón desde Chile",
+      "url": "https://esim.holafly.com/es/blog/planificar-viaje/requisitos-viajar-chile-japon/"
+    },
+    {
+      "txt": "Kiwi.com (25-09-2026): SCL-PUQ ene-2027 desde USD 129 RT",
+      "url": "https://kiwi.com/u/r29y3u"
+    },
+    {
+      "txt": "Kiwi.com: SCL-CJC abr-2027 desde USD 107 RT",
+      "url": "https://kiwi.com/u/7yxnpww"
+    },
+    {
+      "txt": "Kiwi.com: SCL-IPC mar-2027 desde USD 798 RT",
+      "url": "https://kiwi.com/u/nfwckm"
+    },
+    {
+      "txt": "Kiwi.com: SCL-BBA feb-2027 desde USD 133 RT",
+      "url": "https://kiwi.com/u/p2p52x"
+    },
+    {
+      "txt": "Kiwi.com: SCL-PMC dic-2026 desde USD 109 RT",
+      "url": "https://kiwi.com/u/pmt2ju"
+    },
+    {
+      "txt": "Kiwi.com: SCL-CUZ may-2027 USD 339 RT",
+      "url": "https://kiwi.com/u/pdc6yj"
+    },
+    {
+      "txt": "Kiwi.com: SCL-FLN feb-2027 USD 266 RT",
+      "url": "https://kiwi.com/u/gvh6ct"
+    },
+    {
+      "txt": "Kiwi.com: SCL-BRC jul-2027 USD 325 RT",
+      "url": "https://kiwi.com/u/pjp3c3"
+    },
+    {
+      "txt": "Kiwi.com: SCL-Buenos Aires nov-2026 USD 164 RT",
+      "url": "https://kiwi.com/u/7qfpxq"
+    },
+    {
+      "txt": "Kiwi.com: SCL-MDZ mar/abr-2027 USD 168 RT",
+      "url": "https://kiwi.com/u/u69pxn"
+    },
+    {
+      "txt": "Kiwi.com: SCL-AKL mar-2027 USD 2.000 RT (Qantas, con maleta)",
+      "url": "https://kiwi.com/u/u5xfqx"
+    },
+    {
+      "txt": "Kiwi.com: SCL-Tokio mar/abr-2027 USD 2.020 RT",
+      "url": "https://kiwi.com/u/c5xmv3"
+    },
+    {
+      "txt": "Kiwi.com: SCL-Maceió sep-2027 USD 1.741 RT (ruta mala, referencial)",
+      "url": "https://kiwi.com/u/7r8cxu"
+    }
+  ]
+}

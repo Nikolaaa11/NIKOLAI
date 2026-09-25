@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Plan de Vida NIKOLAI</title>
+  <meta name="description" content="Plan de vida año a año: ahorro, inversión, patrimonio, negocio, dónde vivir, vacaciones, alimentación, salud, deporte, estudios y coaches con oportunidades.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23256abf'/><text x='16' y='22' font-family='system-ui' font-size='15' font-weight='700' text-anchor='middle' fill='white'>V</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="vida.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-in">
+      <div class="brand">NIKOLAI <span>· plan de vida</span></div>
+      <div class="scen" role="group" aria-label="Escenario de ingresos">
+        <span class="scen-l">Escenario</span>
+        <div class="seg" id="scenSeg">
+          <button type="button" data-esc="conservador">Conservador</button>
+          <button type="button" data-esc="base">Base</button>
+          <button type="button" data-esc="optimista">Optimista</button>
+        </div>
+      </div>
+      <a class="toplink" href="../">Radiografía</a>
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Cambiar tema">Tema</button>
+    </div>
+    <nav class="tabs" id="tabs" role="tablist" aria-label="Secciones del plan"></nav>
+  </header>
+
+  <main id="main">
+    <div class="example-banner" id="exampleBanner" hidden>
+      Estás viendo un <b>perfil de ejemplo</b>. Pon tus datos reales en <a href="#perfil">Mi perfil</a> y todo el plan se recalcula en tu navegador.
+    </div>
+
+    <section class="panel" id="p-resumen" data-tab="resumen"></section>
+    <section class="panel" id="p-perfil" data-tab="perfil"></section>
+    <section class="panel" id="p-dinero" data-tab="dinero"></section>
+    <section class="panel" id="p-inversion" data-tab="inversion"></section>
+    <section class="panel" id="p-patrimonio" data-tab="patrimonio"></section>
+    <section class="panel" id="p-negocio" data-tab="negocio"></section>
+    <section class="panel" id="p-vivir" data-tab="vivir"></section>
+    <section class="panel" id="p-vacaciones" data-tab="vacaciones"></section>
+    <section class="panel" id="p-alimentacion" data-tab="alimentacion"></section>
+    <section class="panel" id="p-salud" data-tab="salud"></section>
+    <section class="panel" id="p-deporte" data-tab="deporte"></section>
+    <section class="panel" id="p-estudios" data-tab="estudios"></section>
+    <section class="panel" id="p-coaches" data-tab="coaches"></section>
+    <section class="panel" id="p-anio" data-tab="anio"></section>
+    <section class="panel" id="p-prompt" data-tab="prompt"></section>
+  </main>
+
+  <footer>
+    Plan orientativo generado con Claude Code a partir de tu cuenta y de datos públicos con fuente. No reemplaza a un médico ni a un asesor financiero con tu información completa. Tus datos se guardan solo en este navegador.
+  </footer>
+
+  <div class="tooltip" id="tip" role="tooltip"></div>
+
+  <script src="data.js"></script>
+  <script src="contenido.js"></script>
+  <script src="engine.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

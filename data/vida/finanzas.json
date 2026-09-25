@@ -1,0 +1,978 @@
+{
+  "meta": {
+    "fecha_corte": "2026-09-25",
+    "moneda": "CLP salvo indicación",
+    "nota": "Datos recopilados vía búsqueda web (resúmenes de resultados). Varias fuentes primarias (bcentral.cl, sii.cl) no pudieron abrirse directamente; valores marcados 'estimado' no fueron verificados contra fuente primaria. No constituye asesoría personalizada.",
+    "estado_verificacion": {
+      "verificado_en_fuente_secundaria_o_primaria": "UF, UTM, IPC, TPM, EEE, cotización empleador, APV topes, tramos IGC, retención honorarios, Pro Pyme, TER ETFs principales, tasa hipotecaria promedio",
+      "estimado": "rentabilidades reales esperadas, cap rate por comuna, algunas comisiones (IBKR LSE, custodia Renta4), tope imponible, UTA 2026"
+    }
+  },
+  "macro": {
+    "uf": {
+      "valor": 41016.28,
+      "fecha": "2026-09-25",
+      "uf_30_sep_2026": 41057.2,
+      "variacion_sep_2026": "+0,45% en el mes",
+      "fuente": "https://patrimore.com/herramientas/valor-de-la-uf ; https://www.uf-hoy.com/ ; https://www.sii.cl/valores_y_fechas/uf/uf2026.htm"
+    },
+    "utm": {
+      "valor": 71721,
+      "mes": "septiembre 2026",
+      "fuente": "https://valor-utm.cl/utm-historico/2026/septiembre/ ; https://www.sii.cl/valores_y_fechas/utm/utm2026.htm"
+    },
+    "uta": {
+      "valor_AT2026": 834504,
+      "nota": "UTA de dic-2025 usada en Operación Renta 2026 (rentas 2025). La UTA para AT2027 (dic-2026) aún no existe; estimado ≈ $865.000–875.000.",
+      "fuente": "https://www.rankia.cl/blog/sii/2457838-impuesto-global-complementario-tabla-calculo-ejemplos"
+    },
+    "ipc": {
+      "agosto_2026_mensual": "0,6%",
+      "acumulado_2026_a_agosto": "3,6%",
+      "doce_meses_agosto_2026": "4,1%",
+      "fuente": "https://www.ine.gob.cl/sala-de-prensa/prensa/general/noticia/2026/09/08/%C3%ADndice-de-precios-al-consumidor-(ipc)-de-agosto-present%C3%B3-una-variaci%C3%B3n-mensual-de-0-6"
+    },
+    "expectativa_inflacion": {
+      "EEE_sep_2026_dic_2026": "4,4%",
+      "EEE_12_meses": "3,3%",
+      "EEE_24_meses": "3,0%",
+      "IPoM_sep_2026": "Algo sobre 4% a fines de 2026; convergencia a 3% en 2T-2027",
+      "meta_BCCh": "3% (rango 2–4%)",
+      "fuente": "https://www.cnnchile.com/negocios/encuesta-expectativas-economicas-eleva-44-proyeccion-inflacion-tpm-se-mantendria-45/ ; https://www.bcentral.cl/resumen-ipom/-/detalle/resumen-ipom-septiembre-2026"
+    },
+    "tpm": {
+      "valor": "4,50%",
+      "decision": "Mantenida por unanimidad en RPM de septiembre 2026",
+      "expectativa": "EEE: se mantendría en 4,5% hasta fin de 2026; primer recorte esperado a inicios de 2027",
+      "fuente": "https://www.bcentral.cl/web/banco-central/contenido/-/detalle/prensa/nota-de-prensa/bcch-publica-ipom-septiembre-2026 ; https://www.cnnchile.com/negocios/encuesta-expectativas-economicas-eleva-44-proyeccion-inflacion-tpm-se-mantendria-45/"
+    },
+    "dolar_observado": {
+      "valor": 965.71,
+      "fecha": "2026-09-25",
+      "nota": "El brief indicaba ~946; las fuentes consultadas muestran que el dólar cerró ~$962 el 24-sep y $965,71 el 25-sep (máximo de 2026) por alza global del USD, caída del cobre y petróleo. ~946 corresponde a niveles de días previos. Verificar valor oficial en SII/BCCh.",
+      "fuente": "https://portalinnova.cl/dolar-marca-su-maximo-de-2026-al-cierre-de-septiembre-petroleo-cobre-y-la-fed-presionan-el-peso/ ; https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/09/24/el-dolar-se-dispara-a-niveles-no-vistos-desde-2025-el-cobre-y-petroleo-ponen-presion-al-peso-chileno.shtml ; https://www.sii.cl/valores_y_fechas/dolar/dolar2026.htm"
+    },
+    "tasas_referencia": {
+      "captacion_bcch_18jun2026_anual": {
+        "30d": "4,47%",
+        "90d": "4,55%",
+        "180d": "4,66%",
+        "360d": "4,97%"
+      },
+      "btu_bcu_10_anios": "≈2,52% real (UF+) al 8-jun-2026; a sep-2026 estimado 2,5–3,0% por alza global de tasas largas",
+      "treasury_eeuu_10y": "5,1% (23-sep-2026, máximo en 19 años)",
+      "fuente": "https://www.rankia.cl/blog/mejores-depositos-a-plazo/3257869-cuales-son-mejores-depositos-plazo ; https://si3.bcentral.cl/siete/ES/Siete/Cuadro/CAP_EST_OMA/MN_EST_OMA/TMS_16?idSerie=F022.BUF.TIS.AN10.UF.Z.D ; https://abc17news.com/cnn-spanish/2026/09/23/el-rendimiento-de-los-bonos-del-tesoro-a-10-anos-alcanza-el-51-por-primera-vez-en-19-anos/"
+    },
+    "equivalencias_utiles_clp": {
+      "6_UTM_tope_bonificacion_APV_A": 430326,
+      "50_UF_tope_mensual_APV_B": 2050814,
+      "600_UF_tope_anual_APV": 24609768,
+      "13_5_UTA_exento_IGC_AT2026": 11265804,
+      "310_UTA_inicio_tramo_40pct_AT2026": 258696240,
+      "30_UTM_exencion_cuenta2": 2151630,
+      "nota": "Calculado con UF 25-sep-2026, UTM sep-2026 y UTA AT2026."
+    },
+    "contexto": "Shock petrolero por tensiones en Ormuz, dólar global fuerte y tasas largas al alza (sep-2026). Inflación sobre meta; BCCh en pausa."
+  },
+  "instrumentos": [
+    {
+      "id": "dap_pesos",
+      "nombre": "Depósito a plazo en pesos (30/90/365 días)",
+      "categoria": "corto_plazo",
+      "rent_real_esperada": "0–0,8%",
+      "rent_nominal_referencia": "30d bancos: 0,25–0,46% mensual (≈3–5,5% anual); promedio ~0,36% mensual (≈4,3% anual, sep-2026). BCCh captación jun-2026: 4,47% (30d), 4,55% (90d), 4,97% (360d)",
+      "costo": "Sin comisión",
+      "liquidez": "Al vencimiento (renovable); no rescatable antes",
+      "riesgo": "bajo",
+      "para_que": "Fondo de emergencia escalonado, caja para metas <12 meses, dinero del negocio en espera",
+      "donde": "Ripley, BTG Pactual, Internacional, Consorcio (tasas más altas); BancoEstado, Santander, Chile, BCI, Scotiabank (bajo promedio); también vía Racional sin comisión",
+      "fuente": "https://chocale.cl/2026/09/depositos-a-plazo-dap-mejor-tasa-septiembre/ ; https://finclaro.cl/calculadoras/comparador-depositos ; https://www.rankia.cl/blog/mejores-depositos-a-plazo/3257869-cuales-son-mejores-depositos-plazo"
+    },
+    {
+      "id": "dap_uf",
+      "nombre": "Depósito a plazo reajustable en UF (≥90 días)",
+      "categoria": "corto_plazo",
+      "rent_real_esperada": "0,5–2% (estimado)",
+      "costo": "Sin comisión",
+      "liquidez": "Mínimo 90 días; al vencimiento",
+      "riesgo": "bajo",
+      "para_que": "Proteger metas de 3–18 meses contra inflación (ej. pie de vivienda)",
+      "donde": "Bancos (BancoEstado, Consorcio, BCI, etc.)",
+      "fuente": "estimado; tasas en https://www.bancoestado.cl/bancoestado/DepPlazoTasas.asp"
+    },
+    {
+      "id": "cuenta_remunerada",
+      "nombre": "Cuenta remunerada / cuenta de ahorro",
+      "categoria": "liquidez",
+      "rent_real_esperada": "−2% a +1,8%",
+      "rent_nominal_referencia": "Tenpo cuenta remunerada 6% anual (saldo mínimo diario $50.000; verificar topes/condiciones). Cuentas de ahorro bancarias tradicionales: bajo o cercano a UF+0% (estimado)",
+      "costo": "Sin comisión de administración",
+      "liquidez": "Inmediata (T+0)",
+      "riesgo": "bajo",
+      "para_que": "Primer tramo del fondo de emergencia y caja operativa",
+      "donde": "Tenpo, Mercado Pago, bancos digitales; cuentas de ahorro BancoEstado/bancos",
+      "fuente": "https://tasas.cl/tenpo ; https://www.tenpo.cl/productos/cuenta-remunerada"
+    },
+    {
+      "id": "ffmm_money_market",
+      "nombre": "Fondo mutuo money market / deuda ≤90 días",
+      "categoria": "liquidez",
+      "rent_real_esperada": "−0,5% a +0,5%",
+      "rent_nominal_referencia": "≈ TPM (4,5%) menos comisión → ~3,5–4,5% nominal (estimado)",
+      "costo": "Rem./TAC 0,05%–1,2% anual según serie (Santander MM informa gasto 0,05%; Fintual Streep 1,19%; Racional DAP 0%)",
+      "liquidez": "T+1 (rescate en 1 día hábil)",
+      "riesgo": "bajo",
+      "para_que": "Fondo de emergencia con liquidez diaria; estacionar caja entre inversiones",
+      "donde": "Fintual (Very Conservative Streep), Santander AM, BCI, BICE, LarrainVial, Racional",
+      "fuente": "https://www.rankia.cl/blog/fondos-mutuos-agf/3151875-mejores-fondos-mutuos-chile ; https://fintual.cl/money-market/"
+    },
+    {
+      "id": "apv_a",
+      "nombre": "APV Régimen A",
+      "categoria": "previsional",
+      "rent_real_esperada": "Rentabilidad del fondo subyacente + bonificación fiscal 15% (efecto one-off por aporte)",
+      "beneficio": "Bonificación estatal 15% del ahorro, tope 6 UTM/año (≈$430.326 con UTM sep-2026)",
+      "costo": "Según administrador: Fintual APV 0,49% anual; AFP/AGF típicamente 0,5–1,5% (estimado)",
+      "liquidez": "Retirable, pero se pierde la bonificación y la rentabilidad tributa; pensado para jubilación",
+      "riesgo": "medio",
+      "para_que": "Ahorro jubilación para quienes pagan poco o nada de impuesto (tramo exento o 4–8%)",
+      "donde": "AFP, Fintual, AGF bancarias, compañías de seguros, corredoras",
+      "fuente": "https://www.aafp.cl/noticias/apv-regimen-a-o-regimen-b/ ; https://www.spensiones.cl/portal/institucional/594/w3-article-5795.html"
+    },
+    {
+      "id": "apv_b",
+      "nombre": "APV Régimen B",
+      "categoria": "previsional",
+      "rent_real_esperada": "Rentabilidad del fondo + ahorro tributario = tasa marginal IGC/IUSC (4%–40%) al aportar",
+      "beneficio": "Rebaja de la base imponible. Tope 50 UF/mes por planilla o 600 UF/año depósito directo (≈$24.609.768/año)",
+      "costo": "Igual que APV A (0,49%–1,5% anual según administrador)",
+      "liquidez": "Retiro antes de pensión paga impuesto único (art. 42 bis LIR); pensado para jubilación",
+      "riesgo": "medio",
+      "para_que": "Ahorro jubilación con diferimiento tributario para tramos altos (≥13,5% marginal)",
+      "donde": "AFP, Fintual, AGF, seguros, corredoras",
+      "fuente": "https://www.aafp.cl/noticias/apv-regimen-a-o-regimen-b/ ; https://www.simulaapv.cl/tope-apv"
+    },
+    {
+      "id": "apvc",
+      "nombre": "APVC (APV Colectivo)",
+      "categoria": "previsional",
+      "rent_real_esperada": "Fondo subyacente + aporte del empleador (match) + beneficio A/B",
+      "costo": "Según administrador (similar a APV)",
+      "liquidez": "Aportes del empleador sujetos a permanencia/vesting según contrato",
+      "riesgo": "medio",
+      "para_que": "Beneficio de retención de talento; aplicable si se tiene SpA con trabajadores (incluido el dueño contratado)",
+      "donde": "AFP y administradoras de APV autorizadas",
+      "fuente": "https://www.cmfchile.cl/educa/621/w3-propertyvalue-580.html ; https://www.aafp.cl/temas-previsionales/cuenta-de-ahorro-previsional-voluntario-colectivo-apvc/"
+    },
+    {
+      "id": "cuenta2_afp",
+      "nombre": "Cuenta 2 AFP (ahorro voluntario)",
+      "categoria": "largo_plazo",
+      "rent_real_esperada": "Según multifondo A–E: 0,5–5% (estimado)",
+      "costo": "0,2%–0,96% anual sobre saldo (ej. UNO 0,6%; Habitat 0,95%)",
+      "liquidez": "Hasta 24 giros/año; pago en pocos días",
+      "riesgo": "medio",
+      "para_que": "Ahorro flexible de mediano/largo plazo en multifondos; sin beneficio 108 (no se puede traspasar sin rescatar)",
+      "donde": "Cualquier AFP",
+      "tributacion": "Régimen general: giros exentos si la rentabilidad del año <30 UTM; sobre eso tributa toda la rentabilidad en IGC",
+      "fuente": "https://www.spensiones.cl/portal/institucional/594/w3-propertyvalue-9930.html ; https://monedario.cl/posts/que-es-la-cuenta-2-afp/"
+    },
+    {
+      "id": "fintual",
+      "nombre": "Fintual (fondos mutuos indexados: Risky Norris, Moderate Pitt, Conservative Clooney, Very Conservative Streep)",
+      "categoria": "largo_plazo",
+      "rent_real_esperada": "Risky Norris 3–6%; Moderate Pitt 2–4%; Clooney 1–2%; Streep 0–0,5% (estimado, neto de comisión)",
+      "costo": "1,19% anual IVA incl. en serie general; 0,49% anual en serie APV (cobro diario)",
+      "liquidez": "Rescate T+1 a T+3 (según fondo)",
+      "riesgo": "alto (Norris) / medio (Pitt) / bajo (Clooney, Streep)",
+      "para_que": "Inversión automática diversificada con beneficio 108 LIR; APV de bajo costo",
+      "donde": "fintual.cl",
+      "fuente": "https://ayuda.fintual.cl/es/articles/3207275-cual-es-la-comision-de-fintual ; https://fintual.cl/risky-norris"
+    },
+    {
+      "id": "racional",
+      "nombre": "Racional (Stocks y Portafolios de ETFs)",
+      "categoria": "largo_plazo",
+      "rent_real_esperada": "Según ETFs elegidos (acciones globales ~4–6% real en USD, estimado)",
+      "costo": "Stocks: $0 comisión hasta 10 transacciones/mes; gana con spread de tipo de cambio. Portafolios: 1,00% anual IVA incl. DAP: sin comisión",
+      "liquidez": "Venta T+1/T+2 + transferencia USD→CLP",
+      "riesgo": "alto",
+      "para_que": "Acceso fraccionado a ETFs de EE.UU. (desde US$5) desde Chile",
+      "donde": "racional.cl (custodia DriveWealth, miembro FINRA/SIPC)",
+      "fuente": "https://racional.cl/preguntas-frecuentes ; https://ayuda.racional.cl/es/articles/6287831-cuanto-cuesta-invertir-por-racional-portafolios ; https://wise.com/cl/blog/racional-chile"
+    },
+    {
+      "id": "tenpo_inversiones",
+      "nombre": "Tenpo Inversiones (fondos Credicorp)",
+      "categoria": "largo_plazo",
+      "rent_real_esperada": "Según perfil (estimado 0,5–5%)",
+      "costo": "1,15%–1,17% anual; retiros $0; desde $1.000",
+      "liquidez": "T+1 a T+3",
+      "riesgo": "bajo a alto según fondo",
+      "para_que": "Ahorro automatizado de montos pequeños (bolsillos, redondeo)",
+      "donde": "Tenpo app",
+      "fuente": "https://www.rankia.cl/blog/fondos-mutuos-agf/5711129-analisis-tenpo-inversiones"
+    },
+    {
+      "id": "renta4",
+      "nombre": "Renta 4 Chile (corredora)",
+      "categoria": "largo_plazo",
+      "rent_real_esperada": "Según instrumento",
+      "costo": "Nacional: 0,15% + $3.500 por día con órdenes (+IVA). Internacional: 0,25% + IVA, mínimo US$15/€15. Cobro mensual por mantención de cuenta mandante (monto no verificado)",
+      "liquidez": "T+2",
+      "riesgo": "según instrumento",
+      "para_que": "Acceso a acciones/ETFs locales e internacionales con corredora regulada CMF",
+      "donde": "renta4.cl",
+      "fuente": "https://www.renta4.cl/plataforma-de-inversion/nuestras-tarifas ; https://www.renta4.cl/content/dam/rentabanco/renta4chile/documentos/tarifas/Renta-4-Tarifas.pdf"
+    },
+    {
+      "id": "corredoras_locales",
+      "nombre": "Corredoras de bolsa locales (costos típicos)",
+      "categoria": "largo_plazo",
+      "rent_real_esperada": "Según instrumento",
+      "costo": "Corretaje 0,15%–0,6% del monto + derechos de bolsa 0,03–0,05% + IVA; en internacional + spread CLP/USD y a veces custodia",
+      "liquidez": "T+2",
+      "riesgo": "según instrumento",
+      "para_que": "Comprar ETFs locales acogidos a 107 (ej. ETF Singular S&P 500) o acciones IPSA",
+      "donde": "BTG, LarrainVial, Santander, BCI, Zesty, Trii, Falabella Inversiones",
+      "fuente": "https://www.rankia.cl/blog/corredores-bolsa/7016987-costos-totales-invertir-chile-comisiones-derechos-iva"
+    },
+    {
+      "id": "ibkr",
+      "nombre": "Interactive Brokers (broker internacional)",
+      "categoria": "largo_plazo",
+      "rent_real_esperada": "Según ETF (acciones globales ~4–6% real en USD, estimado)",
+      "costo": "EE.UU. Tiered: US$0,0035/acción, mín US$0,35, máx 1% del trade; >150 ETFs sin comisión (programa NTF). Europa/LSE Tiered: 0,05% mín €1,25 (LSE sin tope; Fixed suele convenir en LSE). Sin custodia; conversión FX de bajo costo (estimado ~0,002%, mín US$2)",
+      "liquidez": "T+1 (EE.UU.) / T+2 (Europa) + transferencia internacional",
+      "riesgo": "alto",
+      "para_que": "ETFs UCITS acumulativos (VWRA, IWDA, SSAC) o de EE.UU. (VT, VOO) al menor costo; mayor complejidad tributaria (declarar en F22)",
+      "donde": "interactivebrokers.com (acepta residentes chilenos)",
+      "fuente": "https://www.interactivebrokers.com/en/pricing/commissions-stocks.php ; https://www.interactivebrokers.com/es/trading/commission-free-etfs-mkt.php"
+    },
+    {
+      "id": "etf_vt",
+      "nombre": "ETF VT – Vanguard Total World Stock (EE.UU.)",
+      "categoria": "largo_plazo",
+      "rent_real_esperada": "4–6% en USD real (estimado)",
+      "costo": "TER 0,06%",
+      "liquidez": "Diaria (NYSE Arca)",
+      "riesgo": "alto",
+      "para_que": "Acciones globales (desarrollados + emergentes) en un solo fondo. Domicilio EE.UU.: dividendos con retención 15% (tratado Chile-EE.UU.) y exposición a impuesto a la herencia de EE.UU. para no residentes (>US$60.000)",
+      "donde": "IBKR, Racional, corredoras con acceso internacional",
+      "fuente": "https://investor.vanguard.com/investment-products/etfs/profile/vt"
+    },
+    {
+      "id": "etf_vwra",
+      "nombre": "ETF VWRA/VWCE – Vanguard FTSE All-World UCITS (Irlanda, acumulación)",
+      "categoria": "largo_plazo",
+      "rent_real_esperada": "4–6% en USD real (estimado)",
+      "costo": "TER 0,19% (fuentes discrepan: 0,14%–0,22%; verificar ficha Vanguard vigente)",
+      "liquidez": "Diaria (LSE en USD / Xetra en EUR)",
+      "riesgo": "alto",
+      "para_que": "Acciones globales acumulativas; evita impuesto a la herencia de EE.UU.; 15% de retención ocurre a nivel del fondo",
+      "donde": "IBKR, brokers europeos",
+      "fuente": "https://www.justetf.com/en/etf-profile.html?isin=IE00BK5BQT80 ; https://fund-docs.vanguard.com/FTSE_All-World_UCITS_ETF_USD_Accumulating_9679_EU_INT_UK_EN.pdf"
+    },
+    {
+      "id": "etf_iwda",
+      "nombre": "ETF IWDA/SWDA – iShares Core MSCI World UCITS (sólo desarrollados)",
+      "categoria": "largo_plazo",
+      "rent_real_esperada": "4–6% en USD real (estimado)",
+      "costo": "TER 0,20%",
+      "liquidez": "Diaria (LSE/Euronext)",
+      "riesgo": "alto",
+      "para_que": "Acciones de mercados desarrollados; combinable con EIMI para emergentes",
+      "donde": "IBKR, brokers europeos",
+      "fuente": "https://www.justetf.com/en/etf-profile.html?isin=IE00B4L5Y983 ; https://www.ishares.com/uk/individual/en/products/251882/ishares-msci-world-ucits-etf-acc-fund"
+    },
+    {
+      "id": "etf_acwi",
+      "nombre": "ETF ACWI (EE.UU.) / SSAC (UCITS) – iShares MSCI ACWI",
+      "categoria": "largo_plazo",
+      "rent_real_esperada": "4–6% en USD real (estimado)",
+      "costo": "ACWI TER 0,32%; SSAC (UCITS) ~0,20% (estimado)",
+      "liquidez": "Diaria",
+      "riesgo": "alto",
+      "para_que": "Alternativa global; más cara que VT",
+      "donde": "IBKR, Racional (ACWI), corredoras",
+      "fuente": "https://www.ishares.com/us/products/239600/ishares-msci-acwi-etf ; https://www.ishares.com/uk/individual/en/products/251850/ishares-msci-acwi-ucits-etf"
+    },
+    {
+      "id": "etf_sp500",
+      "nombre": "ETF S&P 500 – VOO / SPY (EE.UU.)",
+      "categoria": "largo_plazo",
+      "rent_real_esperada": "4–6,5% en USD real (estimado; valoraciones altas reducen expectativa)",
+      "costo": "VOO 0,03%; SPY 0,0945%",
+      "liquidez": "Diaria",
+      "riesgo": "alto",
+      "para_que": "Exposición concentrada en EE.UU. (no diversificación global)",
+      "donde": "IBKR, Racional, corredoras",
+      "fuente": "https://www.fool.com/investing/2026/09/19/voo-vs-spy-is-there-actually-a-difference/"
+    },
+    {
+      "id": "bonos_uf_btu",
+      "nombre": "Bonos del Tesoro en UF (BTU) / Bonos BCU",
+      "categoria": "largo_plazo",
+      "rent_real_esperada": "2,5–3% real si se mantiene a vencimiento (BTU-10 ≈2,52% al 8-jun-2026; sep-2026 estimado 2,5–3%)",
+      "costo": "Corretaje 0,1–0,5% + custodia según corredora (estimado)",
+      "liquidez": "Mercado secundario (Bolsa de Santiago); precio fluctúa con tasas",
+      "riesgo": "bajo (crédito soberano) / medio (duración)",
+      "para_que": "Ancla real en UF para objetivos de largo plazo y parte defensiva del portafolio",
+      "donde": "Corredoras de bolsa (BTG, LarrainVial, Santander, BCI, Renta4)",
+      "fuente": "https://si3.bcentral.cl/siete/ES/Siete/Cuadro/CAP_EST_OMA/MN_EST_OMA/TMS_16?idSerie=F022.BUF.TIS.AN10.UF.Z.D ; https://www.hacienda.cl/areas-de-trabajo/finanzas-internacionales/oficina-de-la-deuda-publica/estadisticas/caracteristicas-financieras-bonos-locales"
+    },
+    {
+      "id": "ffmm_deuda_uf",
+      "nombre": "Fondos mutuos de deuda en UF (mediano/largo plazo)",
+      "categoria": "largo_plazo",
+      "rent_real_esperada": "1–2,5% real neto de comisión (estimado)",
+      "costo": "Remuneración 0,5–1,5% anual (estimado); Fintual Conservative Clooney 1,19%",
+      "liquidez": "T+1 a T+10",
+      "riesgo": "bajo a medio",
+      "para_que": "Renta fija diversificada sin comprar bonos directo; beneficio 108 (traspaso sin tributar)",
+      "donde": "Fintual, AGF bancarias, LarrainVial, BICE, Security",
+      "fuente": "https://www.rankia.cl/blog/fondos-mutuos-agf/3151875-mejores-fondos-mutuos-chile"
+    },
+    {
+      "id": "depto_arriendo",
+      "nombre": "Departamento para arriendo (Gran Santiago)",
+      "categoria": "inmobiliario",
+      "rent_real_esperada": "Neta sin deuda 3–4,5% + plusvalía real 0–2% (estimado)",
+      "costo": "Gastos de compra ~2–4% del precio (notaría, CBR, tasación, impuesto de timbres 0,8% del crédito, corretaje; estimado); contribuciones 0,893%/1,042% del avalúo sobre exento; mantención 5–8% del arriendo; vacancia 8–10%",
+      "liquidez": "Baja (3–12 meses para vender)",
+      "riesgo": "medio",
+      "para_que": "Diversificación en activo real en UF; apalancamiento hipotecario",
+      "donde": "Portal Inmobiliario, Toctoc, Assetplan, Houm, Propital",
+      "fuente": "https://blog.houm.com/rentabilidad-real-de-tu-departamento-en-chile-2026-como-calcularla-bien-y-no-solo-mirar-el-arriendo-mensual/"
+    },
+    {
+      "id": "fondos_inversion_rentas",
+      "nombre": "Fondos de inversión inmobiliarios / de rentas (cuotas en bolsa)",
+      "categoria": "inmobiliario",
+      "rent_real_esperada": "3–6% (estimado)",
+      "costo": "Remuneración 0,5–1,5% + corretaje (estimado)",
+      "liquidez": "Media-baja (bolsa, baja presencia)",
+      "riesgo": "medio",
+      "para_que": "Exposición inmobiliaria sin comprar propiedad; algunas cuotas con presencia bursátil acogidas a 107",
+      "donde": "Corredoras; administradoras (LarrainVial, Toesca, BTG, Independencia)",
+      "fuente": "estimado"
+    },
+    {
+      "id": "spa_propia",
+      "nombre": "SpA propia (reinversión en el negocio de software/IA)",
+      "categoria": "negocio",
+      "rent_real_esperada": "Muy variable: −100% a >30% (estimado)",
+      "costo": "Contabilidad ~1–5 UF/mes (estimado); IDPC Pro Pyme 12,5% (2025–2027)",
+      "liquidez": "Baja",
+      "riesgo": "alto",
+      "para_que": "Capturar retorno del capital humano; separar patrimonio personal; diferimiento tributario de utilidades no retiradas",
+      "donde": "Registro Empresa en un Día / SII",
+      "fuente": "https://www.circuloverde.cl/extension-de-la-rebaja-de-tasas-de-impuesto-de-primera-categoria-y-de-ppm-para-el-regimen-propyme-14-d-3-de-la-lir/"
+    }
+  ],
+  "impuestos": [
+    {
+      "tema": "Impuesto Global Complementario / Único 2ª categoría – tramos",
+      "detalle": "Anual en UTA (IGC) y mensual en UTM (IUSC), mismas tasas: 0–13,5 exento; 13,5–30: 4%; 30–50: 8%; 50–70: 13,5%; 70–90: 23%; 90–120: 30,4%; 120–310: 35%; >310: 40% (tramo creado por Ley 21.210). UTA AT2026 = $834.504 → exento hasta $11.265.804; 40% sobre $258.696.240. Con UTM sep-2026 ($71.721) el IUSC mensual es exento hasta ≈$968.000.",
+      "fuente": "https://www.rankia.cl/blog/sii/2457838-impuesto-global-complementario-tabla-calculo-ejemplos ; https://www.aem.cl/40-de-tasa-el-impuesto-global-complementario/"
+    },
+    {
+      "tema": "Retención boletas de honorarios",
+      "detalle": "15,25% en 2026 (desde 1-ene-2026); 16% en 2027; 17% en 2028 (Ley 21.133). La retención financia cotizaciones de seguridad social de independientes en la Operación Renta (orden: SIS → ATEP → SANNA → Salud → AFP); el saldo se imputa a impuestos. Boletas 2026 se declaran en OR 2027.",
+      "fuente": "https://www.sii.cl/noticias/2025/261225noti01smn.htm ; https://www.aafp.cl/noticias/retencion-boletas-honorarios-2026/"
+    },
+    {
+      "tema": "Fondos mutuos – art. 107 LIR (acciones con presencia bursátil)",
+      "detalle": "Mayor valor en rescate de cuotas de FM con ≥90% en acciones con presencia bursátil (y ETFs/cuotas locales con presencia) paga impuesto único 10% desde 1-sep-2022 (Ley 21.420). La Ley de Reconstrucción (aprobada por el Congreso 4-ago-2026) elimina ese 10% y lo vuelve ingreso no renta desde 1-ene-2027, sujeto a su publicación en el Diario Oficial (no confirmada al 25-sep-2026).",
+      "fuente": "https://www.aafm.cl/2016/wp-content/uploads/2022/10/Actualizaci%C3%B3n-Beneficios-Tributarios-Fondos-Mutuos-septiembre-2022.pdf ; https://www.carey.cl/reforma-tributaria/ganancia-de-capital-en-instrumentos-con-presencia-bursatil ; https://assets.kpmg.com/content/dam/kpmgsites/cl/pdf/2026/08/Tax%20Alert%20Aprobaci%C3%B3n%20Ley%20de%20Reconstrucci%C3%B3n.pdf.coredownload.inline.pdf"
+    },
+    {
+      "tema": "Fondos mutuos – art. 108 LIR (traspaso sin tributar)",
+      "detalle": "Si el rescate se reinvierte en otro fondo mutuo (misma u otra administradora) se posterga la tributación del mayor valor. No aplica a Cuenta 2 AFP.",
+      "fuente": "https://ayuda.fintual.cl/es/articles/3207826-existen-beneficios-tributarios ; https://www.aafm.cl/2016/wp-content/uploads/2022/10/Actualizaci%C3%B3n-Beneficios-Tributarios-Fondos-Mutuos-septiembre-2022.pdf"
+    },
+    {
+      "tema": "Fondos mutuos sin beneficio 107 (renta fija, balanceados, money market)",
+      "detalle": "El mayor valor al rescatar tributa en IGC en el año del rescate (con costo de adquisición reajustado; estimado). Mientras no se rescate, no hay tributación.",
+      "fuente": "https://www.aafm.cl/2016/wp-content/uploads/2022/10/Actualizaci%C3%B3n-Beneficios-Tributarios-Fondos-Mutuos-septiembre-2022.pdf"
+    },
+    {
+      "tema": "ETFs extranjeros (VT, VOO, VWRA, IWDA) – ganancias de capital",
+      "detalle": "No aplica art. 107: la ganancia al vender se grava como renta ordinaria en IGC a la tasa marginal (0–40%) y debe declararse en F22 aunque el broker sea extranjero (el SII recibe información vía CRS). ETFs locales con presencia bursátil (ej. ETF Singular S&P 500) sí tributan 10% (0% desde 2027 si se publica la Ley de Reconstrucción).",
+      "fuente": "https://www.awaketrader.com/educacion/impuestos-trading-chile ; https://www.el-fondo.com/es/articles/impuestos-etfs-chile-inversionistas-minoristas-sii-tratado-formulario-22 ; https://www.sii.cl/preguntas_frecuentes/declaracion_renta/001_140_1578.htm"
+    },
+    {
+      "tema": "Dividendos de ETFs de EE.UU. – convenio Chile-EE.UU.",
+      "detalle": "Convenio para evitar doble tributación vigente; desde 1-feb-2024 la retención sobre dividendos baja de 30% a 15% (5% sólo participaciones ≥10%, no aplica a ETFs/RIC). El dividendo se declara en IGC con crédito por impuesto pagado en el exterior (estimado: sujeto a límites art. 41 A). ETFs UCITS irlandeses acumulativos sufren 15% a nivel de fondo y no distribuyen.",
+      "fuente": "https://fintualist.com/chile/educacion-financiera/tus-inversiones-en-fintual-mejoran-con-el-nuevo-convenio-tributario-chile-estados-unidos/ ; https://ayuda.racional.cl/es/articles/6027124-que-es-el-withholding-tax-de-los-dividendos-e-intereses-de-estados-unidos"
+    },
+    {
+      "tema": "Impuesto a la herencia de EE.UU. (ETFs domiciliados en EE.UU.)",
+      "detalle": "No residentes en EE.UU. con activos 'US-situs' (acciones/ETFs de EE.UU.) sobre US$60.000 pueden quedar afectos al estate tax de EE.UU.; el convenio Chile-EE.UU. es de renta, no de herencia. Los ETFs UCITS (Irlanda) evitan este riesgo. (No verificado en esta sesión; regla ampliamente documentada por el IRS).",
+      "fuente": "https://www.irs.gov/individuals/international-taxpayers/some-nonresidents-with-us-assets-must-file-estate-tax-returns"
+    },
+    {
+      "tema": "APV régimen A vs B",
+      "detalle": "A: bonificación 15% del aporte, tope 6 UTM/año; conviene con tasa marginal baja. B: el aporte rebaja la base imponible (tope 50 UF/mes por planilla o 600 UF/año), el beneficio equivale a la tasa marginal (hasta 40%); retiros anticipados tributan como impuesto único. Tope conjunto A+B+APVC: 600 UF por año calendario.",
+      "fuente": "https://www.aafp.cl/noticias/apv-regimen-a-o-regimen-b/ ; https://www.spensiones.cl/portal/institucional/594/w3-article-5795.html"
+    },
+    {
+      "tema": "Cuenta 2 AFP",
+      "detalle": "Régimen general: giros exentos si la rentabilidad anual de los giros es <30 UTM (≈$2,15 MM); si se supera, tributa el total en IGC. Sin beneficio 108.",
+      "fuente": "https://monedario.cl/posts/que-es-la-cuenta-2-afp/ ; https://www.uno.cl/productos/cuenta2"
+    },
+    {
+      "tema": "Régimen Pro Pyme General (14 D N°3) para una SpA propia",
+      "detalle": "Aplica a empresas con ingresos promedio <75.000 UF (3 últimos años). IDPC transitorio 12,5% en años comerciales 2025, 2026 y 2027; 15% en 2028; tasa normal 25%. PPM reducido a la mitad 2025–2027. Tributación integrada: el socio paga IGC sobre retiros/dividendos con crédito total por el IDPC (estimado). Alternativa Pro Pyme Transparente (14 D N°8): la empresa no paga IDPC y los socios tributan directo en IGC (estimado). Ley de Reconstrucción: tasa pyme 25%→23% desde 2030 y régimen general 27%→25,5% (2027), 24% (2028), 23% (2029).",
+      "fuente": "https://www.circuloverde.cl/extension-de-la-rebaja-de-tasas-de-impuesto-de-primera-categoria-y-de-ppm-para-el-regimen-propyme-14-d-3-de-la-lir/ ; https://aprende.gomaxxa.com/tasa-de-primera-categor%C3%ADa-2025-2029 ; https://www.ex-ante.cl/los-10-cambios-tributarios-del-plan-de-kast-que-cambia-a-quien-beneficia-y-el-costo-fiscal-del-paquete/"
+    },
+    {
+      "tema": "Ley de Reconstrucción Nacional (2026) – estado y medidas para personas",
+      "detalle": "Aprobada por el Congreso el 4-ago-2026; TC resolvió requerimientos (25-ago-2026); promulgación/publicación esperada en septiembre 2026 – no confirmada en fuentes al 25-sep-2026. Medidas: elimina impuesto 10% art. 107 desde 2027; rebaja IDPC a 23% gradual; exención 100% de contribuciones de vivienda principal para mayores de 65; suspensión temporal (1 año) de IVA a primera venta de ciertas viviendas nuevas; régimen voluntario de declaración de activos en el exterior (10%, 7% si se repatrían e invierten); rebaja única 50% impuesto a donaciones; invariabilidad tributaria 25 años para nuevas inversiones.",
+      "fuente": "https://www.infobae.com/america/america-latina/2026/08/05/el-congreso-chileno-aprobo-el-ultimo-articulo-del-plan-de-reconstruccion-nacional-del-gobierno-de-kast/ ; https://www.nss.cl/en/resources/reforma-tributaria-2026 ; https://www.az.cl/en/2026-major-tax-reform-major-changes-approved-and-key-considerations-for-businesses-and-individuals/ ; https://www.df.cl/economia-y-politica/df-tax/iva-a-la-vivienda-repatriacion-de-capitales-e-invariabilidad-tributaria"
+    }
+  ],
+  "pensiones": [
+    {
+      "tema": "Ley 21.735 (reforma de pensiones, publicada 26-mar-2025) – cotización del empleador",
+      "detalle": "Nueva cotización de cargo del empleador, gradual hasta 8,5% adicional en ago-2033 (cotización total 18,5%). Calendario: 1% desde ago-2025; 3,5% desde ago-2026; 4,25% ago-2027; 5% ago-2028; luego +0,7 pp/año 2029–2033. Puede extenderse hasta 11 años si la evaluación de la Ley de Cumplimiento Tributario (fines de 2027) muestra menor recaudación.",
+      "fuente": "https://www.spensiones.cl/portal/institucional/594/w3-propertyvalue-10906.html ; https://www.hacienda.cl/noticias-y-eventos/noticias/implementacion-de-la-reforma-previsional-nueva-cotizacion-del-empleador-regira ; https://www.meganoticias.cl/nacional/528500-reforma-pensiones-prestamo-reembolsable-crp-cotizacion-03-08-2026.html"
+    },
+    {
+      "tema": "Distribución del 3,5% vigente (ago-2026 a jul-2027)",
+      "detalle": "0,1% a la cuenta individual AFP; 0,9% Cotización con Rentabilidad Protegida (préstamo al Seguro Social, sube a 1,5% en ago-2027); 2,5% a Compensación por Expectativa de Vida + SIS. Meta 2033: 6% a cuenta individual y 2,5% a Seguro Social Previsional (incluye SIS). No es descuento al trabajador.",
+      "fuente": "https://www.aafp.cl/noticias/reforma-previsional-cotizacion-adicional-35-agosto-2026/ ; https://www.emol.com/noticias/Economia/2026/08/02/1207170/cambios-sistema-de-pensiones-reforma.html"
+    },
+    {
+      "tema": "Independientes / boletas de honorarios",
+      "detalle": "La cotización del empleador NO aplica a independientes. Siguen cotizando el 10% AFP + SIS + salud, etc. vía retención de honorarios en la Operación Renta (Ley 21.133), sobre 80% de los honorarios brutos anuales con tope imponible (≈90 UF/mes en 2026, estimado). La Ley 21.735 permite a independientes afiliados (<65 años, no pensionados) cotizar voluntariamente al Seguro Social. En OR 2027 aún existiría opción de cobertura parcial (≈90% según fuentes secundarias, estimado).",
+      "fuente": "https://www.ips.gob.cl/noticias/trabajadores-independientes-cotizaciones-para-nueva-reforma-de-pensiones ; https://www.spensiones.cl/portal/institucional/594/w3-propertyvalue-9913.html ; https://calculadoraenlinea.cl/blog/cotizaciones-honorarios-2027/"
+    },
+    {
+      "tema": "Dueño de SpA con sueldo",
+      "detalle": "Si la persona se asigna remuneración como trabajador dependiente de su propia SpA, la SpA (empleador) debe pagar la cotización adicional (3,5% desde ago-2026) sobre esa remuneración; si retira sólo dividendos/retiros, no hay cotización (implica menor ahorro previsional). Interpretación general, verificar con contador.",
+      "fuente": "https://calculadorachile.cl/blog/cotizacion-empleador-3-5-agosto-2026-costo-pyme"
+    },
+    {
+      "tema": "APV / APVC / Cuenta 2",
+      "detalle": "Topes: APV A bonificación 15% tope 6 UTM/año; APV B 50 UF/mes o 600 UF/año; tope conjunto 600 UF/año. Cuenta 2: 24 giros/año, exención si rentabilidad de giros <30 UTM. APVC: aportes del trabajador + empleador, beneficio tributario A/B.",
+      "fuente": "https://www.spensiones.cl/portal/institucional/594/w3-article-5795.html ; https://www.spensiones.cl/portal/institucional/594/w3-propertyvalue-9930.html"
+    },
+    {
+      "tema": "Otros cambios del sistema (contexto)",
+      "detalle": "Aumento gradual de la PGU (calendario por edades 2025–2027, verificar montos), beneficio por años cotizados, y transición de multifondos A–E a fondos generacionales (implementación en curso con controversia a ago-2026; fechas por confirmar).",
+      "fuente": "https://www.gob.cl/noticias/que-viene-ahora-reforma-pensiones-conoce-calendario-informate-cuando-aumentan-jubilaciones/ ; https://www.emol.com/noticias/Economia/2026/08/02/1207170/cambios-sistema-de-pensiones-reforma.html"
+    }
+  ],
+  "inmobiliario": {
+    "tasa_hipotecaria": {
+      "promedio_bcch": "4,06% anual en UF (agosto 2026, mínimo desde dic-2021)",
+      "mejores_ofertas": "Itaú ~3,39% UF; Banco Falabella ~3,70% UF; Banco de Chile y Santander <3,3% UF con garantía FOGAES (primera vivienda ≤4.500 UF, requisitos MINVU)",
+      "fuente": "https://www.neatpagos.com/blog/articulo/mejor-tasa-credito-hipotecario ; https://si3.bcentral.cl/siete/login.aspx?idMenutree=MN_TASA_INTERES_09&idCuadro=TSF_27&idSerie=F022.VIV.TIP.MA03.UF.Z.M"
+    },
+    "pie": {
+      "estandar": "20% (LTV 80%) para segunda vivienda / inversión",
+      "primera_vivienda": "hasta LTV 90% (pie 10%) según banco",
+      "fuente": "https://finclaro.cl/guias/cuanto-sueldo-necesito-credito-hipotecario"
+    },
+    "dividendo_renta": {
+      "regla": "Dividendo ≤25% del ingreso líquido (algunos bancos hasta 30%); carga financiera total ≤45%",
+      "independientes": "Bancos suelen pedir 2 años de F22/boletas y promedian ingresos (estimado)",
+      "fuente": "https://finclaro.cl/guias/cuanto-sueldo-necesito-credito-hipotecario ; https://monedario.cl/posts/credito-hipotecario-chile-guia-completa/"
+    },
+    "rentabilidad_bruta_arriendo": {
+      "promedio_residencial_chile": "≈4,8% bruta",
+      "comunas_mayor_rentabilidad": "Estación Central 5,4%, La Cisterna 5,2% (Toctoc); Independencia/Quinta Normal >4,8% neta en algunos análisis",
+      "pericentro_(Ñuñoa, Providencia, San Miguel, Macul)": "4–4,8% bruta (estimado)",
+      "oriente_(Las Condes, Vitacura, Lo Barnechea)": "3–4% bruta (estimado)",
+      "nota": "Las fuentes difieren mucho según metodología (algunos reportes muestran 2,8–2,9% para Santiago/Ñuñoa). Arriendos Gran Santiago con ocupación >95% (Toctoc).",
+      "fuente": "https://blog.houm.com/rentabilidad-real-de-tu-departamento-en-chile-2026-como-calcularla-bien-y-no-solo-mirar-el-arriendo-mensual/ ; https://www.latercera.com/pulso/noticia/ciudades-y-comunas-donde-es-mas-rentable-comprar-un-departamento-para-arrendarlo/ ; https://blog.toctoc.com/arriendos-en-el-gran-santiago-alcanzan-niveles-de-ocupacion-sobre-el-95-reflejando-alzas-en-precios/ ; https://capitalarriendo.cl/blog/mercado-inmobiliario-chile-tendencias-abril-2026/"
+    },
+    "rentabilidad_neta": {
+      "rango": "3–4,5% anual en Santiago (diferencia bruta-neta 1,5–2 pp); Propital estima 4–6% neta real en proyectos seleccionados",
+      "regla_rapida": "Arriendo mensual × 11 / precio",
+      "fuente": "https://blog.houm.com/rentabilidad-real-de-tu-departamento-en-chile-2026-como-calcularla-bien-y-no-solo-mirar-el-arriendo-mensual/ ; https://www.propital.com/blog/2026-07-10-rentabilidad-inversion-inmobiliaria-chile-2026"
+    },
+    "costos_recurrentes": {
+      "vacancia": "8–10% del ingreso anual (~1 mes)",
+      "mantencion": "5–8% del ingreso anual",
+      "gastos_comunes": "$80.000–$236.000/mes (de cargo del arrendatario si está ocupado)",
+      "administracion": "~7–10% del arriendo si se externaliza (estimado)",
+      "fuente": "https://blog.houm.com/rentabilidad-real-de-tu-departamento-en-chile-2026-como-calcularla-bien-y-no-solo-mirar-el-arriendo-mensual/"
+    },
+    "contribuciones": {
+      "exento_habitacional_2S_2026": "avalúo fiscal hasta $61.711.570",
+      "tasa": "0,893% sobre la parte afecta hasta avalúo $220.398.431; 1,042% sobre el exceso (valores 1-jul-2026); reajuste semestral factor 1,028",
+      "cambio_2026": "Ley de Reconstrucción: exención 100% vivienda principal para mayores de 65 (pendiente publicación)",
+      "dfl2": "DFL-2 (≤140 m²) con rebaja parcial de contribuciones por plazo limitado (estimado; verificar)",
+      "fuente": "https://www.sii.cl/ayudas/ayudas_por_servicios/2242-reajustes_exenciones-2468.html ; https://www.chileatiende.gob.cl/fichas/3229-pago-de-contribuciones-de-bienes-raices-en-sii"
+    },
+    "contexto_mercado": "En 2026 'el arriendo paga el dividendo' ya no aplica en la mayoría de las comunas con pie 20%; el retorno total depende de plusvalía y apalancamiento. Precios de arriendo estabilizados en 2026 tras ciclo de alzas.",
+    "fuente": "https://www.propital.com/blog/2026-05-28-rentabilidad-inversion-inmobiliaria-chile-2026 ; https://blog.houm.com/mercado-inmobiliario-en-santiago-2026-tendencias-y-perspectivas/"
+  },
+  "reglas": [
+    {
+      "regla": "Tasa de retiro segura (regla del 4%)",
+      "detalle": "Bengen/Trinity: 4% inicial ajustado por inflación, 30 años. Morningstar (dic-2025, para 2026): 3,9% base (90% prob. de éxito, 30 años, 30–50% en acciones); hasta 5,7% con estrategias flexibles. Para horizontes de 40–50 años (retiro temprano) suele usarse 3–3,5% (estimado). Equivale a necesitar 25× (4%) a 28,5–33× (3,5–3%) el gasto anual.",
+      "fuente": "https://www.morningstar.com/retirement/whats-safe-retirement-withdrawal-rate-2026 ; https://www.fa-mag.com/news/morningstar-safe-retirement-withdrawal-rate-for-2026-is-3-9-85940.html"
+    },
+    {
+      "regla": "Fondo de emergencia",
+      "detalle": "3–6 meses de gastos esenciales para dependientes; 6–12 meses para independientes o ingresos variables. Mantener en instrumentos líquidos (cuenta remunerada, money market, DAP escalonado).",
+      "fuente": "https://www.infobae.com/peru/2026/07/02/cuanto-dinero-deberias-tener-en-tu-fondo-de-emergencia-segun-tu-edad/"
+    },
+    {
+      "regla": "50/30/20",
+      "detalle": "50% necesidades, 30% deseos, 20% ahorro/deuda (Warren & Warren Tyagi, 'All Your Worth', 2005). Con ingreso variable se suele aplicar sobre un 'sueldo base' fijo y ahorrar el excedente.",
+      "fuente": "Regla popular (no verificada en esta sesión); ver https://www.elimparcial.com/dinero/2026/09/22/la-regla-del-piso-indispensable-ayuda-a-trabajadores-independientes-a-fijar-su-sueldo-mensual-y-administrar-sus-ganancias-ante-la-variabilidad-de-ingresos/"
+    },
+    {
+      "regla": "Glide path acciones/bonos por edad",
+      "detalle": "Heurísticas: % acciones = 100/110/120 − edad (a los 35: 65%/75%/85%). Fondos por fecha objetivo (ej. Vanguard Target Retirement) mantienen ~90% en acciones hasta ~25 años antes del retiro y bajan a ~50% al jubilar (estimado).",
+      "fuente": "Heurística ampliamente citada (estimado)"
+    },
+    {
+      "regla": "Dividendo hipotecario ≤25% del ingreso",
+      "detalle": "Criterio bancario chileno; carga financiera total ≤45%.",
+      "fuente": "https://finclaro.cl/guias/cuanto-sueldo-necesito-credito-hipotecario"
+    },
+    {
+      "regla": "Costos importan",
+      "detalle": "Diferencia de 1% anual en comisiones (ej. 1,19% FM vs 0,06–0,2% ETF) reduce el capital final ~18–20% en 20 años (estimado por interés compuesto).",
+      "fuente": "https://www.rankia.cl/blog/fondos-mutuos-agf/3151875-mejores-fondos-mutuos-chile"
+    }
+  ],
+  "escenarios_rentabilidad": {
+    "nota": "Rentabilidades reales anuales (sobre inflación) de largo plazo, antes de impuestos y de comisiones salvo indicación. Acciones globales medidas en USD real; en CLP real se suma/resta la variación real del tipo de cambio (volátil, neutral a largo plazo; estimado). Supuestos del recopilador, no pronósticos oficiales.",
+    "conservador": {
+      "acciones_globales": "3,0–3,5%",
+      "bonos_uf_btu": "1,0–1,5%",
+      "money_market_dap": "0–0,3%",
+      "inmobiliario_neto_total": "2,0–3,0% (renta neta 3% + plusvalía real −1 a 0%)",
+      "portafolio_60_40": "2,0–2,5%",
+      "inflacion_supuesta": "4,0–4,5%",
+      "tasa_retiro": "3,0–3,5%"
+    },
+    "base": {
+      "acciones_globales": "5,0%",
+      "bonos_uf_btu": "2,0–2,5% (BTU-10 ≈2,5% jun-2026)",
+      "money_market_dap": "0,5–1,0%",
+      "inmobiliario_neto_total": "3,5–4,5% (renta neta 3,5% + plusvalía real 0–1%)",
+      "portafolio_60_40": "3,5–4,0%",
+      "inflacion_supuesta": "3,0% (meta BCCh)",
+      "tasa_retiro": "3,5–4,0%"
+    },
+    "optimista": {
+      "acciones_globales": "6,0–6,6% (6,6% real histórico EE.UU. 1900–2025, DMS)",
+      "bonos_uf_btu": "2,5–3,0%",
+      "money_market_dap": "1,0–1,5%",
+      "inmobiliario_neto_total": "5,0–6,0% (sin deuda; mayor con apalancamiento y plusvalía)",
+      "portafolio_60_40": "4,5–5,0%",
+      "inflacion_supuesta": "3,0%",
+      "tasa_retiro": "4,0–4,5%"
+    },
+    "referencias": {
+      "historico_DMS_1900_2025": "EE.UU.: acciones 6,6% real, bonos 1,6% real, letras 0,5% real anual. Acciones Mundo ≈5% real (estimado; cifra exacta no verificada en esta sesión).",
+      "vanguard_VCMM_2026": "Acciones desarrolladas ex-EE.UU. ~7,7% nominal y emergentes ~7,5% nominal a 10 años (≈5% real con inflación ~2,5%); EE.UU. con retornos esperados menores por valoración",
+      "fuente": "https://www.wealthbriefing.com/html/article.php/equities-have-beaten-bonds-since-1900--ubs-yearbook- ; https://www.ubs.com/global/en/investment-bank/insights-and-data/articles/global-investment-returns-yearbook-2026.html ; https://corporate.vanguard.com/content/corporatesite/us/en/corp/vemo/vemo-return-forecasts.html"
+    }
+  },
+  "fuentes": [
+    {
+      "txt": "Patrimore – valor UF",
+      "url": "https://patrimore.com/herramientas/valor-de-la-uf"
+    },
+    {
+      "txt": "UF hoy",
+      "url": "https://www.uf-hoy.com/"
+    },
+    {
+      "txt": "SII",
+      "url": "https://www.sii.cl/valores_y_fechas/uf/uf2026.htm"
+    },
+    {
+      "txt": "Valor UTM septiembre 2026",
+      "url": "https://valor-utm.cl/utm-historico/2026/septiembre/"
+    },
+    {
+      "txt": "SII",
+      "url": "https://www.sii.cl/valores_y_fechas/utm/utm2026.htm"
+    },
+    {
+      "txt": "Rankia Chile",
+      "url": "https://www.rankia.cl/blog/sii/2457838-impuesto-global-complementario-tabla-calculo-ejemplos"
+    },
+    {
+      "txt": "INE – IPC agosto 2026",
+      "url": "https://www.ine.gob.cl/sala-de-prensa/prensa/general/noticia/2026/09/08/%C3%ADndice-de-precios-al-consumidor-(ipc)-de-agosto-present%C3%B3-una-variaci%C3%B3n-mensual-de-0-6"
+    },
+    {
+      "txt": "CNN Chile – Encuesta de Expectativas Económicas sep-2026",
+      "url": "https://www.cnnchile.com/negocios/encuesta-expectativas-economicas-eleva-44-proyeccion-inflacion-tpm-se-mantendria-45/"
+    },
+    {
+      "txt": "Banco Central – Resumen IPoM septiembre 2026",
+      "url": "https://www.bcentral.cl/resumen-ipom/-/detalle/resumen-ipom-septiembre-2026"
+    },
+    {
+      "txt": "Banco Central – IPoM septiembre 2026 (nota de prensa)",
+      "url": "https://www.bcentral.cl/web/banco-central/contenido/-/detalle/prensa/nota-de-prensa/bcch-publica-ipom-septiembre-2026"
+    },
+    {
+      "txt": "Portal Innova – dólar máximo 2026",
+      "url": "https://portalinnova.cl/dolar-marca-su-maximo-de-2026-al-cierre-de-septiembre-petroleo-cobre-y-la-fed-presionan-el-peso/"
+    },
+    {
+      "txt": "BioBioChile – dólar 24-sep-2026",
+      "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/09/24/el-dolar-se-dispara-a-niveles-no-vistos-desde-2025-el-cobre-y-petroleo-ponen-presion-al-peso-chileno.shtml"
+    },
+    {
+      "txt": "SII",
+      "url": "https://www.sii.cl/valores_y_fechas/dolar/dolar2026.htm"
+    },
+    {
+      "txt": "Rankia Chile",
+      "url": "https://www.rankia.cl/blog/mejores-depositos-a-plazo/3257869-cuales-son-mejores-depositos-plazo"
+    },
+    {
+      "txt": "Banco Central – Base de Datos Estadísticos",
+      "url": "https://si3.bcentral.cl/siete/ES/Siete/Cuadro/CAP_EST_OMA/MN_EST_OMA/TMS_16?idSerie=F022.BUF.TIS.AN10.UF.Z.D"
+    },
+    {
+      "txt": "CNN Español – Treasury 10 años 5,1%",
+      "url": "https://abc17news.com/cnn-spanish/2026/09/23/el-rendimiento-de-los-bonos-del-tesoro-a-10-anos-alcanza-el-51-por-primera-vez-en-19-anos/"
+    },
+    {
+      "txt": "Chócale – DAP septiembre 2026",
+      "url": "https://chocale.cl/2026/09/depositos-a-plazo-dap-mejor-tasa-septiembre/"
+    },
+    {
+      "txt": "FinClaro",
+      "url": "https://finclaro.cl/calculadoras/comparador-depositos"
+    },
+    {
+      "txt": "tasas.cl – Tenpo",
+      "url": "https://tasas.cl/tenpo"
+    },
+    {
+      "txt": "Tenpo",
+      "url": "https://www.tenpo.cl/productos/cuenta-remunerada"
+    },
+    {
+      "txt": "Rankia Chile",
+      "url": "https://www.rankia.cl/blog/fondos-mutuos-agf/3151875-mejores-fondos-mutuos-chile"
+    },
+    {
+      "txt": "Fintual",
+      "url": "https://fintual.cl/money-market/"
+    },
+    {
+      "txt": "Asociación de AFP",
+      "url": "https://www.aafp.cl/noticias/apv-regimen-a-o-regimen-b/"
+    },
+    {
+      "txt": "Superintendencia de Pensiones",
+      "url": "https://www.spensiones.cl/portal/institucional/594/w3-article-5795.html"
+    },
+    {
+      "txt": "SimulaAPV – tope APV",
+      "url": "https://www.simulaapv.cl/tope-apv"
+    },
+    {
+      "txt": "CMF Educa – APVC",
+      "url": "https://www.cmfchile.cl/educa/621/w3-propertyvalue-580.html"
+    },
+    {
+      "txt": "Asociación de AFP",
+      "url": "https://www.aafp.cl/temas-previsionales/cuenta-de-ahorro-previsional-voluntario-colectivo-apvc/"
+    },
+    {
+      "txt": "Superintendencia de Pensiones",
+      "url": "https://www.spensiones.cl/portal/institucional/594/w3-propertyvalue-9930.html"
+    },
+    {
+      "txt": "Monedario",
+      "url": "https://monedario.cl/posts/que-es-la-cuenta-2-afp/"
+    },
+    {
+      "txt": "Fintual",
+      "url": "https://ayuda.fintual.cl/es/articles/3207275-cual-es-la-comision-de-fintual"
+    },
+    {
+      "txt": "Fintual",
+      "url": "https://fintual.cl/risky-norris"
+    },
+    {
+      "txt": "Racional",
+      "url": "https://racional.cl/preguntas-frecuentes"
+    },
+    {
+      "txt": "Racional",
+      "url": "https://ayuda.racional.cl/es/articles/6287831-cuanto-cuesta-invertir-por-racional-portafolios"
+    },
+    {
+      "txt": "Racional",
+      "url": "https://wise.com/cl/blog/racional-chile"
+    },
+    {
+      "txt": "Rankia Chile",
+      "url": "https://www.rankia.cl/blog/fondos-mutuos-agf/5711129-analisis-tenpo-inversiones"
+    },
+    {
+      "txt": "Renta 4 Chile – tarifas",
+      "url": "https://www.renta4.cl/plataforma-de-inversion/nuestras-tarifas"
+    },
+    {
+      "txt": "Renta 4 Chile – tarifas",
+      "url": "https://www.renta4.cl/content/dam/rentabanco/renta4chile/documentos/tarifas/Renta-4-Tarifas.pdf"
+    },
+    {
+      "txt": "Rankia Chile",
+      "url": "https://www.rankia.cl/blog/corredores-bolsa/7016987-costos-totales-invertir-chile-comisiones-derechos-iva"
+    },
+    {
+      "txt": "Interactive Brokers – comisiones",
+      "url": "https://www.interactivebrokers.com/en/pricing/commissions-stocks.php"
+    },
+    {
+      "txt": "Interactive Brokers – comisiones",
+      "url": "https://www.interactivebrokers.com/es/trading/commission-free-etfs-mkt.php"
+    },
+    {
+      "txt": "Vanguard",
+      "url": "https://investor.vanguard.com/investment-products/etfs/profile/vt"
+    },
+    {
+      "txt": "justETF",
+      "url": "https://www.justetf.com/en/etf-profile.html?isin=IE00BK5BQT80"
+    },
+    {
+      "txt": "Vanguard",
+      "url": "https://fund-docs.vanguard.com/FTSE_All-World_UCITS_ETF_USD_Accumulating_9679_EU_INT_UK_EN.pdf"
+    },
+    {
+      "txt": "justETF",
+      "url": "https://www.justetf.com/en/etf-profile.html?isin=IE00B4L5Y983"
+    },
+    {
+      "txt": "iShares",
+      "url": "https://www.ishares.com/uk/individual/en/products/251882/ishares-msci-world-ucits-etf-acc-fund"
+    },
+    {
+      "txt": "iShares",
+      "url": "https://www.ishares.com/us/products/239600/ishares-msci-acwi-etf"
+    },
+    {
+      "txt": "iShares",
+      "url": "https://www.ishares.com/uk/individual/en/products/251850/ishares-msci-acwi-ucits-etf"
+    },
+    {
+      "txt": "Motley Fool – VOO vs SPY",
+      "url": "https://www.fool.com/investing/2026/09/19/voo-vs-spy-is-there-actually-a-difference/"
+    },
+    {
+      "txt": "Ministerio de Hacienda",
+      "url": "https://www.hacienda.cl/areas-de-trabajo/finanzas-internacionales/oficina-de-la-deuda-publica/estadisticas/caracteristicas-financieras-bonos-locales"
+    },
+    {
+      "txt": "Houm – rentabilidad real departamento 2026",
+      "url": "https://blog.houm.com/rentabilidad-real-de-tu-departamento-en-chile-2026-como-calcularla-bien-y-no-solo-mirar-el-arriendo-mensual/"
+    },
+    {
+      "txt": "Círculo Verde – Pro Pyme",
+      "url": "https://www.circuloverde.cl/extension-de-la-rebaja-de-tasas-de-impuesto-de-primera-categoria-y-de-ppm-para-el-regimen-propyme-14-d-3-de-la-lir/"
+    },
+    {
+      "txt": "AEM – tramo 40% IGC",
+      "url": "https://www.aem.cl/40-de-tasa-el-impuesto-global-complementario/"
+    },
+    {
+      "txt": "SII",
+      "url": "https://www.sii.cl/noticias/2025/261225noti01smn.htm"
+    },
+    {
+      "txt": "Asociación de AFP",
+      "url": "https://www.aafp.cl/noticias/retencion-boletas-honorarios-2026/"
+    },
+    {
+      "txt": "AAFM – beneficios tributarios fondos mutuos",
+      "url": "https://www.aafm.cl/2016/wp-content/uploads/2022/10/Actualizaci%C3%B3n-Beneficios-Tributarios-Fondos-Mutuos-septiembre-2022.pdf"
+    },
+    {
+      "txt": "Carey – ganancia de capital presencia bursátil",
+      "url": "https://www.carey.cl/reforma-tributaria/ganancia-de-capital-en-instrumentos-con-presencia-bursatil"
+    },
+    {
+      "txt": "KPMG Chile – Tax Alert Ley de Reconstrucción",
+      "url": "https://assets.kpmg.com/content/dam/kpmgsites/cl/pdf/2026/08/Tax%20Alert%20Aprobaci%C3%B3n%20Ley%20de%20Reconstrucci%C3%B3n.pdf.coredownload.inline.pdf"
+    },
+    {
+      "txt": "Fintual",
+      "url": "https://ayuda.fintual.cl/es/articles/3207826-existen-beneficios-tributarios"
+    },
+    {
+      "txt": "Awake Trader – impuestos trading Chile",
+      "url": "https://www.awaketrader.com/educacion/impuestos-trading-chile"
+    },
+    {
+      "txt": "el fondo – impuestos ETFs Chile",
+      "url": "https://www.el-fondo.com/es/articles/impuestos-etfs-chile-inversionistas-minoristas-sii-tratado-formulario-22"
+    },
+    {
+      "txt": "SII",
+      "url": "https://www.sii.cl/preguntas_frecuentes/declaracion_renta/001_140_1578.htm"
+    },
+    {
+      "txt": "Fintual",
+      "url": "https://fintualist.com/chile/educacion-financiera/tus-inversiones-en-fintual-mejoran-con-el-nuevo-convenio-tributario-chile-estados-unidos/"
+    },
+    {
+      "txt": "Racional",
+      "url": "https://ayuda.racional.cl/es/articles/6027124-que-es-el-withholding-tax-de-los-dividendos-e-intereses-de-estados-unidos"
+    },
+    {
+      "txt": "IRS – estate tax no residentes",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/some-nonresidents-with-us-assets-must-file-estate-tax-returns"
+    },
+    {
+      "txt": "UNO AFP – Cuenta 2",
+      "url": "https://www.uno.cl/productos/cuenta2"
+    },
+    {
+      "txt": "Gomaxxa – tasa primera categoría 2025–2029",
+      "url": "https://aprende.gomaxxa.com/tasa-de-primera-categor%C3%ADa-2025-2029"
+    },
+    {
+      "txt": "Ex-Ante – 10 medidas tributarias plan Kast",
+      "url": "https://www.ex-ante.cl/los-10-cambios-tributarios-del-plan-de-kast-que-cambia-a-quien-beneficia-y-el-costo-fiscal-del-paquete/"
+    },
+    {
+      "txt": "Infobae – aprobación Ley de Reconstrucción",
+      "url": "https://www.infobae.com/america/america-latina/2026/08/05/el-congreso-chileno-aprobo-el-ultimo-articulo-del-plan-de-reconstruccion-nacional-del-gobierno-de-kast/"
+    },
+    {
+      "txt": "NSS Legal & Tax – reforma tributaria 2026",
+      "url": "https://www.nss.cl/en/resources/reforma-tributaria-2026"
+    },
+    {
+      "txt": "AZ – 2026 Major Tax Reform",
+      "url": "https://www.az.cl/en/2026-major-tax-reform-major-changes-approved-and-key-considerations-for-businesses-and-individuals/"
+    },
+    {
+      "txt": "Diario Financiero",
+      "url": "https://www.df.cl/economia-y-politica/df-tax/iva-a-la-vivienda-repatriacion-de-capitales-e-invariabilidad-tributaria"
+    },
+    {
+      "txt": "Superintendencia de Pensiones",
+      "url": "https://www.spensiones.cl/portal/institucional/594/w3-propertyvalue-10906.html"
+    },
+    {
+      "txt": "Ministerio de Hacienda",
+      "url": "https://www.hacienda.cl/noticias-y-eventos/noticias/implementacion-de-la-reforma-previsional-nueva-cotizacion-del-empleador-regira"
+    },
+    {
+      "txt": "Meganoticias – CRP y alza cotización",
+      "url": "https://www.meganoticias.cl/nacional/528500-reforma-pensiones-prestamo-reembolsable-crp-cotizacion-03-08-2026.html"
+    },
+    {
+      "txt": "Asociación de AFP",
+      "url": "https://www.aafp.cl/noticias/reforma-previsional-cotizacion-adicional-35-agosto-2026/"
+    },
+    {
+      "txt": "Emol – guía cambios pensiones ago-2026",
+      "url": "https://www.emol.com/noticias/Economia/2026/08/02/1207170/cambios-sistema-de-pensiones-reforma.html"
+    },
+    {
+      "txt": "Gob.cl – calendario reforma pensiones",
+      "url": "https://www.ips.gob.cl/noticias/trabajadores-independientes-cotizaciones-para-nueva-reforma-de-pensiones"
+    },
+    {
+      "txt": "Superintendencia de Pensiones",
+      "url": "https://www.spensiones.cl/portal/institucional/594/w3-propertyvalue-9913.html"
+    },
+    {
+      "txt": "CalculadoraEnLinea – honorarios 2027",
+      "url": "https://calculadoraenlinea.cl/blog/cotizaciones-honorarios-2027/"
+    },
+    {
+      "txt": "CalculaChile – cotización empleador 3,5%",
+      "url": "https://calculadorachile.cl/blog/cotizacion-empleador-3-5-agosto-2026-costo-pyme"
+    },
+    {
+      "txt": "Gob.cl – calendario reforma pensiones",
+      "url": "https://www.gob.cl/noticias/que-viene-ahora-reforma-pensiones-conoce-calendario-informate-cuando-aumentan-jubilaciones/"
+    },
+    {
+      "txt": "Neat – tasas hipotecarias ago-2026",
+      "url": "https://www.neatpagos.com/blog/articulo/mejor-tasa-credito-hipotecario"
+    },
+    {
+      "txt": "Banco Central – Base de Datos Estadísticos",
+      "url": "https://si3.bcentral.cl/siete/login.aspx?idMenutree=MN_TASA_INTERES_09&idCuadro=TSF_27&idSerie=F022.VIV.TIP.MA03.UF.Z.M"
+    },
+    {
+      "txt": "FinClaro",
+      "url": "https://finclaro.cl/guias/cuanto-sueldo-necesito-credito-hipotecario"
+    },
+    {
+      "txt": "Monedario",
+      "url": "https://monedario.cl/posts/credito-hipotecario-chile-guia-completa/"
+    },
+    {
+      "txt": "La Tercera – rentabilidad por ciudad/comuna",
+      "url": "https://www.latercera.com/pulso/noticia/ciudades-y-comunas-donde-es-mas-rentable-comprar-un-departamento-para-arrendarlo/"
+    },
+    {
+      "txt": "Toctoc – ocupación arriendos",
+      "url": "https://blog.toctoc.com/arriendos-en-el-gran-santiago-alcanzan-niveles-de-ocupacion-sobre-el-95-reflejando-alzas-en-precios/"
+    },
+    {
+      "txt": "Capital Arriendo – mercado abril 2026",
+      "url": "https://capitalarriendo.cl/blog/mercado-inmobiliario-chile-tendencias-abril-2026/"
+    },
+    {
+      "txt": "Propital – rentabilidad inmobiliaria 2026",
+      "url": "https://www.propital.com/blog/2026-07-10-rentabilidad-inversion-inmobiliaria-chile-2026"
+    },
+    {
+      "txt": "SII",
+      "url": "https://www.sii.cl/ayudas/ayudas_por_servicios/2242-reajustes_exenciones-2468.html"
+    },
+    {
+      "txt": "ChileAtiende – contribuciones",
+      "url": "https://www.chileatiende.gob.cl/fichas/3229-pago-de-contribuciones-de-bienes-raices-en-sii"
+    },
+    {
+      "txt": "Propital – rentabilidad inmobiliaria 2026",
+      "url": "https://www.propital.com/blog/2026-05-28-rentabilidad-inversion-inmobiliaria-chile-2026"
+    },
+    {
+      "txt": "Houm – rentabilidad real departamento 2026",
+      "url": "https://blog.houm.com/mercado-inmobiliario-en-santiago-2026-tendencias-y-perspectivas/"
+    },
+    {
+      "txt": "Morningstar – tasa de retiro segura 2026",
+      "url": "https://www.morningstar.com/retirement/whats-safe-retirement-withdrawal-rate-2026"
+    },
+    {
+      "txt": "Financial Advisor – Morningstar 3,9%",
+      "url": "https://www.fa-mag.com/news/morningstar-safe-retirement-withdrawal-rate-for-2026-is-3-9-85940.html"
+    },
+    {
+      "txt": "Infobae – fondo de emergencia",
+      "url": "https://www.infobae.com/peru/2026/07/02/cuanto-dinero-deberias-tener-en-tu-fondo-de-emergencia-segun-tu-edad/"
+    },
+    {
+      "txt": "WealthBriefing – resumen Yearbook",
+      "url": "https://www.wealthbriefing.com/html/article.php/equities-have-beaten-bonds-since-1900--ubs-yearbook-"
+    },
+    {
+      "txt": "UBS Global Investment Returns Yearbook 2026",
+      "url": "https://www.ubs.com/global/en/investment-bank/insights-and-data/articles/global-investment-returns-yearbook-2026.html"
+    },
+    {
+      "txt": "Vanguard",
+      "url": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/vemo/vemo-return-forecasts.html"
+    }
+  ]
+}
