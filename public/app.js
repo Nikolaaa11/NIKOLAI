@@ -139,7 +139,7 @@
   var maxTeam = Math.max.apply(null, D.equipos.map(function (e) { return e.horas; }));
   $("#teams").innerHTML = D.equipos.map(function (e) {
     var pct = e.horas / T.horas * 100;
-    return '<div class="card team"><div class="team-top"><span class="team-name">' + esc(e.nombre) + '</span><span class="num" style="color:var(--ink-2);font-size:.85rem">' +
+    return '<div class="card team"><div class="team-top"><span class="team-name">' + esc(e.nombre) + '</span><span class="num" style="color:var(--ink-2);font-size:.85rem;white-space:nowrap">' +
       nf(e.horas) + " h · " + nf(pct, pct < 1 ? 1 : 0) + ' %</span></div><div class="meter" aria-hidden="true"><div style="width:' + Math.max(1.5, e.horas / maxTeam * 100) + '%"></div></div>' +
       '<div class="team-roles">' + e.roles.map(esc).join(" · ") + "</div></div>";
   }).join("");
@@ -437,8 +437,16 @@
   $("#promptBox").textContent = D.prompt_maestro;
   $("#copyPrompt").addEventListener("click", function () {
     var b = this;
-    var done = function () { b.textContent = "Copiado"; setTimeout(function () { b.textContent = "Copiar prompt"; }, 1600); };
-    if (navigator.clipboard) navigator.clipboard.writeText(D.prompt_maestro).then(done, function () { });
+    var done = function (msg) { b.textContent = msg; setTimeout(function () { b.textContent = "Copiar prompt"; }, 1800); };
+    var fallback = function () {
+      var sel = window.getSelection(), range = document.createRange();
+      range.selectNodeContents($("#promptBox")); sel.removeAllRanges(); sel.addRange(range);
+      done("Texto seleccionado: copia con Ctrl/Cmd+C");
+    };
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(D.prompt_maestro).then(function () { done("Copiado"); }, fallback);
+      else fallback();
+    } catch (e) { fallback(); }
   });
   $("#methodList").innerHTML = C.metodo.map(function (m) { return "<li>" + fill(m) + "</li>"; }).join("");
   $("#sources").innerHTML = D.fuentes.map(function (f) { return '<li><a href="' + esc(f.url) + '" target="_blank" rel="noopener">' + esc(f.txt) + "</a></li>"; }).join("");
